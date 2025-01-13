@@ -7,8 +7,8 @@ import Root from "./routes/Root.jsx";
 // import Index from "./routes/Index.jsx";
 import Home from "./routes/Home.jsx";
 import About from "./routes/About.jsx";
-import Contact from "./components/sections/Contact.jsx";
-import Projects from "./components/sections/Projects.jsx";
+import Projects from "./routes/Projects.jsx";
+import Contact from "./routes/Contact.jsx";
 
 const router = createBrowserRouter([
   {

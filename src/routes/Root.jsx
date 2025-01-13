@@ -43,15 +43,15 @@ const Root = () => {
 
   return (
     <div className="flex flex-col overflow-x-hidden w-screen">
-      <header className="fixed flex top-0 w-full bg-globalColor5 shadow-md min-h-24 z-30">
-        <div className="container flex items-center md:justify-center justify-between min-h-full transition">
+      <header className="fixed flex top-0 w-full bg-globalColor5 shadow-md z-30">
+        <div className="container flex items-center justify-between min-h-full transition">
           {/* Start Logo */}
           <Link to="/">
             <img className="max-h-28" src={logo} alt="logo" />
           </Link>
           {/* End Logo */}
           <div
-            className="bg-globalColor0 md:hidden block text-globalColor8 p-3 text-xl rounded-sm cursor-pointer"
+            className="bg-globalColor0 lg:hidden block text-globalColor8 p-3 text-xl rounded-sm cursor-pointer"
             onClick={handleShowMenu}
           >
             <FaBars />
@@ -69,7 +69,7 @@ const Root = () => {
           />
         </div>
       </header>
-      <div className="flex flex-col mt-28">
+      <div className="flex flex-col mt-24">
         <Outlet />
       </div>
     </div>

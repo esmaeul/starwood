@@ -33,7 +33,7 @@ function NavbarLg() {
     };
   });
   return (
-    <nav className="md:flex hidden items-center justify-between w-full">
+    <nav className="lg:flex hidden items-center justify-between w-full">
       <ul className="flex gap-4 justify-center items-center pl-12">
         <li className="nav-link">
           <Link
