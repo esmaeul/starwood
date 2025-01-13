@@ -22,7 +22,7 @@ const Landing = () => {
           >
             <FaPhone className="text-lg" /> +966 12 6930030
           </a>
-          <form className="md:-mb-16 mb-0 p-10 bg-globalColor4 shadow-lg rounded-lg flex md:flex-row flex-col md:gap-5 items-center justify-center">
+          <form className="md:-mb-16 mb-0 p-10 bg-globalColor8 shadow-lg rounded-lg flex md:flex-row flex-col md:gap-5 items-center justify-center">
             <div className="flex flex-row sm:flex-col lg:basis-5/12 sm:basis-6/12 basis-full">
               <p className="text-globalColor0 font-semibold">
                 Quick Service Request
