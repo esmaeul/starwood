@@ -4,9 +4,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import ErrPage from "./routes/ErrPage.jsx";
 import Root from "./routes/Root.jsx";
-import Index from "./routes/Index.jsx";
+// import Index from "./routes/Index.jsx";
 import Home from "./routes/Home.jsx";
 import About from "./routes/About.jsx";
+import Contact from "./components/sections/Contact.jsx";
+import Projects from "./components/sections/Projects.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +16,7 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <ErrPage />,
     children: [
-      { index: true, element: <Index /> },
+      { index: true, element: <Home /> },
       {
         path: "/Home",
         element: <Home />,
@@ -25,7 +27,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <Home />,
+        element: <Contact />,
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
       },
     ],
   },
