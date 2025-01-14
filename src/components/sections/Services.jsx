@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
 import SingelService from "./services/SingelService";
-import germanBeech from "../../../public/assets/images/woods/german-beech.png";
-import mahgoniWood from "../../../public/assets/images/woods/Mahgoni.png";
-import medepan from "../../../public/assets/images/woods/medepan-fr.jpg";
-import amricanSinian from "../../../public/assets/images/woods/Amirican sindian.png";
-import austrian from "../../../public/assets/images/woods/Austrian marbou3.png";
-import austrian25x5 from "../../../public/assets/images/woods/Austria 25x5.png";
+import germanBeech from "../../assets/images/services/German zan.png";
+import mahgoniWood from "../../assets/images/services/Mahgoni.png";
+import medepan from "../../assets/images/services/medepan-fr.jpg";
+import amricanSinian from "../../assets/images/services/Amirican sindian.png";
+import austrian from "../../assets/images/services/Austrian marbou3.png";
+import austrian25x5 from "../../assets/images/services/Austria 25x5.png";
+
 const Services = () => {
   return (
     <section

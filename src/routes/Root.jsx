@@ -3,7 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 import NavbarLg from "../components/navbar/NavbarLg";
 import NavbarSm from "../components/navbar/NavbarSm";
 import { useEffect, useState } from "react";
-import logo from "../../src/assets/images/logo.png";
+import logo from "../../src/assets/shared/logo.png";
 
 const Root = () => {
   const [showMenu, setShowMenu] = useState(false);

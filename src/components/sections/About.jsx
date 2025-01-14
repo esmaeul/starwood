@@ -1,7 +1,7 @@
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaCircleCheck } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import starwoodMap from "../../../public/assets/images/woods/starwood-map.jpg";
+import starwoodMap from "../../assets/images/about/starwood-map.jpg";
 
 const About = () => {
   return (
@@ -25,7 +25,7 @@ const About = () => {
           <h1 className="text-xl font-semibold text-globalColor2">
             Startwood Company
           </h1>
-          <p className=" font-light my-3">
+          <p className="font-light my-3">
             About Starwood Starwood For Decorations Starwood is a product of
             utmost quality wood, professional craftsmanship and avant-garde
             technology. It is the elite range of wood products for those who
