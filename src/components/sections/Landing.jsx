@@ -8,7 +8,7 @@ const Landing = () => {
         <LandingVideo />
       </div>
       {/* Start Landing Text */}
-      <div className="z-10 mt-72">
+      <div className="z-10 mt-96">
         <div className="flex m-w-full flex-col lg:gap-6 gap-4 sm:-mt-0 -mt-36">
           <LandingForm />
         </div>

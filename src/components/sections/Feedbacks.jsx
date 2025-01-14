@@ -1,6 +1,6 @@
 const Feedbacks = () => {
   return (
-    <section id="feedbacks" className="feedbacks">
+    <section id="feedbacks" className="feedbacks bg-globalColor7 min-h-screen">
       <div className="main-heading">
         <h2>People Say The Nicest Things do some better Texts for Starwood</h2>
       </div>

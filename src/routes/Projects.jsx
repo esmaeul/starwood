@@ -1,10 +1,5 @@
-
 const Projects = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div className="min-h-screen">Projects</div>;
+};
 
-export default Projects
+export default Projects;

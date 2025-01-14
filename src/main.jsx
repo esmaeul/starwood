@@ -4,11 +4,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import ErrPage from "./routes/ErrPage.jsx";
 import Root from "./routes/Root.jsx";
-// import Index from "./routes/Index.jsx";
 import Home from "./routes/Home.jsx";
 import About from "./routes/About.jsx";
 import Projects from "./routes/Projects.jsx";
 import Contact from "./routes/Contact.jsx";
+import Activities from "./routes/Activities.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,12 +26,16 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "/contact",
-        element: <Contact />,
+        path: "/activities",
+        element: <Activities />,
       },
       {
         path: "/projects",
         element: <Projects />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

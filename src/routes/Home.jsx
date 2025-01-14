@@ -1,9 +1,8 @@
 import About from "../components/sections/About";
 import Contact from "../components/sections/Contact";
-import Feedbacks from "../components/sections/Feedbacks";
-import Footer from "../components/sections/Footer";
+// import Feedbacks from "../components/sections/Feedbacks";
 import Landing from "../components/sections/Landing";
-import Services from "../components/sections/Services";
+import Activities from "../components/sections/Activities";
 import WhyUs from "../components/sections/WhyUs";
 
 const Home = () => {
@@ -16,20 +15,14 @@ const Home = () => {
       <About />
       {/* <!-- End About --> */}
       {/* <!-- Start Services --> */}
-      <Services />
+      <Activities />
       {/* <!-- End Services --> */}
       {/* <!-- Staert Why us --> */}
       <WhyUs />
       {/* <!-- End Why us --> */}
-      {/* <!-- Start Feedback --> */}
-      <Feedbacks />
-      {/* <!-- End Feedbacks --> */}
       {/* <!-- Start Contact pre-Footer--> */}
       <Contact />
       {/* <!-- End Contact pre-Footer--> */}
-      {/* <!-- Start Footer --> */}
-      <Footer />
-      {/* <!-- End Footer --> */}
     </>
   );
 };

@@ -5,9 +5,10 @@ import starwoodMap from "../../assets/images/about/cats1.png";
 import starwoodStar from "../../assets/images/about/star logo-hd.png";
 
 const About = () => {
+
   return (
     <section id="about" className="about">
-      <div className="section container flex md:flex-row flex-col gap-10 items-center justify-center">
+      <div className="section container flex lg:flex-row flex-col gap-10 items-center justify-center">
         <div className="md:basis-6/12 md:h-full overflow-hidden relative">
           <img
             src={starwoodMap}
@@ -19,7 +20,7 @@ const About = () => {
             <img
               src={starwoodStar}
               alt="starwood marker"
-              className="w-12 h-12 rounded-2xl object-cover"
+              className="sm:w-11 sm:h-11 w-8 h-8 object-cover"
             />
             <FaMapMarkerAlt className=" absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
           </div>
@@ -28,7 +29,7 @@ const About = () => {
             <img
               src={starwoodStar}
               alt="starwood marker"
-              className="w-12 h-12 rounded-2xl object-cover"
+              className="sm:w-11 sm:h-11 w-8 h-8 rounded-2xl object-cover"
             />
             <FaMapMarkerAlt className=" absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
           </div>
@@ -37,7 +38,7 @@ const About = () => {
             <img
               src={starwoodStar}
               alt="starwood marker"
-              className="w-12 h-12 rounded-2xl object-cover"
+              className="sm:w-11 sm:h-11 w-8 h-8 rounded-2xl object-cover"
             />
             <FaMapMarkerAlt className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
           </div>
@@ -46,7 +47,7 @@ const About = () => {
             <img
               src={starwoodStar}
               alt="starwood marker"
-              className="w-12 h-12 rounded-2xl object-cover"
+              className="sm:w-11 sm:h-11 w-8 h-8 rounded-2xl object-cover"
             />
             <FaMapMarkerAlt className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
           </div>

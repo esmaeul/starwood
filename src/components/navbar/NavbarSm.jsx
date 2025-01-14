@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+import usaFlag from "../../assets/shared/icons8-usa-50.png";
+
 import { useEffect, useRef, useState } from "react";
 import {
   FaFacebook,
@@ -55,7 +56,15 @@ const NavbarSm = ({ handleShowMenu, showMenu, setShowMenu }) => {
       >
         <FaXmark className="group-hover:scale-125" />
       </div>
-      <ul className="flex flex-col my-20 px-10">
+      <ul
+        className="flex flex-col my-20 px-10"
+        onClick={(e) => {
+          // Close the menu if the clicked element is a link
+          if (e.target.tagName === "A") {
+            setShowMenu(false);
+          }
+        }}
+      >
         <li className="my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold">
           <Link
             className="text-globalColor2 hover:text-globalColor0 text-md transition"
@@ -75,15 +84,16 @@ const NavbarSm = ({ handleShowMenu, showMenu, setShowMenu }) => {
         <li
           ref={serRef}
           className="flex items-center gap-1.5 group hover:cursor-pointer my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold"
-          onClick={(e) => {
-            e.stopPropagation(); // Prevent propagation to the document click handler
+          onClick={() => {
             setSerMenu((prev) => !prev);
           }}
         >
           {" "}
-          <div className="relative text-globalColor2 group-hover:text-globalColor0 text-md transition">
-            Services
-          </div>
+          <Link to="/activities" onClick={() => setShowMenu(false)}>
+            <div className="relative text-globalColor2 group-hover:text-globalColor0 text-md transition">
+              Activities
+            </div>
+          </Link>
           <IoIosArrowUp
             className={`group-hover:text-globalColor0 text-md text-globalColor2 ${
               serMenu ? "" : "rotate-180"
@@ -123,19 +133,24 @@ const NavbarSm = ({ handleShowMenu, showMenu, setShowMenu }) => {
         <li
           ref={langRef}
           className="flex items-center gap-1.5 group hover:cursor-pointer my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold"
-          onClick={(e) => {
-            e.stopPropagation(); // Prevent propagation to the document click handler
+          onClick={() => {
             setLangMenu((prev) => !prev);
           }}
         >
-          <div className="relative text-globalColor2 group-hover:text-globalColor0 text-md transition">
-            English
-          </div>
-          <img
-            src={""}
-            alt="usaFlag-flag"
-            className="opacity-75 group-hover:opacity-100 transition"
-          />
+          <Link
+            to="/home"
+            className="flex gap-2 items-center"
+            onClick={() => setShowMenu(false)}
+          >
+            <div className="relative text-globalColor2 group-hover:text-globalColor0 text-md transition">
+              English
+            </div>
+            <img
+              src={usaFlag}
+              alt="flag"
+              className="w-8 h-8 opacity-50 group-hover:opacity-100 transition"
+            />
+          </Link>
           <IoIosArrowUp
             className={`group-hover:text-globalColor0 text-md text-globalColor2 ${
               langMenu ? "" : "rotate-180"
@@ -146,10 +161,17 @@ const NavbarSm = ({ handleShowMenu, showMenu, setShowMenu }) => {
         {langMenu && (
           <li className="my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold">
             <Link
-              className="text-globalColor2 hover:text-globalColor0 text-md transition"
-              to="/home-en"
+              className="flex gap-2 items-center"
+              onClick={() => setShowMenu(false)}
             >
-              English
+              <div className="relative text-globalColor2 group-hover:text-globalColor0 text-md transition">
+                English
+              </div>
+              <img
+                src={usaFlag}
+                alt="flag"
+                className="w-8 h-8 opacity-50 group-hover:opacity-100 transition"
+              />
             </Link>
           </li>
         )}

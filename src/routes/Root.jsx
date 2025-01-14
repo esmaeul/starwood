@@ -4,6 +4,7 @@ import NavbarLg from "../components/navbar/NavbarLg";
 import NavbarSm from "../components/navbar/NavbarSm";
 import { useEffect, useState } from "react";
 import logo from "../../src/assets/shared/logo.png";
+import Footer from "../components/footer/Footer";
 
 const Root = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -42,12 +43,12 @@ const Root = () => {
   }, []);
 
   return (
-    <div className="flex flex-col overflow-x-hidden w-screen">
+    <div className="flex flex-col overflow-x-hidden">
       <header className="fixed flex top-0 w-full bg-globalColor5 shadow-md z-30">
         <div className="container flex items-center justify-between min-h-full transition">
           {/* Start Logo */}
           <Link to="/">
-            <img className="max-h-28" src={logo} alt="logo" />
+            <img className="sm:h-28 h-24" src={logo} alt="logo" />
           </Link>
           {/* End Logo */}
           <div
@@ -57,7 +58,7 @@ const Root = () => {
             <FaBars />
           </div>
           <div
-            className={`absolute left-0 top-0 h-full bg-black opacity-30 z-30 ${
+            className={`absolute left-0 top-0 h-full bg-black opacity-30 z-40 ${
               showMenu ? "w-full" : "w-0"
             }`}
           ></div>
@@ -69,9 +70,12 @@ const Root = () => {
           />
         </div>
       </header>
-      <div className="flex flex-col mt-24">
+      <div className="flex flex-col sm:mt-24 my-20">
         <Outlet />
       </div>
+      {/* <!-- Start Footer --> */}
+      <Footer />
+      {/* <!-- End Footer --> */}
     </div>
   );
 };

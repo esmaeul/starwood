@@ -1,21 +1,23 @@
-import SingelService from "./services/SingelService";
-import germanBeech from "../../assets/images/services/German zan.png";
-import mahgoniWood from "../../assets/images/services/Mahgoni.png";
-import medepan from "../../assets/images/services/medepan-fr.jpg";
-import amricanSinian from "../../assets/images/services/Amirican sindian.png";
-import austrian from "../../assets/images/services/Austrian marbou3.png";
-import austrian25x5 from "../../assets/images/services/Austria 25x5.png";
+import SingelService from "./activities/SingelActivity";
+import germanBeech from "../../assets/images/activities/German zan.png";
+import mahgoniWood from "../../assets/images/activities/Mahgoni.png";
+import medepan from "../../assets/images/activities/medepan-fr.jpg";
+import amricanSinian from "../../assets/images/activities/Amirican sindian.png";
+import austrian from "../../assets/images/activities/Austrian marbou3.png";
+import austrian25x5 from "../../assets/images/activities/Austria 25x5.png";
 
-const Services = () => {
+const SingelActivity = () => {
   return (
     <section
-      id="services"
-      className="services flex flex-col min-h-[100vh] bg-globalColor1 py-6 mt-16 pt-16"
+      id="SingelActivity"
+      className="SingelActivity min-h-screen bg-globalColor1 py-6 mt-16 pt-16"
     >
       <div className="container section grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-        <div className="main-heading col-span-full mb-8">
-          <h2 className="text-3xl">Types of Wood We Offer</h2>
-          <p>We Provide Superior Construction Services</p>
+        <div className="main-heading col-span-full mb-8 w-fit mx-auto flex flex-col gap-1.5">
+          <h2 className="text-4xl text-globalColor0">Types of Wood We Offer</h2>
+          <p className="text-white my-6 mx-auto w-fit font-light">
+            We Provide Superior Construction SingelActivity
+          </p>
         </div>
         <SingelService
           imgSrc={germanBeech}
@@ -80,4 +82,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default SingelActivity;

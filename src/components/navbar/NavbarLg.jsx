@@ -1,3 +1,5 @@
+import usaFlag from "../../assets/shared/icons8-usa-50.png";
+
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import {
@@ -14,24 +16,7 @@ function NavbarLg() {
   const serRef = useRef(null);
   const langRef = useRef(null);
 
-  useEffect(() => {
-    const handleClickOutSer = (e) => {
-      if (serRef.current && !serRef.current.contains(e.target)) {
-        setSerMenu(false);
-      }
-    };
-    const handleClickOutLang = (e) => {
-      if (langRef.current && !langRef.current.contains(e.target)) {
-        setLangMenu(false);
-      }
-    };
-    document.addEventListener("mouseleave", handleClickOutSer);
-    document.addEventListener("mouseleave", handleClickOutLang);
-    return () => {
-      document.removeEventListener("mouseleave", handleClickOutLang);
-      document.removeEventListener("mouseleave", handleClickOutSer);
-    };
-  });
+  useEffect(() => {});
   return (
     <nav className="lg:flex hidden items-center justify-between w-full">
       <ul className="flex gap-4 justify-center items-center pl-12">
@@ -57,21 +42,24 @@ function NavbarLg() {
           onMouseOver={() => {
             setSerMenu(true);
           }}
+          onMouseLeave={() => setSerMenu(false)}
         >
-          <div className="text-globalColor2 group-hover:text-globalColor0 text-md transition">
-            Activities
-          </div>
-          <IoIosArrowUp
-            className={`group-hover:text-globalColor0 text-md text-globalColor2 transition ${
-              serMenu ? "" : "rotate-180"
-            }`}
-          />
+          <Link to={"/activities"} className="flex items-center gap-3">
+            <div className="text-globalColor2 group-hover:text-globalColor0 text-md transition">
+              Activities
+            </div>
+            <IoIosArrowUp
+              className={`group-hover:text-globalColor0 text-md text-globalColor2 transition ${
+                serMenu ? "" : "rotate-180"
+              }`}
+            />
+          </Link>
           {/* Start Services menu */}
           <ul
-            className={`absolute z-50 top-full flex-col gap-3 opacity-0 min-w-36 min-h-fit py-6 px-2 bg-globalColor8 transition ${
+            className={`absolute z-50 top-full flex-col gap-3 opacity-0 min-w-36 min-h-fit py-6 px-2 bg-globalColor5 transition rounded-sm  ${
               serMenu
-                ? "translate-y-0 opacity-100 flex opacity-1"
-                : "-translate-y-full opacity-0"
+                ? "translate-y-0 opacity-100 flex opacity-1 pointer-events-auto"
+                : "-translate-y-6 opacity-0 pointer-events-none"
             }`}
           >
             <li className="nav-link">
@@ -104,30 +92,39 @@ function NavbarLg() {
         <li
           ref={langRef}
           className="nav-link flex gap-2 items-center justify-center group hover:cursor-pointer"
-          onClick={(e) => {
-            e.stopPropagation(); // Prevent propagation to the document click handler
-            setLangMenu((prev) => !prev);
+          onMouseOver={() => {
+            setLangMenu(true);
+          }}
+          onMouseLeave={() => {
+            setLangMenu(false);
           }}
         >
-          <div className="text-globalColor2 group-hover:text-globalColor0 text-md transition">
-            English
-          </div>
-          <IoIosArrowUp
-            className={`group-hover:text-globalColor0 text-md text-globalColor2 transition ${
-              langMenu ? "" : "rotate-180"
-            }`}
-          />
+          <Link to={"/home"} className="flex items-center gap-3">
+            <img
+              src={usaFlag}
+              alt="flag"
+              className="w-7 h-7 opacity-50 group-hover:opacity-100 transition-all"
+            />
+            <div className="text-globalColor2 group-hover:text-globalColor0 text-md transition">
+              English
+            </div>
+            <IoIosArrowUp
+              className={`group-hover:text-globalColor0 text-md text-globalColor2 transition ${
+                langMenu ? "" : "rotate-180"
+              }`}
+            />
+          </Link>
           {/* Start English menu */}
           <ul
-            className={`absolute z-50 top-full flex-col gap-3 opacity-0 min-w-36 min-h-fit py-6 px-2 bg-globalColor8 transition ${
+            className={`absolute z-50 top-full flex-col gap-3 opacity-0 min-w-36 min-h-fit py-6 px-2 bg-globalColor5 transition rounded-sm  ${
               langMenu
-                ? "translate-y-0 opacity-100 flex opacity-1"
-                : "-translate-y-full opacity-0"
+                ? "translate-y-0 opacity-100 flex pointer-events-auto"
+                : "-translate-y-full opacity-0 pointer-events-none"
             }`}
           >
-            <li className="nav-link">
+            <li className="">
               <Link
-                className="text-globalColor2 hover:text-globalColor0 text-md transition"
+                className="nav-link text-globalColor2 hover:text-globalColor0 text-md transition"
                 to="/home-en"
               >
                 English
@@ -136,9 +133,9 @@ function NavbarLg() {
           </ul>
           {/* End English menu */}
         </li>
-        <li className="nav-link">
+        <li className="">
           <Link
-            className="text-globalColor2 hover:text-globalColor0 text-md transition"
+            className="nav-link text-globalColor2 hover:text-globalColor0 text-md transition"
             to="/contact"
           >
             Contact Us

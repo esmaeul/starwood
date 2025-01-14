@@ -10,11 +10,15 @@ import {
 
 const WhyUs = () => {
   return (
-    <section id="why-us" className="why-us">
-      <div className="container section grid grid-cols-3">
-        <div className="main-heading col-span-full">
-          <h2>Why Choose Us do some nice colors</h2>
-          <p>We are committed to providing the best services</p>
+    <section id="why-us" className="why-us bg-globalColor4 min-h-screen py-16">
+      <div className="container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+        <div className="main-heading col-span-full text-center gap-1.5">
+          <h2 className="text-4xl font-semibold text-globalColor0">
+            Why Choose Us
+          </h2>
+          <p className="font-light my-4">
+            We are committed to providing the best services
+          </p>
         </div>
         <Reason
           icon={<FaAward />}
