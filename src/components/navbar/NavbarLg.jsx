@@ -25,11 +25,11 @@ function NavbarLg() {
         setLangMenu(false);
       }
     };
-    document.addEventListener("click", handleClickOutSer);
-    document.addEventListener("click", handleClickOutLang);
+    document.addEventListener("mouseleave", handleClickOutSer);
+    document.addEventListener("mouseleave", handleClickOutLang);
     return () => {
-      document.removeEventListener("click", handleClickOutLang);
-      document.removeEventListener("click", handleClickOutSer);
+      document.removeEventListener("mouseleave", handleClickOutLang);
+      document.removeEventListener("mouseleave", handleClickOutSer);
     };
   });
   return (

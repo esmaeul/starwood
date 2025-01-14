@@ -1,7 +1,8 @@
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaCircleCheck } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import starwoodMap from "../../assets/images/about/starwood-map.jpg";
+import starwoodMap from "../../assets/images/about/cats1.png";
+import starwoodStar from "../../assets/images/about/star logo-hd.png";
 
 const About = () => {
   return (
@@ -13,10 +14,42 @@ const About = () => {
             alt="starwood map"
             className="max-w-full max-h-full"
           />
-          <FaMapMarkerAlt className="absolute lg:top-[55%] top-[70%] animate-bounce left-[25%] text-red-600 text-3xl" />
-          <FaMapMarkerAlt className="absolute lg:top-[60%] top-[70%] animate-bounce left-[27%] text-red-600 text-3xl" />
-          <FaMapMarkerAlt className="absolute lg:top-[68%] top-[70%] animate-bounce left-[25%] text-red-600 text-3xl" />
-          <FaMapMarkerAlt className="absolute lg:top-[54%] top-[52%] animate-bounce left-[46%] text-red-600 text-3xl" />
+          {/* Jeddah */}
+          <div className="absolute animate-bounce top-[58%] left-[18%] flex flex-col">
+            <img
+              src={starwoodStar}
+              alt="starwood marker"
+              className="w-12 h-12 rounded-2xl object-cover"
+            />
+            <FaMapMarkerAlt className=" absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
+          </div>
+          {/* Osfan */}
+          <div className="absolute animate-bounce top-[50%] left-[25%] flex flex-col">
+            <img
+              src={starwoodStar}
+              alt="starwood marker"
+              className="w-12 h-12 rounded-2xl object-cover"
+            />
+            <FaMapMarkerAlt className=" absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
+          </div>
+          {/* Bahra */}
+          <div className="absolute animate-bounce top-[58%] left-[31%] flex flex-col">
+            <img
+              src={starwoodStar}
+              alt="starwood marker"
+              className="w-12 h-12 rounded-2xl object-cover"
+            />
+            <FaMapMarkerAlt className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
+          </div>
+          {/* Riyadh */}
+          <div className="absolute animate-bounce top-[46%] left-[45%] flex flex-col">
+            <img
+              src={starwoodStar}
+              alt="starwood marker"
+              className="w-12 h-12 rounded-2xl object-cover"
+            />
+            <FaMapMarkerAlt className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
+          </div>
         </div>
         <div className="md:basis-6/12 flex flex-col gap-3">
           <p className="text-xl font-semibold text-globalColor0">

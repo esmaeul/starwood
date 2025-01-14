@@ -1,4 +1,3 @@
-import { FaPhone } from "react-icons/fa6";
 import LandingVideo from "../ui/LandingVideo";
 import LandingForm from "./landing/LandingForm";
 
