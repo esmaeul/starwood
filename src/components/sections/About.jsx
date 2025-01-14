@@ -1,6 +1,7 @@
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaCircleCheck } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import starwoodMap from "../../../public/assets/images/woods/starwood-map.jpg";
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
       <div className="section container flex md:flex-row flex-col gap-10 items-center justify-center">
         <div className="md:basis-6/12 md:h-full overflow-hidden relative">
           <img
-            src="/public/assets/images/Starwood-map.jpg"
+            src={starwoodMap}
             alt="starwood map"
             className="max-w-full max-h-full"
           />
