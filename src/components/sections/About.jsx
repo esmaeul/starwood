@@ -5,7 +5,6 @@ import starwoodMap from "../../assets/images/about/cats1.png";
 import starwoodStar from "../../assets/images/about/star logo-hd.png";
 
 const About = () => {
-
   return (
     <section id="about" className="about">
       <div className="section container flex lg:flex-row flex-col gap-10 items-center justify-center">
@@ -60,15 +59,23 @@ const About = () => {
             Startwood Company
           </h1>
           <p className="font-light my-3">
-            About Starwood Starwood For Decorations Starwood is a product of
-            utmost quality wood, professional craftsmanship and avant-garde
-            technology. It is the elite range of wood products for those who
-            seek perfection. Starwood products are artistically designed,
-            perfectly engineered and professionally manufactured to the specific
-            requirements of the customer. The customer derives the highest value
-            from Starwood in terms of quality, timeliness and service
-            excellence. Professionally designed, manufactured Starwood is and
-            marketed by the industry leader, Al Drees Industrial & Trading
+            Starwood For Decorations Starwood is a product of utmost quality
+            wood, professional craftsmanship and avant garde technology. It is
+            the elite range of wood products for those who seek perfection.
+            Starwood products are artistically designed, perfectly engineered
+            and professionally manufactured to the specific requirements of the
+            customer. The customer derives the highest value from Starwood in
+            terms of quality, timeliness and service excellence. Professionally
+            designed, manufactured and marketed by the industry leader, Starwod
+            for Timber Company Starwood is recognized by the clients, the
+            consultants and the contractors as the most trusted wooden door
+            brand in KSA markets. he Starwood products won various certificates
+            for the quality and specifications. Approved by various government
+            clients and consultants. Starwood products are preferred by various
+            medium to large scale government and private projects in KSA.
+            Starwood has a team of craftsmen to design, manufacture and install
+            any kind of joinery works including commercial and residential
+            complexes projects of medium to large sizes.
           </p>
           <div className="flex gap-2 items-center capitalize">
             <FaCircleCheck className="text-blue-500" />

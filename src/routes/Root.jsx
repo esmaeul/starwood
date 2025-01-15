@@ -70,7 +70,7 @@ const Root = () => {
           />
         </div>
       </header>
-      <div className="flex flex-col sm:mt-24 my-20">
+      <div className="outlet flex flex-col sm:mt-28 mt-24">
         <Outlet />
       </div>
       {/* <!-- Start Footer --> */}

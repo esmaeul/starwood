@@ -84,9 +84,9 @@ function NavbarLg() {
         <li className="nav-link">
           <Link
             className="text-globalColor2 hover:text-globalColor0 text-md transition"
-            to="/projects"
+            to="/decorations"
           >
-            Projects
+            Decorations
           </Link>
         </li>
         <li

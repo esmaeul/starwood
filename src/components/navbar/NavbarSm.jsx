@@ -125,9 +125,9 @@ const NavbarSm = ({ handleShowMenu, showMenu, setShowMenu }) => {
         <li className="my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold">
           <Link
             className="text-globalColor2 hover:text-globalColor0 text-md transition"
-            to="/projects"
+            to="/decorations"
           >
-            Projects
+            Decorations
           </Link>
         </li>
         <li

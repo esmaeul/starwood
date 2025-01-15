@@ -6,10 +6,10 @@ import amricanSinian from "../../assets/images/activities/Amirican sindian.png";
 import austrian from "../../assets/images/activities/Austrian marbou3.png";
 import austrian25x5 from "../../assets/images/activities/Austria 25x5.png";
 
-const SingelActivity = () => {
+const Activities = () => {
   return (
     <section
-      id="SingelActivity"
+      id="Activities"
       className="SingelActivity min-h-screen bg-globalColor1 py-6 mt-16 pt-16"
     >
       <div className="container section grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
@@ -82,4 +82,4 @@ const SingelActivity = () => {
   );
 };
 
-export default SingelActivity;
+export default Activities;

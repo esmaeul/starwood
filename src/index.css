@@ -4,6 +4,9 @@
 
 
  /* Start reusable components */
+ .outlet {
+  min-height: calc(100vh - 96px) !important;
+ }
  .container {
     margin: 0 auto;
   }
