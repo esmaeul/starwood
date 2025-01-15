@@ -17,7 +17,7 @@ const Contact = () => {
       </div>
       <div className="container section flex sm:flex-row sm:text-start text-center flex-col sm:gap-3 justify-between">
         <div className="sm:basis-1/2 basis-full">
-          <div className="heading">
+          <div className="heading pt-16 ">
             <p className="text-globalColor0 text-lg">Offices</p>
             <h1 className="text-globalColor2 w-fit sm:mx-0 mx-auto text-4xl font-semibold">
               Our Office
@@ -33,7 +33,7 @@ const Contact = () => {
             <p>Office tel .:+966 12 6930030</p>
           </div>
         </div>
-        <div className="sm:basis-1/2 basis-full bg-globalColor5 lg:border border-opacity-10 focus-within:border-opacity-50 border-globalColor2 lg:-mt-16 my-8 min-h-full p-16">
+        <div className="sm:basis-1/2 basis-full bg-globalColor5 md:border border-opacity-10 focus-within:border-opacity-50 border-globalColor2 md:-mt-16 my-8 min-h-full md:p-16">
           <div className="main-heading">
             <p className="text-globalColor0 text-lg">Free Consultaion</p>
             <h1 className="text-globalColor2 w-fit sm:mx-0 mx-auto text-4xl font-semibold">

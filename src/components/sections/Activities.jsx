@@ -27,88 +27,63 @@ const Activities = () => {
           imgSrc={germanBeech}
           imgAlt={"German beech wood"}
           title={"German beech wood"}
-          desc={`Beech wood has a very homogeneous surface, structure and hardness,
-          which means that the wood does not absorb the paint when
-          surface-treated, but the paint is distributed neatly and evenly on the
-          surface.`}
+          desc={`A high-quality hardwood with a uniform surface, structure, and hardness, ensuring paint or finish is evenly distributed without absorption. Perfect for achieving smooth, flawless finishes.`}
           sercivePath={"wood"}
         />
         <SingelService
           imgSrc={whiteMelamine}
           imgAlt={"Swedish Wood"}
           title={"Swedish Wood"}
-          desc={`Swedish Wood is a straight-grained, reddish-brown hardwood from the
-              tropical mahogany tree family. Mahogany is used commercially for a
-              variety of goods, due to its colorful and durable nature.`}
+          desc={`A straight-grained, reddish-brown hardwood known for its durability and vibrant color, making it ideal for furniture, flooring, and other decorative applications.`}
           sercivePath={"wood"}
         />
         <SingelService
           imgSrc={frMdf}
-          imgAlt={"Amirican-sindian"}
+          imgAlt={"Fire Rated MDF"}
           title={"Fire Rated MDF"}
-          desc={`French Medepen is very strong, hard, heavy, dense, and has a very close
-              grain, making it highly resistant to insect and fungal damage. Oak
-              is commonly used in furniture, joinery, flooring, paneling, veneer`}
+          desc={`A specially engineered medium-density fiberboard designed to resist fire, offering enhanced safety while maintaining versatility for construction and interior projects.`}
           sercivePath={"wood-works"}
         />
         <SingelService
           imgSrc={austrianBoards}
           imgAlt={"Austrian Boards"}
           title={"Austrian Boards"}
-          desc={`Beech wood has a very homogeneous surface, structure and hardness,
-              which means that the wood does not absorb the paint when
-              surface-treated, but the paint is distributed neatly and evenly on
-              the surface.`}
+          desc={`High-quality, durable wood panels known for their precision engineering, strength, and versatility, ideal for furniture, cabinetry, and interior design projects.`}
           sercivePath={"wood-works"}
         />
         <SingelService
           imgSrc={swedish}
           imgAlt={"Austrian"}
           title={"Austrian"}
-          desc={`Beech wood has a very homogeneous surface, structure and hardness,
-              which means that the wood does not absorb the paint when
-              surface-treated, but the paint is distributed neatly and evenly on
-              the surface.`}
+          desc={`A premium-quality wood known for its strength, fine texture, and sustainability, commonly used in furniture, construction, and interior design for its reliability and natural beauty.`}
           sercivePath={"wood-works"}
         />
         <SingelService
           imgSrc={austrianTimberBeams}
           imgAlt={"Austrian Timber Beams"}
           title={"Austrian Timber Beams"}
-          desc={`Austrian Timber Beams wood has a very homogeneous surface, structure and hardness,
-              which means that the wood does not absorb the paint when
-              surface-treated, but the paint is distributed neatly and evenly on
-              the surface.`}
+          desc={`Strong and durable timber beams crafted from high-quality Austrian wood, ideal for structural applications, construction, and architectural projects requiring stability and aesthetic appeal.`}
           sercivePath={"wood-works"}
         />
         <SingelService
           imgSrc={regularMdf}
-          imgAlt={"Regular MDF"}
+          imgAlt={"Ordinary MDF"}
           title={"Ordinary MDF"}
-          desc={`Ordinary MDF wood has a very homogeneous surface, structure and hardness,
-              which means that the wood does not absorb the paint when
-              surface-treated, but the paint is distributed neatly and evenly on
-              the surface.`}
+          desc={`A versatile and affordable engineered wood product with a smooth, uniform surface, ideal for furniture, cabinetry, and interior design applications.`}
           sercivePath={"wood-works"}
         />
         <SingelService
           imgSrc={regularOakWood}
           imgAlt={"American Red Oak"}
           title={"American Red Oak"}
-          desc={`American Red Oak wood has a very homogeneous surface, structure and hardness,
-              which means that the wood does not absorb the paint when
-              surface-treated, but the paint is distributed neatly and evenly on
-              the surface.`}
+          desc={`A strong, dense hardwood with a rich, warm color and prominent grain, commonly used in furniture, flooring, and cabinetry for its durability and timeless appeal.`}
           sercivePath={"wood-works"}
         />
         <SingelService
           imgSrc={veeneeredMDF}
           imgAlt={"MDF Veneer"}
           title={"MDF Veneer"}
-          desc={`Veeneered MDF wood has a very homogeneous surface, structure and hardness,
-              which means that the wood does not absorb the paint when
-              surface-treated, but the paint is distributed neatly and evenly on
-              the surface.`}
+          desc={`A medium-density fiberboard (MDF) surface covered with a thin layer of real wood veneer, offering the look and feel of solid wood with the affordability and smoothness of MDF, ideal for furniture and interior design.`}
           sercivePath={"wood-works"}
         />
       </div>

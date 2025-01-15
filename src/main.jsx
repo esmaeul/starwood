@@ -9,7 +9,6 @@ import About from "./routes/About.jsx";
 import Contact from "./routes/Contact.jsx";
 import Activities from "./routes/Activities.jsx";
 import Decorations from "./routes/Decorations.jsx";
-import SingelDecor from "./routes/decorations/SingelDecor.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,10 +32,6 @@ const router = createBrowserRouter([
       {
         path: "/decorations",
         element: <Decorations />,
-      },
-      {
-        path: "/decorations/:id",
-        element: <SingelDecor />,
       },
       {
         path: "/contact",

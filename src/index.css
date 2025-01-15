@@ -65,16 +65,9 @@
     left: 0;
     transition: width 0.25s ease-in-out;
   }
-  /* Start manual navlink */
-  /* Sections */
-
-  /* .section {
-    transition: all 0.3 ease-in-out;
-    opacity: 0.5;
-    transform: scale(0.6);
+  /* End manual navlink */
+ 
+  .about-list {
+    list-style-type: disclosure-open;
   }
-  .section.active {
-    opacity: 1;
-    transform: scale(1);
-  } */
   /* End Reusable Components */

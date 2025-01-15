@@ -1,4 +1,5 @@
 import SingleDecor from "../components/sections/decors/SingleDecor";
+
 import decorImg1 from "../assets/images/decorations/1.png";
 import decorImg2 from "../assets/images/decorations/2.png";
 import decorImg3 from "../assets/images/decorations/3.png";
@@ -13,7 +14,6 @@ import decorImg11 from "../assets/images/decorations/11.png";
 import decorImg12 from "../assets/images/decorations/12.png";
 import decorImg13 from "../assets/images/decorations/13.png";
 import decorImg14 from "../assets/images/decorations/14.png";
-import decorImg15 from "../assets/images/decorations/15.png";
 
 const Decorations = () => {
   return (
@@ -41,7 +41,6 @@ const Decorations = () => {
         <SingleDecor imgSrc={decorImg12} />
         <SingleDecor imgSrc={decorImg13} />
         <SingleDecor imgSrc={decorImg14} />
-        <SingleDecor imgSrc={decorImg15} />
       </div>
     </div>
   );

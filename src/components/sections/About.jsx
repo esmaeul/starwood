@@ -58,7 +58,7 @@ const About = () => {
           <h1 className="text-xl font-semibold text-globalColor2">
             Startwood Company
           </h1>
-          <ul style={{ listStyle: "none" }}>
+          <ul className="about-list">
             <li>
               <p className="font-light my-3">
                 <span className="text-xl font-semibold">
