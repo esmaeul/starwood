@@ -1,6 +1,7 @@
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import footerLogo from "../../assets/shared/logo.png";
 
 const Footer = () => {
   return (
@@ -9,9 +10,9 @@ const Footer = () => {
         <div className="w-full flex items-center justify-between">
           <div className="logo">
             <img
-              className="h-16 w-16 p-1.5 bg-white rounded-md"
-              src="/src/assets/images/about/star logo-hd.png"
-              alt=""
+              className="h-20 w-20 rounded-sm"
+              src={footerLogo}
+              alt="this is our logo"
             />
           </div>
           <ul className="flex gap-4 text-3xl text-white">
