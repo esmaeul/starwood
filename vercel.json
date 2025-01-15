@@ -3,7 +3,7 @@
         {
             "source": "/(.*)",
             "destination": "/maintenance.html",
-            "premenant": false
+            "permanent": false
         }
     ]
 }
