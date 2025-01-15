@@ -5,7 +5,7 @@ import footerLogo from "../../assets/shared/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="h-48 bg-globalColor2 pt-8">
+    <footer className="min-h-24 bg-globalColor2 py-2">
       <div className="container section flex items-center justify-between">
         <div className="w-full flex items-center justify-between">
           <div className="logo">
@@ -53,9 +53,9 @@ const Footer = () => {
       </div>
       <div className="manual-border"></div>
       <div className="container section">
-        <div className="down text-white flex justify-between pt-8">
-          <p>Copyright © 2025</p>
-          <p>Powered By Abdullah Arafa</p>
+        <div className="down text-white flex gap-3 justify-between items-center pt-8">
+          <p className="uppercase text-xl">Copyright © 2025</p>
+          <p className="uppercase text-xl">powered by Starwood</p>
         </div>
       </div>
     </footer>

@@ -1,14 +1,4 @@
 import SingleDecor from "../components/sections/decors/SingleDecor";
-import decorImg1 from "../assets/images/decorations/Starwood Profile_2024 Final_Page_56.png";
-import decorImg2 from "../assets/images/decorations/Starwood Profile_2024 Final_Page_57.png";
-import decorImg3 from "../assets/images/decorations/Starwood Profile_2024 Final_Page_58.png";
-import decorImg4 from "../assets/images/decorations/Starwood Profile_2024 Final_Page_59.png";
-import decorImg5 from "../assets/images/decorations/Starwood Profile_2024 Final_Page_60.png";
-import decorImg6 from "../assets/images/decorations/Starwood Profile_2024 Final_Page_61.png";
-import decorImg7 from "../assets/images/decorations/Starwood Profile_2024 Final_Page_62.png";
-import decorImg8 from "../assets/images/decorations/Starwood Profile_2024 Final_Page_63.png";
-import decorImg9 from "../assets/images/decorations/Starwood Profile_2024 Final_Page_64.png";
-import decorImg10 from "../assets/images/decorations/Starwood Profile_2024 Final_Page_66.png";
 import decorImg11 from "../assets/images/decorations/Starwood Profile_2024 Final_Page_67.png";
 import decorImg12 from "../assets/images/decorations/Starwood Profile_2024 Final_Page_68.png";
 import decorImg13 from "../assets/images/decorations/Starwood Profile_2024 Final_Page_70.png";
@@ -40,16 +30,6 @@ const Decorations = () => {
             We Provide Decors what you really need.
           </p>
         </div>
-        <SingleDecor imgSrc={decorImg1} />
-        <SingleDecor imgSrc={decorImg2} />
-        <SingleDecor imgSrc={decorImg3} />
-        <SingleDecor imgSrc={decorImg4} />
-        <SingleDecor imgSrc={decorImg5} />
-        <SingleDecor imgSrc={decorImg6} />
-        <SingleDecor imgSrc={decorImg7} />
-        <SingleDecor imgSrc={decorImg8} />
-        <SingleDecor imgSrc={decorImg9} />
-        <SingleDecor imgSrc={decorImg10} />
         <SingleDecor imgSrc={decorImg11} />
         <SingleDecor imgSrc={decorImg12} />
         <SingleDecor imgSrc={decorImg13} />

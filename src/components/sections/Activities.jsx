@@ -4,7 +4,7 @@ import mahgoniWood from "../../assets/images/activities/Mahgoni.png";
 import medepan from "../../assets/images/activities/medepan-fr.jpg";
 import amricanSinian from "../../assets/images/activities/Amirican sindian.png";
 import austrian from "../../assets/images/activities/Austrian marbou3.png";
-import austrian25x5 from "../../assets/images/activities/Austria 25x5.png";
+// import austrian25x5 from "../../assets/images/activities/Austria 25x5.png";
 
 const Activities = () => {
   return (
@@ -67,7 +67,7 @@ const Activities = () => {
               the surface.`}
           sercivePath={"wood-works"}
         />
-        <SingelService
+        {/* <SingelService
           imgSrc={austrian25x5}
           imgAlt={"Austrian 25*5 wood"}
           title={"Austrian 25*5"}
@@ -76,7 +76,7 @@ const Activities = () => {
               surface-treated, but the paint is distributed neatly and evenly on
               the surface.`}
           sercivePath={"wood-works"}
-        />
+        /> */}
       </div>
     </section>
   );
