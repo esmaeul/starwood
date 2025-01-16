@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import starwoodMap from "../../assets/images/about/cats1.png";
 import starwoodStar from "../../assets/images/about/star logo-hd.png";
 
-const About = () => {
+const AboutSection = () => {
   return (
     <section id="about" className="about">
       <div className="section container flex lg:flex-row flex-col gap-10 items-center justify-center">
@@ -119,4 +119,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutSection;

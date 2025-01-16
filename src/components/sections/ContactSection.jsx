@@ -1,6 +1,6 @@
 import ContactForm from "./contact/ContactForm";
 
-const Contact = () => {
+const ContactSection = () => {
   return (
     <section id="contact" className="contact min-h-screen bg-globalColor5">
       <div className="title bg-globalColor7 h-80">
@@ -48,4 +48,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactSection;

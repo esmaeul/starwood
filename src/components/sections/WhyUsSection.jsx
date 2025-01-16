@@ -8,7 +8,7 @@ import {
   FaThumbsUp,
 } from "react-icons/fa6";
 
-const WhyUs = () => {
+const WhyUsSection = () => {
   return (
     <section id="why-us" className="why-us bg-globalColor4 min-h-screen py-16">
       <div className="container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
@@ -55,4 +55,4 @@ const WhyUs = () => {
   );
 };
 
-export default WhyUs;
+export default WhyUsSection;

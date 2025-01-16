@@ -56,23 +56,23 @@ function NavbarLg() {
           </Link>
           {/* Start Services menu */}
           <ul
-            className={`absolute z-50 top-full flex-col gap-3 opacity-0 min-w-36 min-h-fit py-6 px-2 bg-globalColor5 transition rounded-sm  ${
+            className={`absolute z-50 top-full flex-col gap-3 opacity-0 min-w-36 min-h-fit py-6 px-2 bg-globalColor5 transition rounded-sm cursor-default ${
               serMenu
                 ? "translate-y-0 opacity-100 flex opacity-1 pointer-events-auto"
                 : "-translate-y-6 opacity-0 pointer-events-none"
             }`}
           >
-            <li className="nav-link">
+            <li className="">
               <Link
-                className="text-globalColor2 hover:text-globalColor0 text-md transition"
+                className="nav-link text-globalColor2 hover:text-globalColor0 text-md transition"
                 to="/wood"
               >
                 Wood
               </Link>
             </li>
-            <li className="nav-link">
+            <li className="">
               <Link
-                className="text-globalColor2 hover:text-globalColor0 text-md transition"
+                className="nav-link text-globalColor2 hover:text-globalColor0 text-md transition"
                 to="/wood-works"
               >
                 Wood Works
@@ -116,7 +116,7 @@ function NavbarLg() {
           </Link>
           {/* Start English menu */}
           <ul
-            className={`absolute z-50 top-full flex-col gap-3 opacity-0 min-w-36 min-h-fit py-6 px-2 bg-globalColor5 transition rounded-sm  ${
+            className={`absolute z-50 top-full flex-col gap-3 opacity-0 min-w-36 min-h-fit py-6 px-2 bg-globalColor5 transition rounded-sm cursor-default ${
               langMenu
                 ? "translate-y-0 opacity-100 flex pointer-events-auto"
                 : "-translate-y-full opacity-0 pointer-events-none"
