@@ -9,6 +9,7 @@ import paintedBoards from "../../assets/images/activities/خشب مدهون.jpg"
 import veneerMDF from "../../assets/images/activities/Veeneered MDF.jpg";
 import ordinaryMDF from "../../assets/images/activities/Green MDF (Medium Density Fiberboard).png";
 import fireMDF from "../../assets/images/activities/Fire-Resistant MDF.jpg";
+import regularMDF from "../../assets/images/activities/Regular MDF.png";
 
 const ActivitiesSection = () => {
   return (
@@ -77,6 +78,13 @@ const ActivitiesSection = () => {
           imgAlt={"Austrian Timber Beams"}
           title={"Ordinary MDF"}
           desc={`A versatile and affordable engineered wood product with a smooth, uniform surface, ideal for furniture, cabinetry, and interior design applications.`}
+          sercivePath={"wood-works"}
+        />
+        <SingelActivity
+          imgSrc={regularMDF}
+          imgAlt={"Regular MDF"}
+          title={"Regular MDF"}
+          desc={`A standard medium-density fiberboard with a smooth and uniform surface, ideal for general-purpose applications such as furniture, shelving, and interior paneling.`}
           sercivePath={"wood-works"}
         />
         <SingelActivity
