@@ -70,8 +70,15 @@ const ErrPage = () => {
           />
         </div>
       </header>
-      <div className="flex min-h-screen flex-col mt-28 text-4xl font-bold">
-        Error page
+      <div className="flex min-h-screen flex-col mt-28 text-4xl font-bold text-globalColor0 text-center pt-20">
+        Sorry, this is unterdoing!
+        <div>
+          {" "}
+          go to back
+          <Link className="pl-3 underline text-blue-800" to="/home">
+            Home
+          </Link>
+        </div>
       </div>
       {/* <!-- Start Footer --> */}
       <Footer />
