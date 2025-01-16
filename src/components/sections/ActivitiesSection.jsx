@@ -47,23 +47,23 @@ const ActivitiesSection = () => {
         />
         <SingelActivity
           imgSrc={austrianBoards}
-          imgAlt={"Austrian Boards"}
-          title={"Austrian Boards"}
+          imgAlt={"Austrian White"}
+          title={"Austrian White"}
           desc={`High-quality, durable wood panels known for their precision engineering, strength, and versatility, ideal for furniture, cabinetry, and interior design projects.`}
           sercivePath={"wood-works"}
         />
         <SingelActivity
           imgSrc={austrianTimberBeams}
-          imgAlt={"Austrian Timber Beams"}
-          title={"Austrian Timber Beams"}
+          imgAlt={"Austrian Timber"}
+          title={"Austrian Timber"}
           desc={`Strong and durable timber beams crafted from high-quality Austrian wood, ideal for structural applications, construction, and architectural projects requiring stability and aesthetic appeal.`}
           sercivePath={"wood-works"}
         />
         <SingelActivity
           imgSrc={paintedBoards}
-          imgAlt={"Starwood Painted Boards"}
-          title={"Starwood Painted Boards"}
-          desc={`High-quality painted wood boards with a smooth and durable surface. Ideal for furniture, doors, and interior applications that require an elegant finish and excellent resistance.`}
+          imgAlt={"Film-Faced plywood Starwood WBP"}
+          title={"Film-Faced plywood Starwood WBP"}
+          desc={`Durable, water-resistant plywood coated with a smooth film layer, designed for heavy-duty applications like concrete formwork, flooring, and outdoor projects.`}
           sercivePath={"wood-works"}
         />
         <SingelActivity
@@ -74,24 +74,24 @@ const ActivitiesSection = () => {
           sercivePath={"wood-works"}
         />
         <SingelActivity
-          imgSrc={ordinaryMDF}
-          imgAlt={"Austrian Timber Beams"}
+          imgSrc={regularMDF}
+          imgAlt={"Ordinary MDF"}
           title={"Ordinary MDF"}
-          desc={`A versatile and affordable engineered wood product with a smooth, uniform surface, ideal for furniture, cabinetry, and interior design applications.`}
+          desc={`A versatile and affordable engineered fiberboard product with a smooth, uniform surface, ideal for furniture, cabinetry, and interior design applications.`}
           sercivePath={"wood-works"}
         />
         <SingelActivity
-          imgSrc={regularMDF}
-          imgAlt={"Regular MDF"}
-          title={"Regular MDF"}
-          desc={`A standard medium-density fiberboard with a smooth and uniform surface, ideal for general-purpose applications such as furniture, shelving, and interior paneling.`}
+          imgSrc={ordinaryMDF}
+          imgAlt={"HMR MDF"}
+          title={"HMR MDF"}
+          desc={`A standard hight-density fiberboard and anti humdity with a smooth and uniform surface, ideal for general-purpose applications such as furniture, shelving, and interior paneling.`}
           sercivePath={"wood-works"}
         />
         <SingelActivity
           imgSrc={veneerMDF}
           imgAlt={"Veneer MDF"}
           title={"Veneer MDF"}
-          desc={`A medium-density fiberboard (MDF) surface covered with a thin layer of real wood veneer, offering the look and feel of solid wood with the affordability and smoothness of MDF, ideal for furniture and interior design.`}
+          desc={`A medium-density fiberboard surface covered with a natrual wood veneer, offering the look and feel of solid wood with the affordability and smoothness of fiber, ideal for furniture and interior design.`}
           sercivePath={"wood-works"}
         />
       </div>
