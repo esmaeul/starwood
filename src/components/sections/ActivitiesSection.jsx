@@ -5,7 +5,7 @@ import swedish from "../../assets/images/activities/Swedish Wood.jpg";
 import austrianBoards from "../../assets/images/activities/Austrian Boards.png";
 import austrianTimberBeams from "../../assets/images/activities/Austrian Timber Beams.png";
 import regularOakWood from "../../assets/images/activities/Regular Oak Wood.png";
-import paintedBoards from "../../assets/images/activities/خشب مدهون.jpg";
+import paintedBoards from "../../assets/images/activities/Starwood Painted Boards.jpg";
 import veneerMDF from "../../assets/images/activities/Veeneered MDF.jpg";
 import ordinaryMDF from "../../assets/images/activities/Green MDF (Medium Density Fiberboard).png";
 import fireMDF from "../../assets/images/activities/Fire-Resistant MDF.jpg";

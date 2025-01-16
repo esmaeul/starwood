@@ -1,13 +1,15 @@
+import SingelActivity from "../../components/sections/activities/SingelActivity";
+
 import germanBeech from "../../assets/images/activities/German Beech.jpg";
 import swedish from "../../assets/images/activities/Swedish Wood.jpg";
 import austrianBoards from "../../assets/images/activities/Austrian Boards.png";
 import austrianTimberBeams from "../../assets/images/activities/Austrian Timber Beams.png";
 import regularOakWood from "../../assets/images/activities/Regular Oak Wood.png";
-import paintedBoards from "../../assets/images/activities/خشب مدهون.jpg";
+import paintedBoards from "../../assets/images/activities/Starwood Painted Boards.jpg";
 import fireMDF from "../../assets/images/activities/Fire-Resistant MDF.jpg";
 import veneerMDF from "../../assets/images/activities/Veeneered MDF.jpg";
-import ordinaryMDF from "../../assets/images/activities/Regular MDF.png";
-import SingelActivity from "../../components/sections/activities/SingelActivity";
+import ordinaryMDF from "../../assets/images/activities/Green MDF (Medium Density Fiberboard).png";
+import regularMDF from "../../assets/images/activities/Regular MDF.png";
 
 const ActivitiesRoute = () => {
   return (
@@ -76,6 +78,13 @@ const ActivitiesRoute = () => {
           imgAlt={"Austrian Timber Beams"}
           title={"Ordinary MDF"}
           desc={`A versatile and affordable engineered wood product with a smooth, uniform surface, ideal for furniture, cabinetry, and interior design applications.`}
+          sercivePath={"wood-works"}
+        />
+        <SingelActivity
+          imgSrc={regularMDF}
+          imgAlt={"Regular MDF"}
+          title={"Regular MDF"}
+          desc={`A standard medium-density fiberboard with a smooth and uniform surface, ideal for general-purpose applications such as furniture, shelving, and interior paneling.`}
           sercivePath={"wood-works"}
         />
         <SingelActivity
