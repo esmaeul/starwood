@@ -31,7 +31,7 @@ const Activities = () => {
           sercivePath={"wood"}
         />
         <SingelService
-          imgSrc={whiteMelamine}
+          imgSrc={swedish}
           imgAlt={"Swedish Wood"}
           title={"Swedish Wood"}
           desc={`A straight-grained, reddish-brown hardwood known for its durability and vibrant color, making it ideal for furniture, flooring, and other decorative applications.`}
@@ -49,13 +49,6 @@ const Activities = () => {
           imgAlt={"Austrian Boards"}
           title={"Austrian Boards"}
           desc={`High-quality, durable wood panels known for their precision engineering, strength, and versatility, ideal for furniture, cabinetry, and interior design projects.`}
-          sercivePath={"wood-works"}
-        />
-        <SingelService
-          imgSrc={swedish}
-          imgAlt={"Austrian"}
-          title={"Austrian"}
-          desc={`A premium-quality wood known for its strength, fine texture, and sustainability, commonly used in furniture, construction, and interior design for its reliability and natural beauty.`}
           sercivePath={"wood-works"}
         />
         <SingelService
