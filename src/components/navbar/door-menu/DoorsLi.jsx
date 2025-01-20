@@ -14,15 +14,20 @@ const DoorsLi = ({ onClose }) => {
       doorsSubmenuRef.current?.querySelector("li > a")?.focus();
     }, 0);
   };
+
   const handleDoorsBlur = () => {
     setDoorsMenu(false);
+  };
+
+  const handleDoorsClick = () => {
+    setDoorsMenu(!doorsMenu); // Toggle submenu visibility on click
   };
 
   return (
     <li
       className="w-full flex hover:text-globalColor0"
       ref={doorsSubmenuRef}
-      to="/doors"
+      onClick={handleDoorsClick} // Add onClick handler
       onFocus={handleDoorsFoucs}
       onBlur={handleDoorsBlur}
       onMouseOver={() => setDoorsMenu(true)}
@@ -43,7 +48,8 @@ const DoorsLi = ({ onClose }) => {
         }
       />
       {/* Start Doors Submenu */}
-      <DoorsMenu onClose={onClose} doorsMenu={doorsMenu} />
+      {doorsMenu && <DoorsMenu onClose={onClose} doorsMenu={doorsMenu} />}
+      {/* Conditionally render DoorsMenu */}
       {/* End Doors Submenu */}
     </li>
   );

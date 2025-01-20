@@ -12,7 +12,6 @@ import fireMDF from "../../assets/images/activities/Fire-Resistant MDF.jpg";
 import regularMDF from "../../assets/images/activities/Regular MDF.png";
 import palaceDoor from "../../assets/images/activities/2.png";
 import cladding from "../../assets/images/activities/11.png";
-import { Link } from "react-router-dom";
 
 const ActivitiesSection = () => {
   return (
@@ -100,15 +99,15 @@ const ActivitiesSection = () => {
           desc={`A medium-density fiberboard surface covered with a natrual wood veneer, offering the look and feel of solid wood with the affordability and smoothness of fiber, ideal for furniture and interior design.`}
         />
         <div
-          className="col-span-full place-content-center place-items-center text-center pb-16
+          className="col-span-full place-content-center place-items-center text-center py-16
         "
         >
-          <Link
-            to={`/decorations`}
+          <a
+            href="https://www.starwood.sa/decorations"
             className="rounded-sm border text-white border-t-emerald-50 w-fit px-24 py-3 text-xl hover:bg-white hover:text-globalColor0 hover:border-globalColor0 transition"
           >
             See More
-          </Link>
+          </a>
         </div>
       </div>
     </section>

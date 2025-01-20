@@ -1,6 +1,13 @@
+import { motion } from "framer-motion";
+
 const SingelActivity = ({ imgSrc, imgAlt, title, desc }) => {
   return (
-    <div className="service lg:col-span-1 min-h-36 transparent text-globalColor5  p-3 shadow-sm rounded-md hover:bg-inherit lg:hover:scale-x-110 hover:scale-105 transition hover:shadow-2xl">
+    <motion.div
+      whileInView={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0, scale: 0.5 }}
+      transition={{ duration: 0.25 }}
+      className="service lg:col-span-1 min-h-36 transparent text-globalColor5  p-3 shadow-sm rounded-md hover:bg-inherit lg:hover:scale-x-110 hover:scale-105 transition hover:shadow-2xl"
+    >
       {/* Img */}
       <div className="h-3/6 p-1.5 group-hover:bg-globalColor1">
         {" "}
@@ -11,7 +18,7 @@ const SingelActivity = ({ imgSrc, imgAlt, title, desc }) => {
         <h2 className="text-2xl mt-3">{title}</h2>
         <p className="text-globalColor4 font-light">{desc}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

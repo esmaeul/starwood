@@ -1,3 +1,4 @@
+import DoorsLi from "../door-menu/DoorsLi";
 import SubmenuLink from "../links/SubmenuLink";
 const ServicesMenu = ({ serMenu, setSerMenu }) => {
   const handleMenuClose = () => {
@@ -27,7 +28,7 @@ const ServicesMenu = ({ serMenu, setSerMenu }) => {
         name={"Exterior Decorations"}
         path={"/exterior-decorations"}
       />
-      {/* <DoorsLi onClose={handleMenuClose} /> */}
+      <DoorsLi onClose={handleMenuClose} />
       <SubmenuLink
         onClose={handleMenuClose}
         name={"Stages & Platforms"}
