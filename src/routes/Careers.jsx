@@ -5,8 +5,7 @@ import CareersForm from "../components/careers/CareersForm";
 const Careers = () => {
   const [submitDone, setSubmitDone] = useState(false);
 
-  const submitMsg =
-    "Please note that the website is still under development, so your message may not be read by our recruiters. To avoid this, feel free to call us!";
+  const submitMsg = "Your message has been sent successfully!";
 
   return (
     <div className="bg-globalColor1 py-16 min-h-screen">
@@ -29,3 +28,4 @@ const Careers = () => {
 };
 
 export default Careers;
+// git commit -m "removed the title for tha map in decorations & edited the map for form in careers"

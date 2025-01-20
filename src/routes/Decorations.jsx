@@ -27,7 +27,6 @@ const Decorations = () => {
             We Provide Decors what you really need.
           </p>
         </div>
-        <h1 className="col-span-full text-center text-4xl font-bold">Company address this should be a map</h1>
         <SingleDecor imgSrc={decorImg1} />
         <SingleDecor imgSrc={decorImg2} />
         <SingleDecor imgSrc={decorImg3} />

@@ -107,7 +107,7 @@ const ActivitiesSection = () => {
             to={`/decorations`}
             className="rounded-sm border text-white border-t-emerald-50 w-fit px-24 py-3 text-xl hover:bg-white hover:text-globalColor0 hover:border-globalColor0 transition"
           >
-            Read More
+            See More
           </Link>
         </div>
       </div>
