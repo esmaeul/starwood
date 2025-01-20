@@ -30,7 +30,7 @@ const SocialIcons = () => {
       <li className="instagram">
         <Link
           className=" hover:text-instaColor text-md transition"
-          to="/insta"
+          to="https://www.instagram.com/starwood_10/"
           target="_blank"
         >
           <FaInstagram />
