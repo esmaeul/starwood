@@ -1,6 +1,5 @@
 import ContactForm from "../../components/sections/contact/ContactForm";
 
-
 const ContactRouteSection = () => {
   return (
     <section id="contact" className="contact min-h-screen bg-globalColor5">

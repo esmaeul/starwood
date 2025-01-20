@@ -1,11 +1,12 @@
 import usaFlag from "../../assets/shared/icons8-usa-50.png";
+import ksaFlag from "../../assets/shared/icons8-saudi-arabia-48.png";
 
 import { useEffect, useRef, useState } from "react";
 import {
   FaFacebook,
   FaInstagram,
-  FaMagnifyingGlass,
   FaXmark,
+  FaXTwitter,
   FaYoutube,
 } from "react-icons/fa6";
 import { IoIosArrowUp } from "react-icons/io";
@@ -46,7 +47,7 @@ const NavbarSm = ({ handleShowMenu, showMenu, setShowMenu }) => {
   return (
     <nav
       ref={navRef}
-      className={`absolute top-0 min-h-screen w-9/12 transition bg-globalColor5 z-40 ${
+      className={`fixed top-0 min-h-screen w-9/12 transition bg-globalColor5 z-50 ${
         showMenu ? "left-0 transition-all" : "-left-full transition-all"
       }`}
     >
@@ -142,14 +143,14 @@ const NavbarSm = ({ handleShowMenu, showMenu, setShowMenu }) => {
             className="flex gap-2 items-center"
             onClick={() => setShowMenu(false)}
           >
-            <div className="relative text-globalColor2 group-hover:text-globalColor0 text-md transition">
-              English
-            </div>
             <img
               src={usaFlag}
               alt="flag"
               className="w-8 h-8 opacity-50 group-hover:opacity-100 transition"
             />
+            <div className="relative text-globalColor2 group-hover:text-globalColor0 text-md transition">
+              English
+            </div>
           </Link>
           <IoIosArrowUp
             className={`group-hover:text-globalColor0 text-md text-globalColor2 ${
@@ -164,14 +165,27 @@ const NavbarSm = ({ handleShowMenu, showMenu, setShowMenu }) => {
               className="flex gap-2 items-center"
               onClick={() => setShowMenu(false)}
             >
-              <div className="relative text-globalColor2 group-hover:text-globalColor0 text-md transition">
-                English
-              </div>
               <img
                 src={usaFlag}
                 alt="flag"
                 className="w-8 h-8 opacity-50 group-hover:opacity-100 transition"
               />
+              <div className="relative text-globalColor2 group-hover:text-globalColor0 text-md transition">
+                English
+              </div>
+            </Link>
+            <Link
+              className="flex gap-2 items-center"
+              onClick={() => setShowMenu(false)}
+            >
+              <img
+                src={ksaFlag}
+                alt="flag"
+                className="w-8 h-8 opacity-50 group-hover:opacity-100 transition"
+              />
+              <div className="relative text-globalColor2 group-hover:text-globalColor0 text-md transition">
+                العربية
+              </div>
             </Link>
           </li>
         )}
@@ -210,12 +224,13 @@ const NavbarSm = ({ handleShowMenu, showMenu, setShowMenu }) => {
             <FaInstagram />
           </Link>
         </li>
-        <li className="search">
+        <li className="twitter">
           <Link
-            className="text-globalColor2 hover:text-globalColor0 text-md transition"
-            to="/"
+            className="text-globalColor2 hover:text-twitterColor text-md transition"
+            to="https://x.com/StarW63512"
+            target="_blank"
           >
-            <FaMagnifyingGlass />
+            <FaXTwitter />
           </Link>
         </li>
       </ul>

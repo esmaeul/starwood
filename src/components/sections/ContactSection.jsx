@@ -1,6 +1,9 @@
+import { useState } from "react";
 import ContactForm from "./contact/ContactForm";
 
 const ContactSection = () => {
+  const [submitDone, setSubmitDone] = useState(false);
+
   return (
     <section id="contact" className="contact min-h-screen bg-globalColor5">
       <div className="title bg-globalColor7 h-80">
@@ -41,7 +44,15 @@ const ContactSection = () => {
               <div className="w-full my-6 h-[1px] bg-black"></div>
             </h1>
           </div>
-          <ContactForm />
+          {!submitDone ? (
+            <ContactForm setSubmitDone={setSubmitDone} />
+          ) : (
+            <div className="">
+              <h1 className="text-lg font-semibold text-globalColor0">
+                Message has been sent!
+              </h1>
+            </div>
+          )}
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ import Landing from "../components/sections/Landing";
 import AboutSection from "../components/sections/AboutSection";
 import ActivitiesSection from "../components/sections/ActivitiesSection";
 import WhyUsSection from "../components/sections/WhyUsSection";
+import Features from "../components/sections/Features";
 import ContactSection from "../components/sections/ContactSection";
 
 const Home = () => {
@@ -20,6 +21,9 @@ const Home = () => {
       {/* <!-- End Services --> */}
       {/* <!-- Staert Why us --> */}
       <WhyUsSection />
+      {/* <!-- End Why us --> */}
+      {/* <!-- Staert Why us --> */}
+      <Features />
       {/* <!-- End Why us --> */}
       {/* <!-- Start Contact pre-Footer--> */}
       <ContactSection />

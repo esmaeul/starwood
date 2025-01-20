@@ -1,4 +1,4 @@
-import { FaUsers } from "react-icons/fa";
+import { FaTools, FaUsers } from "react-icons/fa";
 import Reason from "./WhyUs/Reason";
 import {
   FaAward,
@@ -7,6 +7,8 @@ import {
   FaRegHandPeace,
   FaThumbsUp,
 } from "react-icons/fa6";
+import { MdOutlineAutoGraph } from "react-icons/md";
+import { GrUserExpert } from "react-icons/gr";
 
 const WhyUsSection = () => {
   return (
@@ -42,13 +44,28 @@ const WhyUsSection = () => {
         />
         <Reason
           icon={<FaRegHandPeace />}
-          title={"Good impacted"}
-          desc={"Engineering supervision and periodic monitoring"}
+          title={"Positive Impact"}
+          desc={"We focus on engineering supervision and periodic monitoring."}
         />
         <Reason
           icon={<FaHandsClapping />}
-          title={"Well handled"}
-          desc={"Time Availability"}
+          title={"Well Managed"}
+          desc={"We ensure efficient handling and time availability."}
+        />
+        <Reason
+          icon={<MdOutlineAutoGraph />}
+          title={"Affordable Prices"}
+          desc={"We offer competitive pricing without compromising on quality."}
+        />
+        <Reason
+          icon={<GrUserExpert />}
+          title={"Extensive Experience"}
+          desc={"Our extensive experience ensures reliable service."}
+        />
+        <Reason
+          icon={<FaTools />}
+          title={"Expert Workers"}
+          desc={"Our workers are highly skilled and experienced."}
         />
       </div>
     </section>

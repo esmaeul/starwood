@@ -1,5 +1,6 @@
 import { FaPhone } from "react-icons/fa6";
 import landingImage from "../../assets/images/landing/WhatsApp Image 2025-01-15 at 09.22.34_6c98b93e.jpg";
+import { MdEmail } from "react-icons/md";
 
 const LandingImage = () => {
   return (
@@ -18,10 +19,17 @@ const LandingImage = () => {
           Engineering Experts
         </p>
         <a
-          href="/tel:+966126930030"
-          className="flex items-center gap-1.5 text-globalColor5 ml-5 bg-globalColor1 hover:bg-globalColor0 px-3 py-2 text-xl rounded-sm transition"
+          href="tel:+966126930030"
+          className="min-w-52 flex items-center gap-1.5 text-globalColor5 ml-5 bg-globalColor1 hover:bg-globalColor0 px-3 py-2 text-xl rounded-sm transition"
         >
           <FaPhone className="text-lg" /> +966 12 6930030
+        </a>
+        <a
+          className="min-w-52 flex items-center gap-1.5 text-globalColor5 ml-5 bg-globalColor1 hover:bg-globalColor0 px-3 py-2 text-xl rounded-sm transition"
+          href="mailto:info@starwood.sa"
+        >
+          <MdEmail className="text-xl" />
+          info@starwood.sa
         </a>
       </div>
     </div>

@@ -74,7 +74,7 @@ const AboutSection = () => {
                 TGV panels, kitchen cabinet components, door frames Wood can be
                 used for almost anything from windows to doors, timber Cladding,
                 bridges to boats, and even that purpose that can only be with
-                Wood materials
+                Wood materials.
               </p>
             </li>
             <li>

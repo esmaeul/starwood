@@ -29,6 +29,7 @@ export default {
         facbookColor: "#3b5998",
         youtubeColor: "#ff0000",
         instaColor: "#e1306c",
+        twitterColor: "#1DA1F2", // Updated to today's X background color
       },
     },
   },
