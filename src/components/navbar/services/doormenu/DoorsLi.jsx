@@ -1,7 +1,7 @@
+import { useRef, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import DoorsMenu from "./doorsMenu";
-import { useRef, useState } from "react";
-import SubmenuLink from "../links/SubmenuLink";
+import SubmenuLink from "../../links/SubmenuLink";
 
 const DoorsLi = ({ onClose }) => {
   const doorsSubmenuRef = useRef(null); // Ref for the submenu

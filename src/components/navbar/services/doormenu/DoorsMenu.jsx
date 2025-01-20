@@ -1,4 +1,4 @@
-import SubmenuLink from "../links/SubmenuLink";
+import SubmenuLink from "../../links/SubmenuLink";
 const DoorsMenu = ({ doorsMenu, onClose }) => {
   return (
     <ul
