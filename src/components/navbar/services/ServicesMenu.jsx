@@ -1,4 +1,4 @@
-import DoorsLi from "../door-menu/DoorsLi";
+import DoorsLi from "../doormenu/DoorsLi";
 import SubmenuLink from "../links/SubmenuLink";
 const ServicesMenu = ({ serMenu, setSerMenu }) => {
   const handleMenuClose = () => {
