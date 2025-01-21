@@ -81,29 +81,23 @@ const ActivitiesSection = () => {
           title={"HMR MDF"}
           desc={`A standard hight-density fiberboard and anti humdity with a smooth and uniform surface, ideal for general-purpose applications such as furniture, shelving, and interior paneling.`}
         />
-        {/* <SingelActivity
-          imgSrc={veneerMDF}
-          imgAlt={"Veneer MDF"}
-          title={"Veneer MDF"}
-          desc={`A medium-density fiberboard surface covered with a natrual wood veneer, offering the look and feel of solid wood with the affordability and smoothness of fiber, ideal for furniture and interior design.`}
-        /> */}
         <SingelActivity
           imgSrc={palaceDoor}
-          imgAlt={"Entry Door"}
-          title={"Entry Door"}
-          desc={``}
+          imgAlt={"Exterior Door"}
+          title={"Exterior Door"}
+          desc={`Designed for strength, durability, and aesthetic appeal, our exterior doors are crafted to protect your space while making a lasting impression. Choose from a range of materials and styles to match your architectural vision and ensure lasting performance against the elements.`}
         />
         <SingelActivity
           imgSrc={cladding}
           imgAlt={"Cladding"}
           title={"Cladding"}
-          desc={``}
+          desc={`High-performance cladding solutions designed to protect and beautify your exterior walls. Available in a variety of materials and finishes, offering durability and a modern look to any architectural style.`}
         />
         <SingelActivity
           imgSrc={InteriorDoor}
           imgAlt={"InteriorDoor"}
           title={"Interior Door"}
-          desc={``}
+          desc={`Stylish and functional interior doors crafted for comfort and privacy. With a variety of designs, finishes, and materials to choose from, these doors seamlessly enhance the interior design of your home or workspace.`}
         />
         {/* See More Link Button */}
         <div className="col-span-full place-content-center place-items-center text-center py-16">

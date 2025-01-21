@@ -1,5 +1,6 @@
 import Feature from "./features/Feature";
-import imgSrc from "../../assets/images/features/72DPIxAdobeStock_383135246-576x324.jpg";
+import feat1 from "../../assets/images/features/1.png";
+import feat2 from "../../assets/images/features/2.jpg";
 
 const Features = () => {
   return (
@@ -11,12 +12,12 @@ const Features = () => {
           <Feature value={"26"} desc={"Years of Experience"} />
         </div>
       </div>
-      <div className="container grid grid-cols-2 gap-6 place-items-center my-16">
-        <div className="overflow-hidden md:col-span-1 col-span-full">
-          <img className="h-full w-full object-cover" src={imgSrc} alt="" />
+      <div className="container grid grid-cols-2 gap-6 place-items-center my-16 md:max-h-screen h-screen min-h-screen lg:mb-0 mb-16">
+        <div className="md:col-span-1 col-span-full h-3/4">
+          <img className="max-h-full max-w-full" src={feat1} alt="" />
         </div>
-        <div className="md:col-span-1 col-span-full">
-          <img className="h-full w-full object-cover" src={imgSrc} alt="" />
+        <div className="md:col-span-1 col-span-full h-3/4">
+          <img className="max-h-full max-w-full" src={feat2} alt="" />
         </div>
       </div>
     </div>
