@@ -34,6 +34,7 @@ const ContactSection = () => {
             </p>
             <p>Jeddah - Kingdom of Saudi Arabia</p>
             <p>Office tel .:+966 12 6930030</p>
+            <p>Our Email .:info@starwood.sa</p>
           </div>
         </div>
         <div className="sm:basis-1/2 basis-full bg-globalColor5 md:border border-opacity-10 focus-within:border-opacity-50 border-globalColor2 md:-mt-16 my-8 min-h-full md:p-16">

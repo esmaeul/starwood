@@ -1,6 +1,7 @@
 import { useState } from "react";
 import imgSrc from "../assets/images/careers/careers.jpg";
 import CareersForm from "../components/careers/CareersForm";
+import MainTitle from "../components/minicomponents/MainTitle";
 
 const Careers = () => {
   const [submitDone, setSubmitDone] = useState(false);
@@ -8,7 +9,8 @@ const Careers = () => {
   const submitMsg = "Your message has been sent successfully!";
 
   return (
-    <div className="bg-globalColor1 py-16 min-h-screen">
+    <div className="bg-globalColor1 py-16 min-h-screen text-white">
+      <MainTitle title={"We Are Starwood For Timber"} />
       <div className="container grid grid-cols-2 gap-8">
         <div className="col-span-1 px-16">
           <img src={imgSrc} alt="" />

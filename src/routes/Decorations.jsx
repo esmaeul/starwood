@@ -14,8 +14,36 @@ import decorImg11 from "../assets/images/decorations/11.png";
 import decorImg12 from "../assets/images/decorations/12.png";
 import decorImg13 from "../assets/images/decorations/13.png";
 import decorImg14 from "../assets/images/decorations/14.png";
+import decorImg15 from "../assets/images/decorations/15.png";
+import decorImg16 from "../assets/images/decorations/16.png";
+import decorImg17 from "../assets/images/decorations/17.png";
+import decorImg18 from "../assets/images/decorations/18.png";
+import decorImg19 from "../assets/images/decorations/19.png";
+import decorImg20 from "../assets/images/decorations/20.png";
+import decorImg21 from "../assets/images/decorations/21.png";
+import decorImg22 from "../assets/images/decorations/22.png";
+import decorImg23 from "../assets/images/decorations/23.png";
+import decorImg24 from "../assets/images/decorations/24.png";
+import decorImg25 from "../assets/images/decorations/25.png";
+import decorImg26 from "../assets/images/decorations/26.png";
+import decorImg27 from "../assets/images/decorations/27.png";
+import decorImg28 from "../assets/images/decorations/28.png";
+import decorImg29 from "../assets/images/decorations/29.png";
+import decorImg30 from "../assets/images/decorations/30.png";
+import decorImg31 from "../assets/images/decorations/31.png";
+import decorImg32 from "../assets/images/decorations/32.png";
+import decorImg33 from "../assets/images/decorations/33.png";
+
+import { useEffect } from "react";
 
 const Decorations = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <div className="bg-globalColor5 py-10">
       <div className="container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
@@ -41,6 +69,25 @@ const Decorations = () => {
         <SingleDecor imgSrc={decorImg12} />
         <SingleDecor imgSrc={decorImg13} />
         <SingleDecor imgSrc={decorImg14} />
+        <SingleDecor imgSrc={decorImg15} />
+        <SingleDecor imgSrc={decorImg16} />
+        <SingleDecor imgSrc={decorImg17} />
+        <SingleDecor imgSrc={decorImg18} />
+        <SingleDecor imgSrc={decorImg19} />
+        <SingleDecor imgSrc={decorImg20} />
+        <SingleDecor imgSrc={decorImg21} />
+        <SingleDecor imgSrc={decorImg22} />
+        <SingleDecor imgSrc={decorImg23} />
+        <SingleDecor imgSrc={decorImg24} />
+        <SingleDecor imgSrc={decorImg25} />
+        <SingleDecor imgSrc={decorImg26} />
+        <SingleDecor imgSrc={decorImg27} />
+        <SingleDecor imgSrc={decorImg28} />
+        <SingleDecor imgSrc={decorImg29} />
+        <SingleDecor imgSrc={decorImg30} />
+        <SingleDecor imgSrc={decorImg31} />
+        <SingleDecor imgSrc={decorImg32} />
+        <SingleDecor imgSrc={decorImg33} />
       </div>
     </div>
   );

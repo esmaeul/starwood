@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const CareersForm = ({setSubmitDone}) => {
+const CareersForm = ({ setSubmitDone }) => {
   const [name, setName] = useState("");
   const [telNum, setTelName] = useState("");
   const [email, setEmail] = useState("");
@@ -25,7 +25,7 @@ const CareersForm = ({setSubmitDone}) => {
   };
 
   return (
-    <form className="flex flex-col gap-8 group">
+    <form className="flex flex-col gap-8 group text-black">
       <input
         className="border border-globalColor2 border-opacity-10 focus:border-opacity-50 py-2 px-3 text-lg w-full outline-none transition-all"
         type="text"
