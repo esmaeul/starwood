@@ -111,7 +111,7 @@ const AboutSection = () => {
             to="/about"
             className="w-fit px-2 py-1.5 border border-globalColor0 text-globalColor2 hover:bg-globalColor0 hover:text-globalColor5 transition rounded-sm"
           >
-            Read More
+            About Us
           </Link>
         </div>
       </div>

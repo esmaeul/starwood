@@ -23,8 +23,8 @@ const ActivitiesSection = () => {
       <div className="container section grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
         <div className="main-heading col-span-full mb-8 w-fit mx-auto flex flex-col gap-1.5">
           <h2 className="text-5xl text-globalColor0">Types of Wood We Offer</h2>
-          <p className="text-white my-6 mx-auto w-fit font-light">
-            We Provide Superior Construction SingelActivity
+          <p className="text-white my-6 mx-auto w-fit font-light capitalize">
+            We offer a wide range of woods.
           </p>
         </div>
         <SingelActivity
@@ -89,8 +89,8 @@ const ActivitiesSection = () => {
         />
         <SingelActivity
           imgSrc={cladding}
-          imgAlt={"Cladding"}
-          title={"Cladding"}
+          imgAlt={"Wall Cladding"}
+          title={"Wall Cladding"}
           desc={`High-performance cladding solutions designed to protect and beautify your exterior walls. Available in a variety of materials and finishes, offering durability and a modern look to any architectural style.`}
         />
         <SingelActivity

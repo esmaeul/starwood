@@ -6,7 +6,7 @@ import ErrPage from "./routes/ErrPage.jsx";
 import Root from "./routes/Root.jsx";
 import Home from "./routes/Home.jsx";
 import About from "./routes/About.jsx";
-// import Contact from "./routes/Contact.jsx";
+import Contact from "./routes/Contact.jsx";
 import Decorations from "./routes/Decorations.jsx";
 import Projects from "./routes/Projects.jsx";
 import Careers from "./routes/Careers.jsx";
@@ -101,10 +101,10 @@ const router = createBrowserRouter([
         path: "/decorations",
         element: <Decorations />,
       },
-      // {
-      //   path: "/contact",
-      //   element: <Contact />,
-      // },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
     ],
   },
 ]);

@@ -18,7 +18,7 @@ const LandingForm = () => {
       <div className="flex flex-col lg:basis-5/12 sm:basis-6/12 basis-full">
         <p className="text-globalColor0 font-semibold">Quick Service Request</p>
         <h1 className="lg:text-3xl md:text-2xl text-lg font-semibold">
-          Send Inspection Request
+          Feel free to Request a call
         </h1>
       </div>
       {!submitted ? (

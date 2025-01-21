@@ -82,7 +82,7 @@ const ContactForm = ({setSubmitDone}) => {
         type="submit"
         onClick={handleSumbitClick}
       >
-        GET A FREE QUOTE
+        GET A QUOTE
       </button>
     </form>
   );
