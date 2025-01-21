@@ -12,11 +12,11 @@ const Features = () => {
           <Feature value={"26"} desc={"Years of Experience"} />
         </div>
       </div>
-      <div className="container grid grid-cols-2 gap-6 place-items-center my-16 md:max-h-screen h-screen min-h-screen lg:mb-0 mb-16">
-        <div className="md:col-span-1 col-span-full h-3/4">
+      <div className="container grid grid-cols-2 gap-6 place-items-center my-16">
+        <div className="md:col-span-1 col-span-full">
           <img className="max-h-full max-w-full" src={feat1} alt="" />
         </div>
-        <div className="md:col-span-1 col-span-full h-3/4">
+        <div className="md:col-span-1 col-span-full">
           <img className="max-h-full max-w-full" src={feat2} alt="" />
         </div>
       </div>
