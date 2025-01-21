@@ -20,7 +20,9 @@ const Careers = () => {
             <CareersForm setSubmitDone={setSubmitDone} />
           ) : (
             <div className="flex flex-col gap-8 group bg-white min-h-52 items-center justify-center px-6">
-              <p className="text-lg font-semibold">{submitMsg}</p>
+              <p className="text-xl text-globalColor0 font-semibold">
+                {submitMsg}
+              </p>
             </div>
           )}
         </div>
