@@ -24,7 +24,7 @@ function NavbarLg() {
         <MenuLink name={"About"} path={"/about"} />
         <ServicesLi />
         <MenuLink name={"Projects"} path={"/projects"} />
-        <MenuLink name={"Careers"} path={"/careers"} />
+        <MenuLink name={"Recruitment"} path={"/careers"} />
         <MenuLink name={"Contact Us"} path={"/contact"} />
       </ul>
       <div className="flex items-center gap-3">
