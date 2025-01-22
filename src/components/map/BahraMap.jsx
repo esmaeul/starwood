@@ -3,7 +3,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 // Bahra coordinates
-const BahraCoordinates = [21.944752537023792, 39.36059051317247];
+const BahraCoordinates = [21.422200639812875, 39.471974146326836];
 
 // Default marker icon configuration for React Leaflet
 delete L.Icon.Default.prototype._getIconUrl;
