@@ -1,39 +1,16 @@
-import { FaPhone } from "react-icons/fa6";
-import landingImage from "../../assets/images/landing/landing.png";
-import { MdEmail } from "react-icons/md";
+
+// import landingImage from "../../assets/images/landing/landing.png";
+import landingImage from "../../assets/images/decorations/29.png";
 
 const LandingImage = () => {
   return (
-    <div className="relative w-full h-full overflow-hidden bg-black">
-      <img
-        src={landingImage}
-        className="w-full h-full object-fill"
-        aria-label="Landing image showcasing our logo"
-      />
-      {/* Optional Overlay Content */}
-      <div className="absolute max-w-96 md:left-40 top-1/2 inset-0 flex gap-5 flex-col items-start justify-center text-white">
-        <h1 className="lg:text-3xl text-xl font-semibold text-globalColor5 ml-5">
-          We are Starwood Engineer Experts
-        </h1>
-        <p className="font-semiblod text-md text-globalColor5 ml-5">
-          Engineering Experts
-        </p>
-        <div className="flex">
-          {" "}
-          <a
-            href="tel:+966126930030"
-            className="min-w-52 flex items-center gap-1.5 text-globalColor5 ml-5 bg-globalColor1 hover:bg-globalColor0 px-3 py-2 text-xl rounded-sm transition"
-          >
-            <FaPhone className="text-lg" /> +966 12 6930030
-          </a>
-          <a
-            className="min-w-52 flex items-center gap-1.5 text-globalColor5 ml-5 bg-globalColor1 hover:bg-globalColor0 px-3 py-2 text-xl rounded-sm transition"
-            href="mailto:info@starwood.sa"
-          >
-            <MdEmail className="text-xl" />
-            info@starwood.sa
-          </a>
-        </div>
+    <div className="relative w-full h-full overflow-hidden">
+      <div className="w-11/12 mx-auto">
+        <img
+          src={landingImage}
+          className="w-full h-full object-contain"
+          aria-label="Landing image showcasing our logo"
+        />
       </div>
     </div>
   );

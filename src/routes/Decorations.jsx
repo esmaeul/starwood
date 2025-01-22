@@ -1,5 +1,6 @@
 import SingleDecor from "../components/sections/decors/SingleDecor";
 
+import decorImg0 from "../assets/images/decorations/0.png";
 import decorImg1 from "../assets/images/decorations/1.png";
 import decorImg2 from "../assets/images/decorations/2.png";
 import decorImg3 from "../assets/images/decorations/3.png";
@@ -33,6 +34,19 @@ import decorImg30 from "../assets/images/decorations/30.png";
 import decorImg31 from "../assets/images/decorations/31.png";
 import decorImg32 from "../assets/images/decorations/32.png";
 import decorImg33 from "../assets/images/decorations/33.png";
+import decorImg34 from "../assets/images/decorations/34.png";
+import decorImg35 from "../assets/images/decorations/35.png";
+import decorImg36 from "../assets/images/decorations/36.png";
+import decorImg37 from "../assets/images/decorations/37.png";
+import decorImg38 from "../assets/images/decorations/38.png";
+import decorImg39 from "../assets/images/decorations/39.png";
+import decorImg40 from "../assets/images/decorations/40.png";
+import decorImg41 from "../assets/images/decorations/41.png";
+import decorImg42 from "../assets/images/decorations/42.png";
+import decorImg43 from "../assets/images/decorations/43.png";
+import decorImg44 from "../assets/images/decorations/44.png";
+import decorImg45 from "../assets/images/decorations/45.png";
+import decorImg46 from "../assets/images/decorations/46.png";
 
 import { useEffect } from "react";
 
@@ -55,6 +69,7 @@ const Decorations = () => {
             We Provide Decors what you really need.
           </p>
         </div>
+        <SingleDecor imgSrc={decorImg0} />
         <SingleDecor imgSrc={decorImg1} />
         <SingleDecor imgSrc={decorImg2} />
         <SingleDecor imgSrc={decorImg3} />
@@ -88,6 +103,19 @@ const Decorations = () => {
         <SingleDecor imgSrc={decorImg31} />
         <SingleDecor imgSrc={decorImg32} />
         <SingleDecor imgSrc={decorImg33} />
+        <SingleDecor imgSrc={decorImg34} />
+        <SingleDecor imgSrc={decorImg35} />
+        <SingleDecor imgSrc={decorImg36} />
+        <SingleDecor imgSrc={decorImg37} />
+        <SingleDecor imgSrc={decorImg38} />
+        <SingleDecor imgSrc={decorImg39} />
+        <SingleDecor imgSrc={decorImg40} />
+        <SingleDecor imgSrc={decorImg41} />
+        <SingleDecor imgSrc={decorImg42} />
+        <SingleDecor imgSrc={decorImg43} />
+        <SingleDecor imgSrc={decorImg44} />
+        <SingleDecor imgSrc={decorImg45} />
+        <SingleDecor imgSrc={decorImg46} />
       </div>
     </div>
   );

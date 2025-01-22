@@ -14,7 +14,7 @@ const LandingForm = () => {
   };
 
   return (
-    <form className="sm:-mb-16 sm:mt-0 mt-16 mb-0 lg:px-16 lg:py-24 py-8 px-0 lg:text-left text-center sm:bg-globalColor8 sm:shadow-lg rounded-lg flex lg:flex-row flex-col lg:gap-5 items-center justify-center focus-within:bg-globalColor5 hover:bg-globalColor5 hover:shadow-none focus-within:shadow-none transition-all">
+    <form className="-mb-28 lg:px-16 lg:py-24 py-8 px-0 lg:text-left text-center bg-globalColor8 text-globalColor2 sm:shadow-lg rounded-lg flex lg:flex-row flex-col lg:gap-5 items-center justify-center focus-within:bg-globalColor5 hover:bg-globalColor5 hover:shadow-none focus-within:shadow-none transition-all">
       <div className="flex flex-col lg:basis-5/12 sm:basis-6/12 basis-full">
         <p className="text-globalColor0 font-semibold">Quick Service Request</p>
         <h1 className="lg:text-3xl md:text-2xl text-lg font-semibold">
