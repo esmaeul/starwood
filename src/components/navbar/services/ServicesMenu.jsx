@@ -76,7 +76,7 @@ const ServicesMenu = ({ serMenu, setSerMenu }) => {
           }
         />
         {/* Start Doors Submenu */}
-        <ul
+        <div
           className={`absolute z-50 left-full top-1/2 py-1.5 flex-col opacity-0 min-w-fit text-nowrap bg-globalColor8 border-t border-t-globalColor0 border-opacity-80 transition rounded-sm cursor-default shadow-2xl ${
             doorsMenu
               ? "translate-y-0 opacity-100 flex opacity-1 pointer-events-auto"
@@ -103,7 +103,7 @@ const ServicesMenu = ({ serMenu, setSerMenu }) => {
             name={"Office & Corporate Doors"}
             path={"office-and-corporate-doors"}
           />
-        </ul>
+        </div>
         {/* Conditionally render DoorsMenu */}
         {/* End Doors Submenu */}
       </li>
