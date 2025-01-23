@@ -5,7 +5,6 @@ import NavbarSm from "../components/navbar/NavbarSm";
 import { useState } from "react";
 import logo from "../../src/assets/shared/logo.png";
 import Footer from "../components/footer/Footer";
-import WhatsappBtn from "../components/ui/WhatsappBtn";
 
 const Root = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -47,7 +46,6 @@ const Root = () => {
         ></div>
       </div>
       {/* <!-- Start Footer --> */}
-      <WhatsappBtn />
       <Footer />
       {/* <!-- End Footer --> */}
     </div>
