@@ -25,14 +25,12 @@ import decorImg21 from "../assets/images/decorations/21.png";
 import decorImg22 from "../assets/images/decorations/22.png";
 import decorImg23 from "../assets/images/decorations/23.png";
 import decorImg24 from "../assets/images/decorations/24.png";
-import decorImg25 from "../assets/images/decorations/44.png";
 import decorImg26 from "../assets/images/decorations/26.png";
 import decorImg27 from "../assets/images/decorations/27.png";
 import decorImg28 from "../assets/images/decorations/28.png";
 import decorImg29 from "../assets/images/decorations/32.png";
 import decorImg30 from "../assets/images/decorations/33.png";
 import decorImg31 from "../assets/images/decorations/31.png";
-import decorImg32 from "../assets/images/decorations/44.png";
 import decorImg33 from "../assets/images/decorations/45.png";
 import decorImg34 from "../assets/images/decorations/34.png";
 import decorImg35 from "../assets/images/decorations/35.png";
@@ -75,14 +73,12 @@ const Decorations = () => {
     decorImg22,
     decorImg23,
     decorImg24,
-    decorImg25,
     decorImg26,
     decorImg27,
     decorImg28,
     decorImg29,
     decorImg30,
     decorImg31,
-    decorImg32,
     decorImg33,
     decorImg34,
     decorImg35,
