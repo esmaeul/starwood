@@ -10,13 +10,13 @@ const Landing = () => {
         <LandingImage />
       </div>
       {/* Start Landing Text */}
-      <div className="container relative z-50">
+      <div className="container relative z-20">
         <div className="flex flex-col pb-10 gap-5 w-fit pr-6 py-5 rounded-xl shadow-lg transition-all duration-500">
           <h1 className="lg:text-3xl text-xl font-semibold ml-5">
             We are Starwood Engineer Experts
           </h1>
           <p className="font-semiblod text-md ml-5">Engineering Experts</p>
-          <div className="flex">
+          <div className="flex md:flex-row flex-col md:gap-0 gap-5">
             {" "}
             <a
               href="tel:+966126930030"

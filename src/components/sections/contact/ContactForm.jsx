@@ -1,7 +1,7 @@
 // import axios from "axios";
 import { useState } from "react";
 
-const ContactForm = ({setSubmitDone}) => {
+const ContactForm = ({ setSubmitDone }) => {
   const [name, setName] = useState("");
   const [telNum, setTelName] = useState("");
   const [email, setEmail] = useState("");
@@ -9,9 +9,6 @@ const ContactForm = ({setSubmitDone}) => {
   const [msg, setMsg] = useState("");
 
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Z]{2,}$/i;
-
-  console.log(typeof emailRegex);
-  console.log(emailRegex);
 
   const canSubmit =
     [name, telNum, email, msgTitle, msg].every(Boolean) &&
@@ -22,7 +19,7 @@ const ContactForm = ({setSubmitDone}) => {
 
     if (!canSubmit || !emailRegex.test(email)) return;
 
-    setSubmitDone(true)
+    setSubmitDone(true);
   };
 
   return (

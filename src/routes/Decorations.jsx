@@ -48,9 +48,87 @@ import decorImg44 from "../assets/images/decorations/44.png";
 import decorImg45 from "../assets/images/decorations/45.png";
 import decorImg46 from "../assets/images/decorations/46.png";
 
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
+import Lightbox from "../components/sections/decors/LightBox";
 
 const Decorations = () => {
+  const decorImgs = [
+    decorImg0,
+    decorImg1,
+    decorImg2,
+    decorImg3,
+    decorImg4,
+    decorImg5,
+    decorImg6,
+    decorImg7,
+    decorImg8,
+    decorImg9,
+    decorImg10,
+    decorImg11,
+    decorImg12,
+    decorImg13,
+    decorImg14,
+    decorImg15,
+    decorImg16,
+    decorImg17,
+    decorImg18,
+    decorImg19,
+    decorImg20,
+    decorImg21,
+    decorImg22,
+    decorImg23,
+    decorImg24,
+    decorImg25,
+    decorImg26,
+    decorImg27,
+    decorImg28,
+    decorImg29,
+    decorImg30,
+    decorImg31,
+    decorImg32,
+    decorImg33,
+    decorImg34,
+    decorImg35,
+    decorImg36,
+    decorImg37,
+    decorImg38,
+    decorImg39,
+    decorImg40,
+    decorImg41,
+    decorImg42,
+    decorImg43,
+    decorImg44,
+    decorImg45,
+    decorImg46,
+  ];
+
+  const imgRef = useRef(null);
+
+  const [current, setCurrent] = useState(0);
+  const [showModal, setShowModal] = useState(false);
+
+  const handleNext = () => {
+    setCurrent((prev) => (prev + 1) % decorImgs.length);
+  };
+
+  const handlePrev = () => {
+    setCurrent((prev) => (prev - 1 + decorImgs.length) % decorImgs.length);
+  };
+
+  // Handle clicks outside the modal
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (imgRef.current && !imgRef.current.contains(e.target)) {
+        setShowModal(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -69,53 +147,26 @@ const Decorations = () => {
             We Provide Decors what you really need.
           </p>
         </div>
-        <SingleDecor imgSrc={decorImg0} />
-        <SingleDecor imgSrc={decorImg1} />
-        <SingleDecor imgSrc={decorImg2} />
-        <SingleDecor imgSrc={decorImg3} />
-        <SingleDecor imgSrc={decorImg4} />
-        <SingleDecor imgSrc={decorImg5} />
-        <SingleDecor imgSrc={decorImg6} />
-        <SingleDecor imgSrc={decorImg7} />
-        <SingleDecor imgSrc={decorImg8} />
-        <SingleDecor imgSrc={decorImg9} />
-        <SingleDecor imgSrc={decorImg10} />
-        <SingleDecor imgSrc={decorImg11} />
-        <SingleDecor imgSrc={decorImg12} />
-        <SingleDecor imgSrc={decorImg13} />
-        <SingleDecor imgSrc={decorImg14} />
-        <SingleDecor imgSrc={decorImg15} />
-        <SingleDecor imgSrc={decorImg16} />
-        <SingleDecor imgSrc={decorImg17} />
-        <SingleDecor imgSrc={decorImg18} />
-        <SingleDecor imgSrc={decorImg19} />
-        <SingleDecor imgSrc={decorImg20} />
-        <SingleDecor imgSrc={decorImg21} />
-        <SingleDecor imgSrc={decorImg22} />
-        <SingleDecor imgSrc={decorImg23} />
-        <SingleDecor imgSrc={decorImg24} />
-        <SingleDecor imgSrc={decorImg25} />
-        <SingleDecor imgSrc={decorImg26} />
-        <SingleDecor imgSrc={decorImg27} />
-        <SingleDecor imgSrc={decorImg28} />
-        <SingleDecor imgSrc={decorImg29} />
-        <SingleDecor imgSrc={decorImg30} />
-        <SingleDecor imgSrc={decorImg31} />
-        <SingleDecor imgSrc={decorImg32} />
-        <SingleDecor imgSrc={decorImg33} />
-        <SingleDecor imgSrc={decorImg34} />
-        <SingleDecor imgSrc={decorImg35} />
-        <SingleDecor imgSrc={decorImg36} />
-        <SingleDecor imgSrc={decorImg37} />
-        <SingleDecor imgSrc={decorImg38} />
-        <SingleDecor imgSrc={decorImg39} />
-        <SingleDecor imgSrc={decorImg40} />
-        <SingleDecor imgSrc={decorImg41} />
-        <SingleDecor imgSrc={decorImg42} />
-        <SingleDecor imgSrc={decorImg43} />
-        <SingleDecor imgSrc={decorImg44} />
-        <SingleDecor imgSrc={decorImg45} />
-        <SingleDecor imgSrc={decorImg46} />
+        {decorImgs.map((imgSrc, index) => (
+          <SingleDecor
+            key={index}
+            imgSrc={imgSrc}
+            setCurrent={() => {
+              setCurrent(index);
+              setShowModal(true);
+            }}
+          />
+        ))}
+        {showModal && (
+          <Lightbox
+            current={current}
+            images={decorImgs}
+            imgRef={imgRef}
+            onClose={() => setShowModal(false)}
+            onNext={handleNext}
+            onPrev={handlePrev}
+          />
+        )}
       </div>
     </div>
   );

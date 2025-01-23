@@ -20,7 +20,7 @@ const ActivitiesSection = () => {
       id="Activities"
       className="SingelActivity min-h-screen bg-globalColor1 mt-16 py-6 pt-16"
     >
-      <div className="container section grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+      <div className="container section grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
         <div className="main-heading col-span-full mb-8 w-fit mx-auto flex flex-col gap-1.5">
           <h2 className="text-5xl text-globalColor0">Types of Wood We Offer</h2>
           <p className="text-white my-6 mx-auto w-fit font-light capitalize">
