@@ -26,8 +26,9 @@
     "send": "Send"
   },
   "home": {
-    "title": "Welcome to the Home Page",
-    "intro": "Explore our services and projects"
+    "landingTitle": "Welcome to the Home Page",
+    "landingSubtitle": "Explore our services and projects",
+    "landingPhone": "+966126930030" 
   },
   "about": {
     "title": "About Us",

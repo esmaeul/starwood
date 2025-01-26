@@ -6,6 +6,7 @@ import ar from "./locales/ar.json";
 i18n.use(initReactI18next).init({
   resources: {
     en: {
+      home: en.home,
       common: en.common,
       navbar: en.navbar,
       about: en.about,
@@ -13,6 +14,7 @@ i18n.use(initReactI18next).init({
       contact: en.contact,
     },
     ar: {
+      home: ar.home,
       common: ar.common,
       navbar: ar.navbar,
       about: ar.about,
