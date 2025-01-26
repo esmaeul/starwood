@@ -3,8 +3,11 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import MenuLink from "../links/MenuLink";
 import ServicesMenu from "./ServicesMenu";
+import { useTranslation } from "react-i18next";
 
 const ServicesLi = () => {
+  const { t } = useTranslation("navbar");
+
   const [serMenu, setSerMenu] = useState(false);
 
   const serRef = useRef(null);
@@ -51,7 +54,7 @@ const ServicesLi = () => {
       aria-expanded={serMenu}
     >
       <MenuLink
-        name={"Services"}
+        name={t("services")}
         path={"/services"}
         icon={
           <IoIosArrowUp

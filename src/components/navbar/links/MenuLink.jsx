@@ -8,7 +8,7 @@ const MenuLink = ({ name, path, icon }) => {
       >
         {name}
         {icon ? icon : ""}
-        <div className="absolute top-full left-0 w-0 h-[2px] bg-globalColor0 bg-opacity-50 group-hover:w-full transition-all duration-300"></div>
+        <div className="absolute top-full w-0 h-[2px] bg-globalColor0 bg-opacity-50 group-hover:w-full transition-all duration-300"></div>
       </Link>
     </div>
   );

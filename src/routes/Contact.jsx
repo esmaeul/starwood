@@ -4,12 +4,7 @@ import OsfanMap from "../components/map/OsfanMap";
 import MapRiyadh from "../components/map/RiyadhMap";
 import FactoryMap from "../components/map/FactoryMap";
 import { Link } from "react-router-dom";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaXTwitter,
-  FaYoutube,
-} from "react-icons/fa6";
+import { FaInstagram, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { FaWhatsappSquare } from "react-icons/fa";
 
 const Contact = () => {
@@ -19,15 +14,6 @@ const Contact = () => {
         <div className="basis-2/6 relative">
           <div className="fixed top-3/4">
             <ul className="flex gap-4 text-3xl text-black ">
-              <li className="facebook">
-                <Link
-                  className=" hover:text-facbookColor text-md transition"
-                  to="https://www.facebook.com/profile.php?id=61571768255791"
-                  target="_blank"
-                >
-                  <FaFacebook />
-                </Link>
-              </li>
               <li className="youtube">
                 <Link
                   className=" hover:text-youtubeColor text-md transition"
@@ -55,7 +41,7 @@ const Contact = () => {
                   <FaXTwitter />
                 </Link>
               </li>
-              <li className="twitter">
+              <li className="whats-app">
                 <Link
                   className=" hover:text-green-400 text-md transition"
                   to="https://wa.me/966126930030"

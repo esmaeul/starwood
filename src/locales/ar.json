@@ -1,0 +1,44 @@
+{
+  "navbar": {
+    "home": "الرئيسية",
+    "about": "معلومات عنا",
+    "services": "الخدمات",
+    "interiorDesign": "تصميم داخلي",
+    "interiorDecorations": "ديكورات داخلية",
+    "exteriorDecorations": "ديكورات خارجية",
+    "doors": "الأبواب",
+    "interiorDoors": "الأبواب الداخلية",
+    "exteriorDoors": "الأبواب الخارجية",
+    "palaceResidential Doors": "أبواب القصور والمنازل السكنية",
+    "officeCorporate Doors": "أبواب المكاتب والشركات",
+    "stagesPlatforms": "المسارح والمنصات",
+    "architecturalWork": "العمل المعماري",
+    "projects": "المشاريع",
+    "careers": "الوظائف",
+    "contact": "اتصل بنا"
+  },
+  "common": {
+    "title": "نحن خبراء الهندسة في ستاروود",
+    "subtitle": "خبراء الهندسة",
+    "requestCall": "لا تتردد في طلب مكالمة",
+    "name": "الاسم",
+    "phone": "رقم الهاتف",
+    "send": "إرسال"
+  },
+  "home": {
+    "title": "مرحبًا بكم في الصفحة الرئيسية",
+    "intro": "اكتشف خدماتنا ومشاريعنا"
+  },
+  "about": {
+    "title": "معلومات عنا",
+    "intro": "تعرف على خبراتنا ورسالتنا"
+  },
+  "services": {
+    "title": "خدماتنا",
+    "description": "اكتشف الخدمات التي نقدمها"
+  },
+  "contact": {
+    "title": "اتصل بنا",
+    "description": "تواصل معنا للحصول على المزيد من المعلومات"
+  }
+}

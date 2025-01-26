@@ -3,8 +3,12 @@ import { useRef, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
 import SubmenuLink from "../links/SubmenuLink";
+import { useTranslation } from "react-i18next";
 
 const ServicesMenu = ({ serMenu, setSerMenu }) => {
+  const { t } = useTranslation("navbar");
+  const { i18n } = useTranslation("");
+
   const handleMenuClose = () => {
     setSerMenu(false);
   };
@@ -38,17 +42,17 @@ const ServicesMenu = ({ serMenu, setSerMenu }) => {
     >
       <SubmenuLink
         onClose={handleMenuClose}
-        name={"Interior Design"}
+        name={t("interiorDesign")}
         path={"/interior-design"}
       />
       <SubmenuLink
         onClose={handleMenuClose}
-        name={"Interior Decorations"}
+        name={t("interiorDecorations")}
         path={"/interior-decorations"}
       />
       <SubmenuLink
         onClose={handleMenuClose}
-        name={"Exterior Decorations"}
+        name={t("exteriorDecorations")}
         path={"/exterior-decorations"}
       />
       {/* Start Doors Li */}
@@ -65,7 +69,7 @@ const ServicesMenu = ({ serMenu, setSerMenu }) => {
       >
         <SubmenuLink
           onClose={handleMenuClose}
-          name={"Doors"}
+          name={t("doors")}
           path={"/doors"}
           icon={
             <IoIosArrowForward
@@ -77,30 +81,32 @@ const ServicesMenu = ({ serMenu, setSerMenu }) => {
         />
         {/* Start Doors Submenu */}
         <div
-          className={`absolute z-50 left-full top-1/2 py-1.5 flex-col opacity-0 min-w-fit text-nowrap bg-globalColor8 border-t border-t-globalColor0 border-opacity-80 transition rounded-sm cursor-default shadow-2xl ${
+          className={`absolute z-50 top-1/2 py-1.5 flex-col opacity-0 min-w-fit text-nowrap bg-globalColor8 border-t border-t-globalColor0 border-opacity-80 transition rounded-sm cursor-default shadow-2xl ${
             doorsMenu
               ? "translate-y-0 opacity-100 flex opacity-1 pointer-events-auto"
               : "-translate-y-6 opacity-0 pointer-events-none"
-          }`}
+          }
+              ${i18n.language === "en" ? "left-full" : "right-full"}
+              `}
         >
           <SubmenuLink
             onClose={handleMenuClose}
-            name={"Interior Doors"}
+            name={t("interiorDoors")}
             path={"interior-doors"}
           />
           <SubmenuLink
             onClose={handleMenuClose}
-            name={"Exterior Doors"}
+            name={t("exteriorDoors")}
             path={"exterior-doors"}
           />
           <SubmenuLink
             onClose={handleMenuClose}
-            name={"Palace & Residential Doors"}
+            name={t("palaceResidential Doors")}
             path={"palace-and-residential-doors"}
           />
           <SubmenuLink
             onClose={handleMenuClose}
-            name={"Office & Corporate Doors"}
+            name={t("officeCorporate Doors")}
             path={"office-and-corporate-doors"}
           />
         </div>
@@ -110,12 +116,12 @@ const ServicesMenu = ({ serMenu, setSerMenu }) => {
       {/* End Doors Li */}
       <SubmenuLink
         onClose={handleMenuClose}
-        name={"Stages & Platforms"}
+        name={t("stagesPlatforms")}
         path={"/stages-and-platforms"}
       />
       <SubmenuLink
         onClose={handleMenuClose}
-        name={"Architectural Work"}
+        name={t("architecturalWork")}
         path={"/architectural-work"}
       />
     </ul>

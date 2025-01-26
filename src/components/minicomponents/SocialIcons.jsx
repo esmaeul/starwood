@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import {
-  FaFacebook,
   FaInstagram,
   FaXTwitter,
   FaYoutube,
@@ -9,15 +8,6 @@ import {
 const SocialIcons = () => {
   return (
     <ul className="flex gap-4 text-3xl ">
-      <li className="facebook">
-        <Link
-          className=" hover:text-facbookColor text-md transition"
-          to="https://www.facebook.com/profile.php?id=61571768255791"
-          target="_blank"
-        >
-          <FaFacebook />
-        </Link>
-      </li>
       <li className="youtube">
         <Link
           className=" hover:text-youtubeColor text-md transition"

@@ -1,0 +1,44 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "interiorDesign": "Interior Design",
+    "interiorDecorations": "Interior Decorations",
+    "exteriorDecorations": "Exterior Decorations",
+    "doors": "Doors",
+    "interiorDoors": "Interior Doors",
+    "exteriorDoors": "Exterior Doors",
+    "palaceResidential Doors": "Palace & Residential Doors",
+    "officeCorporate Doors": "Office & Corporate Doors",
+    "stagesPlatforms": "Stages & Platforms",
+    "architecturalWork": "Architectural Work",
+    "projects": "projects",
+    "careers": "careers",
+    "contact": "contact"
+  },
+  "common": {
+    "title": "We are engineering experts at Starwood",
+    "subtitle": "Engineering Experts",
+    "requestCall": "Feel free to request a call",
+    "name": "Name",
+    "phone": "Phone Number",
+    "send": "Send"
+  },
+  "home": {
+    "title": "Welcome to the Home Page",
+    "intro": "Explore our services and projects"
+  },
+  "about": {
+    "title": "About Us",
+    "intro": "Learn more about our expertise and mission"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Explore the various services we offer"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with us for more information"
+  }
+}
