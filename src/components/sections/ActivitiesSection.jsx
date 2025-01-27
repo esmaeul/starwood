@@ -13,8 +13,11 @@ import palaceDoor from "../../assets/images/activities/2.png";
 import cladding from "../../assets/images/activities/11.png";
 import InteriorDoor from "../../assets/images/activities/Door.png";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const ActivitiesSection = () => {
+  const { t } = useTranslation("services");
+
   return (
     <section
       id="Activities"
@@ -22,82 +25,82 @@ const ActivitiesSection = () => {
     >
       <div className="container section grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
         <div className="main-heading col-span-full mb-8 w-fit mx-auto flex flex-col gap-1.5">
-          <h2 className="text-5xl text-globalColor0">Types of Wood We Offer</h2>
+          <h2 className="text-5xl text-globalColor0">{t("title")}</h2>
           <p className="text-white my-6 mx-auto w-fit font-light capitalize">
-            We offer a wide range of woods.
+            {t("description")}
           </p>
         </div>
         <SingelActivity
           imgSrc={germanBeech}
           imgAlt={"German beech wood"}
-          title={"German beech wood"}
-          desc={`A high-quality hardwood with a uniform surface, structure, and hardness, ensuring paint or finish is evenly distributed without absorption. Perfect for achieving smooth, flawless finishes.`}
+          title={t("ser1Title")}
+          desc={t("ser1Text")}
         />
         <SingelActivity
           imgSrc={swedish}
           imgAlt={"Swedish Wood"}
-          title={"Swedish Wood"}
-          desc={`A straight-grained, reddish-brown hardwood known for its durability and vibrant color, making it ideal for furniture, flooring, and other decorative applications.`}
+          title={t("ser2Title")}
+          desc={t("ser2Text")}
         />
         <SingelActivity
           imgSrc={regularOakWood}
           imgAlt={"American Red Oak"}
-          title={"American Red Oak"}
-          desc={`A strong, dense hardwood with a rich, warm color and prominent grain, commonly used in furniture, flooring, and cabinetry for its durability and timeless appeal.`}
+          title={t("ser3Title")}
+          desc={t("ser3Text")}
         />
         <SingelActivity
           imgSrc={austrianBoards}
           imgAlt={"Austrian White"}
-          title={"Austrian White"}
-          desc={`High-quality, durable wood panels known for their precision engineering, strength, and versatility, ideal for furniture, cabinetry, and interior design projects.`}
+          title={t("ser4Title")}
+          desc={t("ser4Text")}
         />
         <SingelActivity
           imgSrc={austrianTimberBeams}
           imgAlt={"Austrian Timber"}
-          title={"Austrian Timber"}
-          desc={`Strong and durable timber beams crafted from high-quality Austrian wood, ideal for structural applications, construction, and architectural projects requiring stability and aesthetic appeal.`}
+          title={t("ser5Title")}
+          desc={t("ser5Text")}
         />
         <SingelActivity
           imgSrc={paintedBoards}
           imgAlt={"Film-Faced plywood Starwood WBP"}
-          title={"Film-Faced plywood Starwood WBP"}
-          desc={`Durable, water-resistant plywood coated with a smooth film layer, designed for heavy-duty applications like concrete formwork, flooring, and outdoor projects.`}
+          title={t("ser6Title")}
+          desc={t("ser6Text")}
         />
         <SingelActivity
           imgSrc={fireMDF}
           imgAlt={"Austrian Timber Beams"}
-          title={"Fire Rated MDF"}
-          desc={`A specially engineered medium-density fiberboard designed to resist fire, offering enhanced safety while maintaining versatility for construction and interior projects.`}
+          title={t("ser7Title")}
+          desc={t("ser7Text")}
         />
         <SingelActivity
           imgSrc={regularMDF}
           imgAlt={"Ordinary MDF"}
-          title={"Ordinary MDF"}
-          desc={`A versatile and affordable engineered fiberboard product with a smooth, uniform surface, ideal for furniture, cabinetry, and interior design applications.`}
+          title={t("ser8Title")}
+          desc={t("ser8Text")}
         />
         <SingelActivity
           imgSrc={ordinaryMDF}
           imgAlt={"HMR MDF"}
-          title={"HMR MDF"}
-          desc={`A standard hight-density fiberboard and anti humdity with a smooth and uniform surface, ideal for general-purpose applications such as furniture, shelving, and interior paneling.`}
+          title={t("ser9Title")}
+          desc={t("ser9Text")}
         />
         <SingelActivity
           imgSrc={palaceDoor}
           imgAlt={"Exterior Door"}
-          title={"Exterior Door"}
-          desc={`Designed for strength, durability, and aesthetic appeal, our exterior doors are crafted to protect your space while making a lasting impression. Choose from a range of materials and styles to match your architectural vision and ensure lasting performance against the elements.`}
+          title={t("ser10Title")}
+          desc={t("ser10Text")}
         />
         <SingelActivity
           imgSrc={cladding}
           imgAlt={"Wall Cladding"}
-          title={"Wall Cladding"}
-          desc={`High-performance cladding solutions designed to protect and beautify your exterior walls. Available in a variety of materials and finishes, offering durability and a modern look to any architectural style.`}
+          title={t("ser11Title")}
+          desc={t("ser11Text")}
         />
         <SingelActivity
           imgSrc={InteriorDoor}
           imgAlt={"InteriorDoor"}
-          title={"Interior Door"}
-          desc={`Stylish and functional interior doors crafted for comfort and privacy. With a variety of designs, finishes, and materials to choose from, these doors seamlessly enhance the interior design of your home or workspace.`}
+          title={t("ser12Title")}
+          desc={t("ser12Text")}
         />
         {/* See More Link Button */}
         <div className="col-span-full place-content-center place-items-center text-center py-16">
@@ -105,7 +108,7 @@ const ActivitiesSection = () => {
             to="/decorations"
             className="rounded-sm border text-white border-t-emerald-50 w-fit px-24 py-3 text-xl hover:bg-white hover:text-globalColor0 hover:border-globalColor0 transition"
           >
-            See More
+            {t("serLink")}
           </Link>
         </div>
         {/* End See More Link Button */}

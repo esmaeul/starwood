@@ -25,7 +25,7 @@ const Landing = () => {
               href="tel:+966126930030"
               className="min-w-52 flex items-center gap-1.5 text-globalColor5 ml-5 bg-globalColor1 hover:bg-globalColor0 px-3 py-2 text-xl rounded-sm transition"
             >
-              <FaPhone className="text-lg" /> +966 12 6930030
+              <FaPhone className="text-lg" /> {t("landingTel")}
             </a>
             <a
               className="min-w-52 flex items-center gap-1.5 text-globalColor5 ml-5 bg-globalColor1 hover:bg-globalColor0 px-3 py-2 text-xl rounded-sm transition"

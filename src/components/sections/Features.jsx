@@ -2,8 +2,11 @@ import Feature from "./features/Feature";
 import feat1 from "../../assets/images/features/1.jpg";
 import feat2 from "../../assets/images/features/2.jpg";
 import { useState, useRef, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const Features = () => {
+  const { t } = useTranslation("features");
+
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
   const [count3, setCount3] = useState(0);
@@ -88,17 +91,17 @@ const Features = () => {
         <div className="container section h-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
           <Feature
             value={Math.floor(count1)}
-            desc={"Team Members"}
+            desc={t("feat1")}
             ref={featureRef1}
           />
           <Feature
             value={Math.floor(count2)}
-            desc={"Success Partners"}
+            desc={t("feat2")}
             ref={featureRef2}
           />
           <Feature
             value={Math.floor(count3)}
-            desc={"Years of Experience"}
+            desc={t("feat3")}
             ref={featureRef3}
           />
         </div>

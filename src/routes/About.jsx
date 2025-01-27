@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import MainTitle from "../components/minicomponents/MainTitle";
 
 const About = () => {
-  const { t } = useTranslation("about");
+  const { t } = useTranslation("common");
 
   return (
     <div>

@@ -11,6 +11,8 @@ i18n.use(initReactI18next).init({
       navbar: en.navbar,
       about: en.about,
       services: en.services,
+      whyus: en.whyUs,
+      features: en.features,
       contact: en.contact,
     },
     ar: {
@@ -19,6 +21,8 @@ i18n.use(initReactI18next).init({
       navbar: ar.navbar,
       about: ar.about,
       services: ar.services,
+      whyus: ar.whyUs,
+      features: ar.features,
       contact: ar.contact,
     },
   },

@@ -18,7 +18,7 @@
     "contact": "contact"
   },
   "common": {
-    "title": "We are engineering experts at Starwood",
+    "title": "We are Starwood for Timber",
     "subtitle": "Engineering Experts",
     "requestCall": "Feel free to request a call",
     "name": "Name",
@@ -26,20 +26,98 @@
     "send": "Send"
   },
   "home": {
-    "landingTitle": "Welcome to the Home Page",
-    "landingSubtitle": "Explore our services and projects",
-    "landingPhone": "+966126930030" 
+    "landingTitle": "We are Starwood Engineer Experts",
+    "landingSubtitle": "Engineering Experts",
+    "landingTel": "+966126930030",
+    "landingFormTitle": "Quick Service Request",
+    "landingFormSubtitle": "Feel free to Request a call",
+    "landingFormName": "Name",
+    "landingFormNumber": "Number",
+    "landingFormSubmit": "Send"
   },
   "about": {
-    "title": "About Us",
-    "intro": "Learn more about our expertise and mission"
+    "headTitle": "About Company",
+    "title": "Startwood Company",
+    "introOne": "Starwood For Timber:",
+    "timberText": "Specializes in the supply of specialty hardwood and softwood, wood flooring, facades, timber components and veneers, all supplied and manufactured to the highest quality for use in a variety of market sectors, from building and construction to kitchen and furniture manufacturing and joinery. We offer a range of products for a variety of applications such as joinery, facades, baseboards, sills, PAO panels, architectural moldings, TGV panels, kitchen cabinet components, door frames Wood can be used for almost anything from windows to doors, timber Cladding, bridges to boats, and even that purpose that can only be with Wood materials.",
+    "introTwo": "Starwood For Decorations:",
+    "decorsText": "Starwood is a product of utmost quality wood, professional craftsmanship and Avant Garde technology. It is the elite range of wood products for those who seek perfection. Starwood products are artistically designed, perfectly engineered and professionally manufactured to the specific requirements of the customer. The customer derives the highest value from Starwood in terms of quality, timeliness and service excellence. Professionally designed, manufactured and marketed by the industry leader, Starwood for Timber Company Starwood is recognized by the clients, the consultants and the contractors as the most trusted wooden door brand in KSA markets. he Starwood products won various certificates for the quality and specifications. Approved by various government clients and consultants. Starwood products are preferred by various medium to large scale government and private projects in KSA. Starwood has a team of craftsmen to design, manufacture and install any kind of joinery works including commercial and residential complexes projects of medium to large sizes.",
+    "companyStatus": "certified Company",
+    "aboutLink": "About Us"
   },
   "services": {
-    "title": "Our Services",
-    "description": "Explore the various services we offer"
+    "title": "Types of Wood We Offer We offer",
+    "description": "We offer a wide range of woods.",
+    "ser1Title": "German beech wood",
+    "ser1Text": "A high-quality hardwood with a uniform surface, structure, and hardness, ensuring paint or finish is evenly distributed without absorption. Perfect for achieving smooth, flawless finishes.",
+    "ser2Title": "Swedish Wood",
+    "ser2Text": "A straight-grained, reddish-brown hardwood known for its durability and vibrant color, making it ideal for furniture, flooring, and other decorative applications.",
+    "ser3Title": "American Red Oak",
+    "ser3Text": "A strong, dense hardwood with a rich, warm color and prominent grain, commonly used in furniture, flooring, and cabinetry for its durability and timeless appeal.",
+    "ser4Title": "Austrian White",
+    "ser4Text": "High-quality, durable wood panels known for their precision engineering, strength, and versatility, ideal for furniture, cabinetry, and interior design projects.",
+    "ser5Title": "Austrian Timber",
+    "ser5Text": "Strong and durable timber beams crafted from high-quality Austrian wood, ideal for structural applications, construction, and architectural projects requiring stability and aesthetic appeal.",
+    "ser6Title": "Film-Faced plywood Starwood WBP",
+    "ser6Text": "Durable, water-resistant plywood coated with a smooth film layer, designed for heavy-duty applications like concrete formwork, flooring, and outdoor projects.",
+    "ser7Title": "Fire Rated MDF",
+    "ser7Text": "A specially engineered medium-density fiberboard designed to resist fire, offering enhanced safety while maintaining versatility for construction and interior projects.",
+    "ser8Title": "Ordinary MDF",
+    "ser8Text": "A versatile and affordable engineered fiberboard product with a smooth, uniform surface, ideal for furniture, cabinetry, and interior design applications.",
+    "ser9Title": "HMR MDF",
+    "ser9Text": "A standard hight-density fiberboard and anti humdity with a smooth and uniform surface, ideal for general-purpose applications such as furniture, shelving, and interior paneling.",
+    "ser10Title": "Exterior Door",
+    "ser10Text": "Designed for strength, durability, and aesthetic appeal, our exterior doors are crafted to protect your space while making a lasting impression. Choose from a range of materials and styles to match your architectural vision and ensure lasting performance against the elements.",
+    "ser11Title": "Wall Cladding",
+    "ser11Text": "High-performance cladding solutions designed to protect and beautify your exterior walls. Available in a variety of materials and finishes, offering durability and a modern look to any architectural style.",
+    "ser12Title": "Interior Door",
+    "ser12Text": "Stylish and functional interior doors crafted for comfort and privacy. With a variety of designs, finishes, and materials to choose from, these doors seamlessly enhance the interior design of your home or workspace.",
+    "serLink": "See More"
+  },
+  "whyUs": {
+    "title": "Why Choose Us",
+    "desc": "We are committed to providing the best services",
+    "reason1Title": "Quality Assurance",
+    "reason1Desc": "We ensure the highest quality standards in all our projects.",
+    "reason2Title": "Expert Team",
+    "reason2Desc": "Our team consists of experienced professionals.",
+    "reason3Title": "Timely Delivery",
+    "reason3Desc": "We value your time and ensure timely completion of projects.",
+    "reason4Title": "Customer Satisfaction",
+    "reason4Desc": "Your satisfaction is our top priority.",
+    "reason5Title": "Positive Impact",
+    "reason5Desc": "We focus on engineering supervision and periodic monitoring.",
+    "reason6Title": "Well Managed",
+    "reason6Desc": "We ensure efficient handling and time availability.",
+    "reason7Title": "Affordable Prices",
+    "reason7Desc": "We offer competitive pricing without compromising on quality.",
+    "reason8Title": "Extensive Experiencee",
+    "reason8Desc": "Our extensive experience ensures reliable service.",
+    "reason9Title": "Expert Workers",
+    "reason9Desc": "Our workers are highly skilled and experienced."
+  },
+  "features": {
+    "feat1": "Team Members",
+    "feat2": "Success Partners",
+    "feat3": "Years of Experience"
   },
   "contact": {
-    "title": "Contact Us",
-    "description": "Get in touch with us for more information"
+    "title": "Don't Know What To Start With?",
+    "desc": "Get A Solutions For All Construction Services",
+    "leftTitle": "Office",
+    "leftDesc": "Our Offices",
+    "Address": "AlMadinah AlMunawarah Road - AL Ruwais District - Aletqan Square Floor10 - Office1001",
+    "country": "Jeddah - Kingdom of Saudi Arabia",
+    "email": "Email :info@starwood.sa",
+    "phone": "Tel .:+966 12 6930030",
+    "contactFormTitle": "Free Consultaion",
+    "contactFormDesc": "Get A Free Quote",
+    "formName": "Enter Yout Full Name",
+    "formPhone": "Phone Number",
+    "formEmail": "Your email",
+    "msgReason": "Service Description",
+    "msg": "Message",
+    "formSend": "GET A QUOTE",
+    "msgSent": "Message has been sent!"
   }
 }

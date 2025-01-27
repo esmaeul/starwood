@@ -9,63 +9,64 @@ import {
 } from "react-icons/fa6";
 import { MdOutlineAutoGraph } from "react-icons/md";
 import { GrUserExpert } from "react-icons/gr";
+import { useTranslation } from "react-i18next";
 
 const WhyUsSection = () => {
+  const { t } = useTranslation("whyus");
+
   return (
     <section id="why-us" className="why-us bg-globalColor4 min-h-screen py-16">
       <div className="container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
         <div className="main-heading col-span-full text-center gap-1.5">
           <h2 className="text-4xl font-semibold text-globalColor0">
-            Why Choose Us
+            {t("title")}
           </h2>
-          <p className="font-light my-4">
-            We are committed to providing the best services
-          </p>
+          <p className="font-light my-4">{t("desc")}</p>
         </div>
         <Reason
           icon={<FaAward />}
-          title={"Quality Assurance"}
-          desc={"We ensure the highest quality standards in all our projects."}
+          title={t("reason1Title")}
+          desc={t("reason1Desc")}
         />
         <Reason
           icon={<FaUsers />}
-          title={"Expert Team"}
-          desc={"Our team consists of experienced professionals."}
+          title={t("reason2Title")}
+          desc={t("reason2Desc")}
         />
         <Reason
           icon={<FaClock />}
-          title={"Timely Delivery"}
-          desc={"We value your time and ensure timely completion of projects."}
+          title={t("reason3Title")}
+          desc={t("reason3Desc")}
         />
         <Reason
           icon={<FaThumbsUp />}
-          title={"Customer Satisfaction"}
-          desc={"Your satisfaction is our top priority."}
+          title={t("reason4Title")}
+          desc={t("reason4Desc")}
         />
         <Reason
           icon={<FaRegHandPeace />}
-          title={"Positive Impact"}
-          desc={"We focus on engineering supervision and periodic monitoring."}
+          title={t("reason5Title")}
+          desc={t("reason5Desc")}
         />
         <Reason
           icon={<FaHandsClapping />}
-          title={"Well Managed"}
-          desc={"We ensure efficient handling and time availability."}
+          title={t("reason6Title")}
+          desc={t("reason6Desc")}
         />
         <Reason
           icon={<MdOutlineAutoGraph />}
-          title={"Affordable Prices"}
-          desc={"We offer competitive pricing without compromising on quality."}
+          title={t("reason7Title")}
+          desc={t("reason7Desc")}
         />
         <Reason
           icon={<GrUserExpert />}
-          title={"Extensive Experience"}
-          desc={"Our extensive experience ensures reliable service."}
+          title={t("reason8Title")}
+          desc={t("reason8Desc")}
         />
         <Reason
           icon={<FaTools />}
-          title={"Expert Workers"}
-          desc={"Our workers are highly skilled and experienced."}
+          title={t("reason9Title")}
+          desc={t("reason9Desc")}
         />
       </div>
     </section>
