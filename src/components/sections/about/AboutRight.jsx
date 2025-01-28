@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { FaCircleCheck } from "react-icons/fa6";
-import { Link } from "react-router-dom";
 
 const AboutRight = () => {
   const { t } = useTranslation("about");
@@ -29,12 +28,6 @@ const AboutRight = () => {
         <FaCircleCheck className="text-blue-500" />
         <span>{t("companyStatus")}</span>
       </div>
-      <Link
-        to="/about"
-        className="w-fit px-2 py-1.5 border border-globalColor0 text-globalColor2 hover:bg-globalColor0 hover:text-globalColor5 transition rounded-sm"
-      >
-        {t("aboutLink")}
-      </Link>
     </div>
   );
 };

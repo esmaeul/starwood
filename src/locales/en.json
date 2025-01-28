@@ -14,7 +14,7 @@
     "stagesPlatforms": "Stages & Platforms",
     "architecturalWork": "Architectural Work",
     "projects": "projects",
-    "careers": "careers",
+    "careers": "Join us",
     "contact": "contact"
   },
   "common": {
@@ -23,7 +23,9 @@
     "requestCall": "Feel free to request a call",
     "name": "Name",
     "phone": "Phone Number",
-    "send": "Send"
+    "send": "Send",
+    "msgSent": "Message has been sent!",
+    "formTitle": "Request a Job"
   },
   "home": {
     "landingTitle": "We are Starwood Engineer Experts",
@@ -112,12 +114,28 @@
     "phone": "Tel .:+966 12 6930030",
     "contactFormTitle": "Free Consultaion",
     "contactFormDesc": "Get A Free Quote",
-    "formName": "Enter Yout Full Name",
+    "formName": "Enter Your Full Name",
     "formPhone": "Phone Number",
     "formEmail": "Your email",
     "msgReason": "Service Description",
     "msg": "Message",
     "formSend": "GET A QUOTE",
     "msgSent": "Message has been sent!"
+  },
+  "careers": {
+    "formName": "Full Name",
+    "formPhone": "Phone Number",
+    "formEmail": "Email",
+    "msgReason": "Describe your Job",
+    "msg": "Tell us about your self",
+    "formSubmit": "Send Your Request"
+  },
+  "contactRoute": {
+    "title": "Our Places",
+    "headOffice": "Head Office",
+    "factory": "Factory",
+    "bahra": "Bahra Branch",
+    "osfan": "Osfan Branch",
+    "riyadh": "Riyadh Branch"
   }
 }

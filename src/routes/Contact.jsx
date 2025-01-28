@@ -6,8 +6,11 @@ import FactoryMap from "../components/map/FactoryMap";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { FaWhatsappSquare } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation("contactRoute");
+
   return (
     <div className="min-h-screen relative z-20 bg-globalColor6 bg-opacity-85 py-16 text-globalColor5">
       <div className="container flex items-center">
@@ -55,25 +58,27 @@ const Contact = () => {
         </div>
         <div className="basis-4/6">
           <h1 className="text-7xl text-center mb-16 border-b w-fit mx-auto pb-16">
-            Our Offices
+            {t("title")}
           </h1>
           <div className="w-screen bg-transparent flex flex-col">
             <h1 className="text-center py-6 text-4xl font-semibold">
-              Head Office
+              {t("headOffice")}
             </h1>
             <div className="container">
               <HeadOfficeMap />
             </div>
           </div>
           <div className="w-screen bg-transparent flex flex-col">
-            <h1 className="text-center py-6 text-4xl font-semibold">Factory</h1>
+            <h1 className="text-center py-6 text-4xl font-semibold">
+              {t("factory")}
+            </h1>
             <div className="container">
               <FactoryMap />
             </div>
           </div>
           <div className="w-screen bg-transparent flex flex-col">
             <h1 className="text-center py-6 text-4xl font-semibold">
-              Bahra Branch
+              {t("bahra")}
             </h1>
             <div className="container">
               <BahraMap />
@@ -81,7 +86,7 @@ const Contact = () => {
           </div>
           <div className="w-screen bg-transparent flex flex-col">
             <h1 className="text-center py-6 text-4xl font-semibold">
-              Osfan Branch
+              {t("osfan")}
             </h1>
             <div className="container">
               <OsfanMap />
@@ -89,7 +94,7 @@ const Contact = () => {
           </div>
           <div className="w-screen bg-transparent flex flex-col">
             <h1 className="text-center py-6 text-4xl font-semibold">
-              Riyadh Branch
+              {t("riyadh")}
             </h1>
             <div className="container">
               <MapRiyadh />

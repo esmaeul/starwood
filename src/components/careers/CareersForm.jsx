@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const CareersForm = ({ setSubmitDone }) => {
+  const { t } = useTranslation("careers");
+
   const [name, setName] = useState("");
   const [telNum, setTelName] = useState("");
   const [email, setEmail] = useState("");
@@ -29,7 +32,7 @@ const CareersForm = ({ setSubmitDone }) => {
       <input
         className="border border-globalColor2 border-opacity-10 focus:border-opacity-50 py-2 px-3 text-lg w-full outline-none transition-all"
         type="text"
-        placeholder="Enter your full name"
+        placeholder={t("formName")}
         aria-label="name"
         value={name}
         onChange={(e) => setName(e.target.value)}
@@ -38,7 +41,7 @@ const CareersForm = ({ setSubmitDone }) => {
       <input
         className="border border-globalColor2 border-opacity-10 focus:border-opacity-50 py-2 px-3 text-lg w-full outline-none transition-all"
         type="text"
-        placeholder="Phone Number"
+        placeholder={t("formPhone")}
         aria-label="phone number"
         value={telNum}
         onChange={(e) => {
@@ -49,7 +52,7 @@ const CareersForm = ({ setSubmitDone }) => {
       <input
         className="border border-globalColor2 border-opacity-10 focus:border-opacity-50 py-2 px-3 text-lg w-full outline-none transition-all"
         type="email"
-        placeholder="Your email"
+        placeholder={t("formEmail")}
         aria-label="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
@@ -58,7 +61,7 @@ const CareersForm = ({ setSubmitDone }) => {
       <input
         className="border border-globalColor2 border-opacity-10 focus:border-opacity-50 py-2 px-3 text-lg w-full outline-none transition-all"
         type="text"
-        placeholder="Enter your job"
+        placeholder={t("msgReason")}
         aria-label="job dispcription"
         value={msgTitle}
         onChange={(e) => setMsgTitle(e.target.value)}
@@ -66,14 +69,14 @@ const CareersForm = ({ setSubmitDone }) => {
       />
       <textarea
         className="border border-globalColor2 border-opacity-10 focus:border-opacity-50 py-2 px-3 text-lg w-full outline-none resize-none min-h-32 transition-all"
-        placeholder="Message"
-        aria-label="name"
+        placeholder={t("msg")}
+        aria-label="message"
         value={msg}
         onChange={(e) => setMsg(e.target.value)}
         required
       ></textarea>
       <button
-        className={`px-3 py-2 border hover:border-opacity-50 transition-all bg-globalColor4 ${
+        className={`px-3 py-4 font-semibold border hover:border-opacity-50 transition-all bg-globalColor4 ${
           canSubmit
             ? "border-globalColor4 border-opacity-10 text-white bg-globalColor0 bg-opacity-85 hover:bg-opacity-100"
             : "border-globalColor2 border-opacity-10"
@@ -81,7 +84,7 @@ const CareersForm = ({ setSubmitDone }) => {
         type="submit"
         onClick={handleSumbitClick}
       >
-        Send
+        {t("formSubmit")}
       </button>
     </form>
   );

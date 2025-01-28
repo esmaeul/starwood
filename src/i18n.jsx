@@ -14,6 +14,8 @@ i18n.use(initReactI18next).init({
       whyus: en.whyUs,
       features: en.features,
       contact: en.contact,
+      careers: en.careers,
+      contactRoute: en.contactRoute,
     },
     ar: {
       home: ar.home,
@@ -24,6 +26,8 @@ i18n.use(initReactI18next).init({
       whyus: ar.whyUs,
       features: ar.features,
       contact: ar.contact,
+      careers: ar.careers,
+      contactRoute: ar.contactRoute,
     },
   },
   lng: "en",
