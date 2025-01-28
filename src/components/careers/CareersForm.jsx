@@ -76,7 +76,7 @@ const CareersForm = ({ setSubmitDone }) => {
         required
       ></textarea>
       <button
-        className={`px-3 py-4 font-semibold border hover:border-opacity-50 transition-all bg-globalColor4 ${
+        className={`px-3 py-4 font-semibold border hover:border-opacity-50 transition-all bg-globalColor1 ${
           canSubmit
             ? "border-globalColor4 border-opacity-10 text-white bg-globalColor0 bg-opacity-85 hover:bg-opacity-100"
             : "border-globalColor2 border-opacity-10"

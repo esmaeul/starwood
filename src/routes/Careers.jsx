@@ -23,9 +23,9 @@ const Careers = () => {
           {!submitDone ? (
             <CareersForm setSubmitDone={setSubmitDone} />
           ) : (
-            <div className="flex flex-col gap-8 group bg-white min-h-52 items-center justify-center px-6">
+            <div className="flex flex-col gap-8 group bg-globalColor5 min-h-52 items-center justify-center px-6">
               <p className="text-xl text-globalColor0 font-semibold">
-                {t("msg")}
+                {t("msgSent")}
               </p>
             </div>
           )}
