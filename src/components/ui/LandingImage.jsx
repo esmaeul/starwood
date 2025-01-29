@@ -1,14 +1,13 @@
-
 // import landingImage from "../../assets/images/landing/landing.png";
-import landingImage from "../../assets/images/decorations/29.png";
+import landingImage from "../../assets/images/landing/MUJ_8552.png";
 
 const LandingImage = () => {
   return (
     <div className="relative w-full h-full overflow-hidden">
-      <div className="w-11/12 mx-auto">
+      <div className="min-w-full h-full">
         <img
           src={landingImage}
-          className="w-full h-full object-contain"
+          className="w-full h-full object-cover bg-center"
           aria-label="Landing image showcasing our logo"
         />
       </div>

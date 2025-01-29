@@ -57,12 +57,12 @@ function NavbarLg() {
           onBlur={handleLangBlur}
         >
           {language === "en" ? (
-            <span className="flex items-center gap-1.5 text-lg">
+            <span className="flex items-center font-bold gap-1.5 text-lg">
               <img src={usaFlag} alt="usa flag" className="w-6 h-6" />
               EN
             </span>
           ) : language === "ar" ? (
-            <span className="flex items-center gap-1.5 text-lg">
+            <span className="flex items-center font-bold gap-1.5 text-lg">
               <img src={ksaFlag} alt="usa flag" className="w-6 h-6" />
               عربي
             </span>
@@ -79,7 +79,7 @@ function NavbarLg() {
             <li>
               <button
                 onClick={() => switchLanguage("en")}
-                className="flex items-center gap-2 px-3 my-2 hover:text-globalColor0 transition-all"
+                className="flex items-center font-bold gap-2 px-3 my-2 hover:text-globalColor0 transition-all"
               >
                 <img src={usaFlag} alt="usa flag" className="w-6 h-6" />
                 EN
@@ -88,7 +88,7 @@ function NavbarLg() {
             <li>
               <button
                 onClick={() => switchLanguage("ar")}
-                className="flex items-center gap-2 px-3 my-2 hover:text-globalColor0 transition-all"
+                className="flex items-center font-bold gap-2 px-3 my-2 hover:text-globalColor0 transition-all"
               >
                 <img src={ksaFlag} alt="usa flag" className="w-6 h-6" />
                 عربي

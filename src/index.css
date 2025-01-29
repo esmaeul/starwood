@@ -50,9 +50,4 @@
   .about-list {
     list-style-type: disclosure-open;
   }
-  .landing {
-    background-image: url("/src/assets/shared/مقاول-هناجر-الرياض-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   /* End Reusable Components */

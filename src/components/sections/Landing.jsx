@@ -9,7 +9,7 @@ const Landing = () => {
 
   return (
     <section className="landing relative mb-56 md:h-[85vh] flex flex-col sm:px-36 md:justify-end justify-center bg-globalColor5 text-white">
-      <div className="absolute top-0 left-0 w-full sm:h-5/6 h-3/6">
+      <div className="absolute top-0 left-0 w-full sm:h-full h-3/6">
         <LandingImage />
       </div>
       {/* Start Landing Text */}

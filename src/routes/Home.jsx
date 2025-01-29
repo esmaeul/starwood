@@ -1,4 +1,3 @@
-
 // import Feedbacks from "../components/sections/Feedbacks";
 import Landing from "../components/sections/Landing";
 import AboutSection from "../components/sections/AboutSection";
@@ -6,6 +5,7 @@ import ActivitiesSection from "../components/sections/ActivitiesSection";
 import WhyUsSection from "../components/sections/WhyUsSection";
 import Features from "../components/sections/Features";
 import ContactSection from "../components/sections/ContactSection";
+// import TrustedSection from "../components/sections/TrustedSection";
 
 const Home = () => {
   return (
@@ -25,6 +25,9 @@ const Home = () => {
       {/* <!-- Staert Why us --> */}
       <Features />
       {/* <!-- End Why us --> */}
+      {/* Start Trusted */}
+      {/* <TrustedSection /> */}
+      {/* End Trusted */}
       {/* <!-- Start Contact pre-Footer--> */}
       <ContactSection />
       {/* <!-- End Contact pre-Footer--> */}
