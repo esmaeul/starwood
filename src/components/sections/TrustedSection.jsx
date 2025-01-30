@@ -20,13 +20,13 @@ const TrustedSection = () => {
           </h1>
         </div>
         {trustedImgs.map((imgSrc, index) => (
-          <div className="col-span-1" key={index}>
+          <div className="col-span-1 select-none" key={index}>
             {" "}
             {/* Use a better key if available */}
             <img
               src={imgSrc}
               alt={t(`trustedImage_${index}`)}
-              className="w-full h-full object-contain max-w-full max-h-full"
+              className="w-full h-full object-contain max-w-full max-h-full bg-white px-6"
             />
           </div>
         ))}

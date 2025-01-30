@@ -14,7 +14,6 @@ const Landing = () => {
       <div className="absolute top-0 left-0 w-full sm:h-full h-3/6">
         <LandingImage />
       </div>
-
       {/* Start Landing Text */}
       <div className="container relative z-20">
         <div className="flex flex-col pb-10 gap-5 w-fit p-5 rounded-xl shadow-lg transition-all duration-500">
@@ -22,7 +21,7 @@ const Landing = () => {
             {t("landingTitle")}
           </h1>
           <p className="font-semibold text-md">{t("landingSubtitle")}</p>
-          <div className="flex md:flex-row flex-col md:gap-0 gap-5">
+          <div className="flex md:flex-row flex-col gap-5">
             <a
               href="tel:+966126930030"
               className={buttonClass}
