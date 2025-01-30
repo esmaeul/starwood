@@ -48,7 +48,7 @@
     "aboutLink": "About Us"
   },
   "services": {
-    "title": "Types of Wood We Offer We offer",
+    "title": "Types of Wood We Offer",
     "description": "We offer a wide range of woods.",
     "ser1Title": "German beech wood",
     "ser1Text": "A high-quality hardwood with a uniform surface, structure, and hardness, ensuring paint or finish is evenly distributed without absorption. Perfect for achieving smooth, flawless finishes.",
@@ -137,5 +137,9 @@
     "bahra": "Bahra Branch",
     "osfan": "Osfan Branch",
     "riyadh": "Riyadh Branch"
+  },
+  "decorations": {
+    "title": "Types of Wood We Offer We offer",
+    "supTitle": "We Provide Decors what you really need."
   }
 }

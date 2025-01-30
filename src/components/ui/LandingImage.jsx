@@ -1,4 +1,3 @@
-// import landingImage from "../../assets/images/landing/landing.png";
 import landingImage from "../../assets/images/landing/MUJ_8552.png";
 
 const LandingImage = () => {
