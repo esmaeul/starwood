@@ -38,7 +38,7 @@ const Decorations = () => {
   }, []);
 
   return (
-    <div className="bg-globalColor5 py-10">
+    <div className="bg-globalColor5 py-10 select-none">
       <div className="container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
         <div className="main-heading col-span-full mb-8 w-fit mx-auto flex flex-col gap-1.5">
           <h2 className="text-4xl text-globalColor0">{t("title")}</h2>

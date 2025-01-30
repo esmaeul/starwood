@@ -5,7 +5,7 @@ import ActivitiesSection from "../components/sections/ActivitiesSection";
 import WhyUsSection from "../components/sections/WhyUsSection";
 import Features from "../components/sections/Features";
 import ContactSection from "../components/sections/ContactSection";
-// import TrustedSection from "../components/sections/TrustedSection";
+import TrustedSection from "../components/sections/TrustedSection";
 
 const Home = () => {
   return (
@@ -26,7 +26,7 @@ const Home = () => {
       <Features />
       {/* <!-- End Why us --> */}
       {/* Start Trusted */}
-      {/* <TrustedSection /> */}
+      <TrustedSection />
       {/* End Trusted */}
       {/* <!-- Start Contact pre-Footer--> */}
       <ContactSection />

@@ -9,7 +9,7 @@ import paintedBoards from "../../assets/images/activities/Starwood Painted Board
 import ordinaryMDF from "../../assets/images/activities/Green MDF (Medium Density Fiberboard).png";
 import fireMDF from "../../assets/images/activities/Fire-Resistant MDF.jpg";
 import regularMDF from "../../assets/images/activities/Regular MDF.png";
-import palaceDoor from "../../assets/images/activities/2.png";
+import exteriorDoor from "../../assets/images/activities/2.webp";
 import cladding from "../../assets/images/activities/11.png";
 import InteriorDoor from "../../assets/images/activities/Door.png";
 import { Link } from "react-router-dom";
@@ -85,7 +85,7 @@ const ActivitiesSection = () => {
           desc={t("ser9Text")}
         />
         <SingelActivity
-          imgSrc={palaceDoor}
+          imgSrc={exteriorDoor}
           imgAlt={"Exterior Door"}
           title={t("ser10Title")}
           desc={t("ser10Text")}
