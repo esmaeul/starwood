@@ -1,59 +1,54 @@
 import usaFlag from "../../assets/shared/icons8-usa-50.png";
 import ksaFlag from "../../assets/shared/icons8-saudi-arabia-48.png";
 
-import { useEffect, useRef, useState } from "react";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaXmark,
-  FaXTwitter,
-  FaYoutube,
-} from "react-icons/fa6";
+import { useContext, useEffect, useRef, useState } from "react";
+import { FaInstagram, FaXmark, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { IoIosArrowUp } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { FaWhatsappSquare } from "react-icons/fa";
+import LanguageContext from "../../context/LanguageContext";
+import SmMenuLink from "./navbarsmlinks/SmMenuLink";
+import { useTranslation } from "react-i18next";
 
-const NavbarSm = ({ handleShowMenu, showMenu, setShowMenu }) => {
+const NavbarSm = ({ showMenu, setShowMenu }) => {
+  const { switchLanguage } = useContext(LanguageContext);
+  const { t } = useTranslation("navbar");
+
   const navRef = useRef(null);
   const [serMenu, setSerMenu] = useState(false);
+  const [doorsMenu, setDoorsMenu] = useState(false);
   const [langMenu, setLangMenu] = useState(false);
-  const serRef = useRef(null);
-  const langRef = useRef(null);
+
+  const closeUls = () => {
+    setShowMenu(false);
+    setSerMenu(false);
+    setDoorsMenu(false);
+    setLangMenu(false);
+  };
 
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (navRef.current && !navRef.current.contains(e.target)) {
-        setShowMenu(false);
-      }
-    };
-    const handleClickOutSer = (e) => {
-      if (serRef.current && !serRef.current.contains(e.target)) {
-        setSerMenu(false);
-      }
-    };
-    const handleClickOutLang = (e) => {
-      if (langRef.current && !langRef.current.contains(e.target)) {
-        setLangMenu(false);
+        closeUls();
       }
     };
 
     document.addEventListener("click", handleClickOutside);
     return () => {
       document.removeEventListener("click", handleClickOutside);
-      document.removeEventListener("click", handleClickOutLang);
-      document.removeEventListener("click", handleClickOutSer);
     };
   });
 
   return (
     <nav
       ref={navRef}
-      className={`fixed top-0 min-h-screen w-9/12 transition bg-globalColor5 z-50 ${
+      className={`fixed top-0 h-screen pb-20 w-9/12 transition bg-globalColor5 z-50 select-text overflow-y-auto ${
         showMenu ? "left-0 transition-all" : "-left-full transition-all"
       }`}
     >
       <div
         className="p-2 border border-globalColor3 text-globalColor2 w-fit absolute right-2 top-2 rounded-md text-2xl cursor-pointer hover:text-red-500 hover:border-red-500 transition group"
-        onClick={handleShowMenu}
+        onClick={() => closeUls()}
       >
         <FaXmark className="group-hover:scale-125" />
       </div>
@@ -62,176 +57,198 @@ const NavbarSm = ({ handleShowMenu, showMenu, setShowMenu }) => {
         onClick={(e) => {
           // Close the menu if the clicked element is a link
           if (e.target.tagName === "A") {
-            setShowMenu(false);
+            closeUls();
           }
         }}
       >
-        {/* <SmMenuLink /> */}
-        <li className="my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold">
-          <Link
-            className="text-globalColor2 hover:text-globalColor0 text-md transition"
-            to="/home"
+        <SmMenuLink name={t("home")} path={"/home"} />
+        <SmMenuLink name={t("about")} path={"/about"} />
+        {/* Start Services /> */}
+        <li className="flex items-center gap-1.5 my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold">
+          <div
+            className="flex gap-2 items-center group cursor-pointer"
+            onClick={() => {
+              setSerMenu((prev) => !prev);
+            }}
           >
-            Home
-          </Link>
-        </li>
-        <li className="my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold">
-          <Link
-            className="text-globalColor2 hover:text-globalColor0 text-md transition"
-            to="/about"
-          >
-            About
-          </Link>
-        </li>
-        <li
-          ref={serRef}
-          className="flex items-center gap-1.5 group hover:cursor-pointer my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold"
-          onClick={() => {
-            setSerMenu((prev) => !prev);
-          }}
-        >
-          {" "}
-          <Link to="/activities" onClick={() => setShowMenu(false)}>
-            <div className="relative text-globalColor2 group-hover:text-globalColor0 text-md transition">
-              Activities
+            <div className="text-globalColor2 group-hover:text-globalColor0 text-md transition">
+              {t("services")}
             </div>
-          </Link>
-          <IoIosArrowUp
-            className={`group-hover:text-globalColor0 text-md text-globalColor2 ${
-              serMenu ? "" : "rotate-180"
-            }`}
-          />
+            <IoIosArrowUp
+              className={`text-globalColor2 group-hover:text-globalColor0 text-md transition ${
+                serMenu ? "" : "rotate-180"
+              }`}
+            />
+          </div>
+          {/* Start English menu */}
         </li>
         {/* Start services menu */}
         {serMenu && (
-          <li className="my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold">
-            <Link
-              className="text-globalColor2 hover:text-globalColor0 text-md transition"
-              to="/wood"
+          <>
+            <SmMenuLink name={t("interiorDesign")} path={"/interior-design"} />
+            <SmMenuLink
+              name={t("interiorDecorations")}
+              path={"/interior-decorations"}
+            />
+            <li
+              // ref={doorsRef}
+              className="flex items-center gap-1.5 my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold"
             >
-              Wood
-            </Link>
-          </li>
-        )}
-        {serMenu && (
-          <li className="my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold">
-            <Link
-              className="text-globalColor2 hover:text-globalColor0 text-md transition"
-              to="/wood-works"
-            >
-              Wood Works
-            </Link>
-          </li>
+              <div
+                className="flex gap-2 items-center group cursor-pointer"
+                onClick={() => {
+                  setDoorsMenu((prev) => !prev);
+                }}
+              >
+                <div className="text-globalColor2 group-hover:text-globalColor0 text-md transition">
+                  {t("doors")}
+                </div>
+                <IoIosArrowUp
+                  className={`text-globalColor2 group-hover:text-globalColor0 text-md transition ${
+                    doorsMenu ? "" : "rotate-180"
+                  }`}
+                />
+              </div>
+            </li>
+            {doorsMenu && (
+              <>
+                <SmMenuLink name={t("interiorDoors")} path={"interior-doors"} />
+                <SmMenuLink name={t("exteriorDoors")} path={"exterior-doors"} />
+                <SmMenuLink
+                  name={t("palaceResidential Doors")}
+                  path={"palace-and-residential-doors"}
+                />
+                <SmMenuLink
+                  name={t("officeCorporate Doors")}
+                  path={"office-and-corporate-doors"}
+                />
+              </>
+            )}
+            <SmMenuLink
+              name={t("exteriorDecorations")}
+              path={"/exterior-decorations"}
+            />
+            <SmMenuLink
+              name={t("stagesPlatforms")}
+              path={"/stages-and-platforms"}
+            />
+            <SmMenuLink
+              name={t("architecturalWork")}
+              path={"/architectural-work"}
+            />
+          </>
         )}
         {/* End services menu */}
-        <li className="my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold">
-          <Link
-            className="text-globalColor2 hover:text-globalColor0 text-md transition"
-            to="/decorations"
-          >
-            Decorations
-          </Link>
-        </li>
-        <li
-          ref={langRef}
-          className="flex items-center gap-1.5 group hover:cursor-pointer my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold"
-          onClick={() => {
-            setLangMenu((prev) => !prev);
-          }}
-        >
-          <Link
-            to="/home"
-            className="flex gap-2 items-center"
-            onClick={() => setShowMenu(false)}
+        <SmMenuLink name={t("projects")} path={"/projects"} />
+        <SmMenuLink name={t("careers")} path={"/careers"} />
+        <SmMenuLink name={t("contact")} path={"/contact"} />
+        {/* Start Language menu */}
+        <li className="flex items-center gap-1.5 my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold">
+          <div
+            className="flex gap-2 items-center group cursor-pointer"
+            onClick={() => {
+              setLangMenu((prev) => !prev);
+            }}
           >
             <img
-              src={usaFlag}
+              src={
+                window.localStorage.getItem("language") === "en"
+                  ? usaFlag
+                  : ksaFlag
+              }
               alt="flag"
               className="w-8 h-8 opacity-50 group-hover:opacity-100 transition"
             />
-            <div className="relative text-globalColor2 group-hover:text-globalColor0 text-md transition">
-              English
+            <div className="text-globalColor2 group-hover:text-globalColor0 text-md transition">
+              {window.localStorage.getItem("language") === "en"
+                ? "English"
+                : "عربي"}
             </div>
-          </Link>
-          <IoIosArrowUp
-            className={`group-hover:text-globalColor0 text-md text-globalColor2 ${
-              langMenu ? "" : "rotate-180"
-            }`}
-          />
+            <IoIosArrowUp
+              className={`text-globalColor2 group-hover:text-globalColor0 text-md transition ${
+                langMenu ? "" : "rotate-180"
+              }`}
+            />
+          </div>
           {/* Start English menu */}
         </li>
         {langMenu && (
-          <li className="my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold">
-            <Link
-              className="flex gap-2 items-center"
-              onClick={() => setShowMenu(false)}
-            >
-              <img
-                src={usaFlag}
-                alt="flag"
-                className="w-8 h-8 opacity-50 group-hover:opacity-100 transition"
-              />
-              <div className="relative text-globalColor2 group-hover:text-globalColor0 text-md transition">
-                English
-              </div>
-            </Link>
-            <Link
-              className="flex gap-2 items-center"
-              onClick={() => setShowMenu(false)}
-            >
-              <img
-                src={ksaFlag}
-                alt="flag"
-                className="w-8 h-8 opacity-50 group-hover:opacity-100 transition"
-              />
-              <div className="relative text-globalColor2 group-hover:text-globalColor0 text-md transition">
-                العربية
-              </div>
-            </Link>
-          </li>
+          <>
+            <li className="my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold">
+              <button
+                className="group flex items-center gap-2"
+                onClick={() => {
+                  setShowMenu(false);
+                  switchLanguage("en");
+                }}
+              >
+                <img
+                  src={usaFlag}
+                  alt="flag"
+                  className="w-8 h-8 opacity-50 group-hover:opacity-100 transition"
+                />
+                <div className="relative text-globalColor2 group-hover:text-globalColor0 text-md transition">
+                  English
+                </div>
+              </button>
+            </li>
+            <li className="my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold">
+              <button
+                className="group flex items-center gap-2"
+                onClick={() => {
+                  setShowMenu(false);
+                  switchLanguage("ar");
+                }}
+              >
+                <img
+                  src={ksaFlag}
+                  alt="flag"
+                  className="w-8 h-8 opacity-50 group-hover:opacity-100 transition"
+                />
+                <div className="relative text-globalColor2 group-hover:text-globalColor0 text-md transition">
+                  العربية
+                </div>
+              </button>
+            </li>
+          </>
         )}
         {/* End English menu */}
-        <li className="my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold">
-          <Link
-            className="text-globalColor2 hover:text-globalColor0 text-md transition"
-            to="/contact"
-          >
-            Contact Us
-          </Link>
-        </li>
       </ul>
-      <ul className="flex gap-4 text-3xl text-globalColor2 mx-auto px-10 w-fit border-t border-t-globalColor1 pt-5">
-        <li className="facebook">
-          <Link
-            className="text-globalColor2 hover:text-facbookColor text-md transition"
-            to="/Face"
-          >
-            <FaFacebook />
-          </Link>
-        </li>
+      <ul className="flex gap-4 text-3xl text-globalColor2 mx-auto px-10 w-fit border-b border-b-globalColor1 pb-5">
         <li className="youtube">
           <Link
-            className="text-globalColor2 hover:text-youtubeColor text-md transition"
-            to="/you"
+            className=" hover:text-youtubeColor text-md transition"
+            to="https://www.youtube.com/@StarWood-p1j"
+            target="_blank"
           >
             <FaYoutube />
           </Link>
         </li>
         <li className="instagram">
           <Link
-            className="text-globalColor2 hover:text-instaColor text-md transition"
-            to="/insta"
+            className=" hover:text-instaColor text-md transition"
+            to="https://www.instagram.com/starwood_10/"
+            target="_blank"
           >
             <FaInstagram />
           </Link>
         </li>
         <li className="twitter">
           <Link
-            className="text-globalColor2 hover:text-twitterColor text-md transition"
+            className=" hover:text-twitterColor text-md transition"
             to="https://x.com/StarW63512"
             target="_blank"
           >
             <FaXTwitter />
+          </Link>
+        </li>
+        <li className="whats-app">
+          <Link
+            className=" hover:text-green-400 text-md transition"
+            to="https://wa.me/966126930030"
+            target="_blank"
+          >
+            <FaWhatsappSquare />
           </Link>
         </li>
       </ul>

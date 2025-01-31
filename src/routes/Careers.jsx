@@ -13,10 +13,14 @@ const Careers = () => {
     <div className="bg-globalColor4 py-16 min-h-screen text-globalColor2">
       <MainTitle title={t("title")} />
       <div className="container grid grid-cols-2 gap-8 mt-16">
-        <div className="col-span-1 px-16">
-          <img src={imgSrc} alt="" />
+        <div className="lg:col-span-1 col-span-full px-16 overflow-hidden">
+          <img
+            src={imgSrc}
+            className="h-full w-full object-contain"
+            alt="applying image"
+          />
         </div>
-        <div className="col-span-1">
+        <div className="lg:col-span-1 col-span-full lg:w-full sm:w-4/6 w-full mx-auto">
           <h1 className="text-center font-semibold text-globalColor2 text-3xl mb-6">
             {t("formTitle")}
           </h1>

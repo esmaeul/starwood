@@ -19,7 +19,7 @@
   },
   "common": {
     "title": "نحن شركة ستاروود للخشب",
-    "msgSent": "لقد تم ارسال رسالتك بنجاح",
+    "msgSent": "شكرًا لتواصلك معنا، تم إرسال رسالتك بنجاح",
     "formTitle": "طلب وظيفة"
   },
   "home": {
@@ -30,7 +30,8 @@
     "landingFormSubtitle": "لا تتردد في طلب مكالمة",
     "landingFormName": "الاسم",
     "landingFormNumber": "الرقم",
-    "landingFormSubmit": "إرسال"
+    "landingFormSubmit": "إرسال",
+    "msgSent": "شكرًا لتواصلك معنا، تم إرسال رسالتك بنجاح"
   },
   "about": {
     "headTitle": "عن الشركة",

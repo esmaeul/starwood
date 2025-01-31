@@ -4,27 +4,22 @@ import ServicesLi from "./services/ServicesLi";
 
 import ksaFlag from "../../assets/shared/icons8-saudi-arabia-48.png";
 import usaFlag from "../../assets/shared/icons8-usa-50.png";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import LanguageContext from "../../context/LanguageContext";
 
 function NavbarLg() {
   const { i18n } = useTranslation();
   const { t } = useTranslation("navbar");
   const [showLang, setShowLang] = useState(false);
-  const [language, setLanguage] = useState("");
+
+  const { language, setLanguage, switchLanguage } = useContext(LanguageContext);
 
   const handleLangFocus = () => {
     setShowLang(true);
   };
   const handleLangBlur = () => {
     setShowLang(false);
-  };
-
-  const switchLanguage = (lang) => {
-    console.log("Switching to:", lang);
-    window.localStorage.setItem("language", lang);
-    setLanguage(lang);
-    i18n.changeLanguage(lang); // Dynamically switch languages
   };
 
   useEffect(() => {
@@ -35,7 +30,7 @@ function NavbarLg() {
       setLanguage(window.localStorage.getItem("language"));
       i18n.changeLanguage(language);
     }
-  }, [i18n, language]);
+  }, [i18n, language, setLanguage]);
 
   return (
     <nav className="lg:flex hidden items-center justify-between w-full text-lg">

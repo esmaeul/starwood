@@ -24,8 +24,8 @@
     "name": "Name",
     "phone": "Phone Number",
     "send": "Send",
-    "msgSent": "Message has been sent!",
-    "formTitle": "Request a Job"
+    "formTitle": "Request a Job",
+    "msgSent": "Thanks for contacting us, your message has been sent successfully"
   },
   "home": {
     "landingTitle": "We are Starwood Engineer Experts",
@@ -35,7 +35,8 @@
     "landingFormSubtitle": "Feel free to Request a call",
     "landingFormName": "Name",
     "landingFormNumber": "Number",
-    "landingFormSubmit": "Send"
+    "landingFormSubmit": "Send",
+    "msgSent": "Thanks for contacting us, your message has been sent successfully"
   },
   "about": {
     "headTitle": "About Company",

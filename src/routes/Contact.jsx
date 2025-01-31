@@ -13,9 +13,9 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen relative z-20 bg-globalColor6 bg-opacity-85 py-16 text-globalColor5">
-      <div className="container flex items-center">
-        <div className="basis-2/6 relative">
-          <div className="fixed top-3/4">
+      <div className="container flex lg:flex-row flex-col-reverse items-center">
+        <div className="lg:basis-2/6 basis-full relative lg:my-0 mt-10">
+          <div className="lg:fixed lg:top-1/4">
             <ul className="flex gap-4 text-3xl text-black ">
               <li className="youtube">
                 <Link
@@ -56,7 +56,7 @@ const Contact = () => {
             </ul>
           </div>
         </div>
-        <div className="basis-4/6">
+        <div className="lg:basis-4/6 basis-full">
           <h1 className="text-7xl text-center mb-16 border-b w-fit mx-auto pb-16">
             {t("title")}
           </h1>
