@@ -109,7 +109,7 @@
   },
   "contact": {
     "title": "Don't Know What To Start With?",
-    "desc": "Get A Solutions For All Construction Services",
+    "desc": "Get solutions for all purposes related to wood products",
     "leftTitle": "Office",
     "leftDesc": "Our Offices",
     "Address": "AlMadinah AlMunawarah Road - AL Ruwais District - Aletqan Square Floor10 - Office1001",
@@ -144,6 +144,16 @@
   },
   "decorations": {
     "title": "Types of Products We Offer",
-    "subTitle": "We Provide Decors what you really need."
+    "subTitle": "We Provide Decors what you really need.",
+    "interiorDesign": "Interior Design",
+    "interiorDecorations": "Interior Decorations",
+    "exteriorDecorations": "Exterior Decorations",
+    "doors": "Doors",
+    "interiorDoors": "Interior Doors",
+    "exteriorDoors": "Exterior Doors",
+    "palaceResidential Doors": "Palace & Residential Doors",
+    "officeCorporate Doors": "Office & Corporate Doors",
+    "stagesPlatforms": "Stages & Platforms",
+    "architecturalWork": "Architectural Work"
   }
 }

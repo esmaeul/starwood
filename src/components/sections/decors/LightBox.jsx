@@ -20,7 +20,7 @@ const Lightbox = ({ current, images, onClose, onNext, onPrev, imgRef }) => {
       >
         {/* Previous Button */}
         <FaChevronLeft
-          className="text-white text-4xl absolute left-16 z-10 cursor-pointer"
+          className="text-white text-4xl absolute md:left-16 -left-20 z-10 cursor-pointer"
           onClick={onPrev}
         />
         <img
@@ -30,7 +30,7 @@ const Lightbox = ({ current, images, onClose, onNext, onPrev, imgRef }) => {
         />
         {/* Next Button */}
         <FaChevronRight
-          className="text-white text-4xl absolute right-16 z-10  cursor-pointer"
+          className="text-white text-4xl absolute md:right-16 -right-20 z-10 cursor-pointer"
           onClick={onNext}
         />
       </motion.div>

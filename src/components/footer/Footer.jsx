@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container section flex items-center justify-between">
         <div className="w-full flex items-center justify-between">
           <div
-            className="cursor-pointer"
+            className="cursor-pointer md:h-14 lg:w-14 h-12 w-12 rounded-sm overflow-hidden"
             onClick={() =>
               scrollTo({
                 top: 0,
@@ -16,7 +16,7 @@ const Footer = () => {
             }
           >
             <img
-              className="h-20 w-20 rounded-sm"
+              className="h-full w-full object-contain"
               src={footerLogo}
               alt="this is our logo"
             />
@@ -26,9 +26,9 @@ const Footer = () => {
       </div>
       <div className="manual-border"></div>
       <div className="container section">
-        <div className="down text-white flex gap-3 justify-between items-center pt-8">
-          <p className="uppercase text-xl">Copyright © 2025</p>
-          <p className="uppercase text-xl">powered by Starwood</p>
+        <div className="down text-white flex md:gap-3 gap-1.5 md:justify-between justify-center items-center pt-8">
+          <p className="uppercase md:text-xl text-md">Copyright © 2025</p>
+          <p className="uppercase md:text-xl text-md">powered by Starwood</p>
         </div>
       </div>
     </footer>
