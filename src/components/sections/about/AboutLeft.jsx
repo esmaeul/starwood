@@ -2,9 +2,24 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import starwoodMap from "../../../assets/images/about/cats1.png";
 import starwoodStar from "../../../assets/images/about/star logo-hd.png";
 
+import { motion } from "framer-motion";
+
 const AboutLeft = () => {
+  const containerVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6, staggerChildren: 0.2 },
+    },
+  };
   return (
-    <div className="md:basis-6/12 md:h-full overflow-hidden relative">
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      className="md:basis-6/12 md:h-full overflow-hidden relative"
+    >
       <img
         src={starwoodMap}
         alt="starwood map"
@@ -54,7 +69,7 @@ const AboutLeft = () => {
           <FaMapMarkerAlt className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
