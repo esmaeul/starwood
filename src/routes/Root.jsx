@@ -16,7 +16,7 @@ const Root = () => {
 
   return (
     <div className="flex flex-col overflow-x-hidden">
-      <header className="fixed flex top-0 w-full bg-globalColor5 shadow-md z-40">
+      <header className="fixed flex top-0 w-full bg-globalColor5 shadow-md z-40 select-none">
         <div className="container flex items-center justify-between min-h-full transition">
           {/* Start Logo */}
           <Link to="/">

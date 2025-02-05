@@ -155,5 +155,10 @@
     "officeCorporate Doors": "Office & Corporate Doors",
     "stagesPlatforms": "Stages & Platforms",
     "architecturalWork": "Architectural Work"
+  },
+  "projects":{
+    "title": "Latest Projects",
+    "project": "project",
+    "otherProjects": "other projects"
   }
 }

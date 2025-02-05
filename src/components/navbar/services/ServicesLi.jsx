@@ -55,7 +55,7 @@ const ServicesLi = () => {
     >
       <MenuLink
         name={t("services")}
-        path={"/services"}
+        path={"#"}
         icon={
           <IoIosArrowUp
             className={`transition-all duration-150 ${

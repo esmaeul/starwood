@@ -150,5 +150,10 @@
     "officeCorporate Doors": "أبواب المكاتب والشركات",
     "stagesPlatforms": "المسارح والمنصات",
     "architecturalWork": "العمل المعماري"
+  },
+  "projects":{
+    "title": "أخر أعمالنا",
+    "project": "مشروع",
+    "otherProjects": "مشاريع اخرى"
   }
 }
