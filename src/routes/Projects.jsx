@@ -97,7 +97,7 @@ const Projects = () => {
       ],
     },
     {
-      title: "NUC",
+      title: "NHC",
       items: ["Wooden Internal doors"],
     },
     {
