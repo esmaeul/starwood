@@ -74,7 +74,7 @@ const Projects = () => {
   return (
     <div className="bg-globalColor4 min-h-screen">
       <div className="container mx-auto px-4 py-8">
-        <div className="text-white my-3 text-4xl">
+        <div className="text-globalColor2 my-3 text-4xl">
           <MainTitle title={t("title")} />
         </div>
         <div className="flex flex-wrap gap-3 justify-center">

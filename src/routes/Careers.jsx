@@ -21,7 +21,7 @@ const Careers = () => {
           />
         </div>
         <div className="lg:col-span-1 col-span-full lg:w-full sm:w-4/6 w-full mx-auto">
-          <h1 className="text-center font-semibold text-globalColor2 text-3xl mb-6">
+          <h1 className="text-center font-semibold text-globalColor0 text-3xl mb-6">
             {t("formTitle")}
           </h1>
           {!submitDone ? (

@@ -1,6 +1,7 @@
 import Feature from "./features/Feature";
 import feat1 from "../../assets/images/features/1.jpg";
 import feat2 from "../../assets/images/features/2.jpg";
+import feat3 from "../../assets/images/features/3.jpg";
 import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -106,12 +107,27 @@ const Features = () => {
           />
         </div>
       </div>
-      <div className="container grid grid-cols-2 gap-6 place-items-center my-16">
+      <div className="container grid grid-cols-3 gap-6 my-16">
         <div className="md:col-span-1 col-span-full">
-          <img className="max-h-full max-w-full" src={feat1} alt="" />
+          <img
+            className="min-w-full min-h-full object-cover"
+            src={feat1}
+            alt="our features"
+          />
         </div>
         <div className="md:col-span-1 col-span-full">
-          <img className="max-h-full max-w-full" src={feat2} alt="" />
+          <img
+            className="min-w-full min-h-full object-cover"
+            src={feat2}
+            alt="our features"
+          />
+        </div>
+        <div className="md:col-span-1 col-span-full">
+          <img
+            className="min-w-full min-h-full object-cover"
+            src={feat3}
+            alt="our features"
+          />
         </div>
       </div>
     </div>

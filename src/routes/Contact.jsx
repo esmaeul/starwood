@@ -12,7 +12,7 @@ const Contact = () => {
   const { t } = useTranslation("contactRoute");
 
   return (
-    <div className="min-h-screen relative z-20 bg-globalColor6 bg-opacity-85 py-16 text-globalColor5">
+    <div className="min-h-screen relative z-20 bg-globalColor4 bg-opacity-85 py-16 text-globalColor2">
       <div className="container flex lg:flex-row flex-col-reverse items-center">
         <div className="lg:basis-2/6 basis-full relative lg:my-0 mt-10">
           <div className="lg:fixed lg:top-1/4">
@@ -60,8 +60,8 @@ const Contact = () => {
           <h1 className="text-7xl text-center mb-16 border-b w-fit mx-auto pb-16">
             {t("title")}
           </h1>
-          <div className="w-screen bg-transparent flex flex-col">
-            <h1 className="text-center py-6 text-4xl font-semibold">
+          <div className="w-screen bg-transparent flex flex-col text-globalColor0">
+            <h1 className="text-center py-6 text-4xl font-semibold text-globalColor0">
               {t("headOffice")}
             </h1>
             <div className="container">
@@ -69,7 +69,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-screen bg-transparent flex flex-col">
-            <h1 className="text-center py-6 text-4xl font-semibold">
+            <h1 className="text-center py-6 text-4xl font-semibold text-globalColor0">
               {t("factory")}
             </h1>
             <div className="container">
@@ -77,7 +77,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-screen bg-transparent flex flex-col">
-            <h1 className="text-center py-6 text-4xl font-semibold">
+            <h1 className="text-center py-6 text-4xl font-semibold text-globalColor0">
               {t("bahra")}
             </h1>
             <div className="container">
@@ -85,7 +85,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-screen bg-transparent flex flex-col">
-            <h1 className="text-center py-6 text-4xl font-semibold">
+            <h1 className="text-center py-6 text-4xl font-semibold text-globalColor0">
               {t("osfan")}
             </h1>
             <div className="container">
@@ -93,7 +93,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-screen bg-transparent flex flex-col">
-            <h1 className="text-center py-6 text-4xl font-semibold">
+            <h1 className="text-center py-6 text-4xl font-semibold text-globalColor0">
               {t("riyadh")}
             </h1>
             <div className="container">
