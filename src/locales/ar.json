@@ -155,5 +155,9 @@
     "title": "أخر أعمالنا",
     "project": "مشروع",
     "otherProjects": "مشاريع اخرى"
+  },
+  "footer": {
+    "title": "حقوق الطبع والنشر © 2025",
+    "subTitle": "بدعم من Starwood"
   }
 }

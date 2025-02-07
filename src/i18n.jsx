@@ -19,6 +19,7 @@ i18n.use(initReactI18next).init({
       contactRoute: en.contactRoute,
       projects: en.projects,
       decorations: en.decorations,
+      footer: en.footer,
     },
     ar: {
       home: ar.home,
@@ -33,6 +34,7 @@ i18n.use(initReactI18next).init({
       careers: ar.careers,
       projects: ar.projects,
       decorations: ar.decorations,
+      footer: ar.footer,
     },
   },
   lng: "en",

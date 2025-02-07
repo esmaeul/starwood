@@ -25,7 +25,7 @@ const ActivitiesSection = () => {
     >
       <div className="container section grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
         <div className="main-heading col-span-full mb-8 w-fit mx-auto flex flex-col gap-1.5">
-          <h2 className="text-5xl text-globalColor0">{t("title")}</h2>
+          <h2 className="sm:text-5xl text-3xl text-globalColor0">{t("title")}</h2>
           <p className="text-white my-6 mx-auto w-fit font-light capitalize">
             {t("description")}
           </p>
