@@ -31,9 +31,9 @@ const AboutLeft = () => {
           <img
             src={starwoodStar}
             alt="starwood marker"
-            className="sm:w-11 sm:h-11 w-8 h-8 object-cover"
+            className="sm:w-10 sm:h-10 w-6 h-6 object-cover"
           />
-          <FaMapMarkerAlt className=" absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
+          <FaMapMarkerAlt className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
         </a>
       </div>
       {/* Osfan */}
@@ -42,9 +42,9 @@ const AboutLeft = () => {
           <img
             src={starwoodStar}
             alt="starwood marker"
-            className="sm:w-11 sm:h-11 w-8 h-8 rounded-2xl object-cover"
+            className="sm:w-10 sm:h-10 w-6 h-6 rounded-2xl object-cover"
           />
-          <FaMapMarkerAlt className=" absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
+          <FaMapMarkerAlt className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
         </a>
       </div>
       {/* Bahra */}
@@ -53,7 +53,7 @@ const AboutLeft = () => {
           <img
             src={starwoodStar}
             alt="starwood marker"
-            className="sm:w-11 sm:h-11 w-8 h-8 rounded-2xl object-cover"
+            className="sm:w-10 sm:h-10 w-6 h-6 rounded-2xl object-cover"
           />
           <FaMapMarkerAlt className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
         </a>
@@ -64,12 +64,14 @@ const AboutLeft = () => {
           <img
             src={starwoodStar}
             alt="starwood marker"
-            className="sm:w-11 sm:h-11 w-8 h-8 rounded-2xl object-cover"
+            className="sm:w-10 sm:h-10 w-6 h-6 rounded-2xl object-cover"
           />
           <FaMapMarkerAlt className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
         </a>
       </div>
     </motion.div>
+    // End English Map
+    // Start Arabic Map
   ) : (
     <motion.div
       variants={containerVariants}
@@ -84,9 +86,9 @@ const AboutLeft = () => {
           <img
             src={starwoodStar}
             alt="starwood marker"
-            className="sm:w-11 sm:h-11 w-8 h-8 object-cover"
+            className="sm:w-10 sm:h-10 w-6 h-6 object-cover"
           />
-          <FaMapMarkerAlt className=" absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
+          <FaMapMarkerAlt className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
         </a>
       </div>
       {/* Osfan */}
@@ -95,9 +97,9 @@ const AboutLeft = () => {
           <img
             src={starwoodStar}
             alt="starwood marker"
-            className="sm:w-11 sm:h-11 w-8 h-8 rounded-2xl object-cover"
+            className="sm:w-10 sm:h-10 w-6 h-6 rounded-2xl object-cover"
           />
-          <FaMapMarkerAlt className=" absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
+          <FaMapMarkerAlt className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
         </a>
       </div>
       {/* Bahra */}
@@ -106,18 +108,18 @@ const AboutLeft = () => {
           <img
             src={starwoodStar}
             alt="starwood marker"
-            className="sm:w-11 sm:h-11 w-8 h-8 rounded-2xl object-cover"
+            className="sm:w-10 sm:h-10 w-6 h-6 rounded-2xl object-cover"
           />
           <FaMapMarkerAlt className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
         </a>
       </div>
       {/* Riyadh */}
-      <div className="absolute animate-bounce top-[49%] left-[47%] flex flex-col">
+      <div className="absolute animate-bounce top-[48%] left-[47%] flex flex-col">
         <a href="https://maps.app.goo.gl/zJTM9mGehtUjkCgG9" target="_blank">
           <img
             src={starwoodStar}
             alt="starwood marker"
-            className="sm:w-11 sm:h-11 w-8 h-8 rounded-2xl object-cover"
+            className="sm:w-10 sm:h-10 w-6 h-6 rounded-2xl object-cover"
           />
           <FaMapMarkerAlt className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 text-red-600 text-md -z-10" />
         </a>
