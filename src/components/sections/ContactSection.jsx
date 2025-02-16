@@ -55,13 +55,23 @@ const ContactSection = () => {
           </div>
           <div className="time-table flex flex-col gap-4 text-start text-wrap sm:max-w-full max-w-96 sm:mx-0 mx-auto ">
             <motion.p variants={itemVariants}>{t("Address")}</motion.p>
-            {t("country")}
-            <motion.p variants={itemVariants}>
-              <IoCall className="text-xl" /> {t("phone")}
-            </motion.p>
-            <motion.p variants={itemVariants}>
-              <MdOutlineMailOutline className="text-xl" /> {t("email")}
-            </motion.p>
+            <motion.p variants={itemVariants}>{t("country")}</motion.p>
+            <div className="flex gap-3 text-white">
+              <motion.a
+                variants={itemVariants}
+                href="tel:+966126930030"
+                className="bg-globalColor0 w-fit flex p-3 gap-3 hover:bg-globalColor7 duration-300 transition-all"
+              >
+                <IoCall className="text-xl" /> {t("phone")}
+              </motion.a>
+              <motion.a
+                variants={itemVariants}
+                href="mailto:info@starwood.sa"
+                className="bg-globalColor0 w-fit flex p-3 gap-3 hover:bg-globalColor7 duration-300 transition-all"
+              >
+                <MdOutlineMailOutline className="text-xl" /> {t("email")}
+              </motion.a>
+            </div>
           </div>
         </div>
         <div className="sm:basis-1/2 basis-full bg-globalColor5 md:border border-opacity-10 focus-within:border-opacity-50 border-globalColor2 md:-mt-16 my-8 min-h-full md:p-16">
