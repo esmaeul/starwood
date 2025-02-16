@@ -1,6 +1,4 @@
-// Motion
 import { motion } from "framer-motion";
-
 import Feature from "./features/Feature";
 import feat1 from "../../assets/images/features/1.webp";
 import feat2 from "../../assets/images/features/2.webp";
@@ -10,8 +8,7 @@ import { useTranslation } from "react-i18next";
 import MotionContext from "../../context/MotionContext";
 
 const Features = () => {
-  const { containerVariants, imageVariants } =
-    useContext(MotionContext);
+  const { containerVariants, imageVariants } = useContext(MotionContext);
   const { t } = useTranslation("features");
 
   const [count1, setCount1] = useState(0);
@@ -28,19 +25,21 @@ const Features = () => {
   };
 
   useEffect(() => {
+    let timeoutId;
+
     const handleScroll = () => {
       if (featureRef1.current && featureRef2.current && featureRef3.current) {
         const feature1Bounds = featureRef1.current.getBoundingClientRect();
-        // const feature2Bounds = featureRef2.current.getBoundingClientRect();
-        // const feature3Bounds = featureRef3.current.getBoundingClientRect();
 
-        // Check if any feature is visible
         if (
           feature1Bounds.top < window.innerHeight &&
           feature1Bounds.bottom > 0
         ) {
-          // Start counting if at least one feature is in the viewport
-          startCounting();
+          clearTimeout(timeoutId); // Prevent duplicate timeouts
+
+          timeoutId = setTimeout(() => {
+            startCounting();
+          }, 500); // 🔥 Delay counting by 0.5s (matching motion delay)
         } else {
           // Reset counts to 0 when the section is scrolled past
           setCount1(0);
@@ -55,7 +54,6 @@ const Features = () => {
       const intervalTime = 20; // Interval for updates in ms
       const totalSteps = duration / intervalTime;
 
-      // Calculate increment steps for each counter
       const increment1 = targets.count1 / totalSteps;
       const increment2 = targets.count2 / totalSteps;
       const increment3 = targets.count3 / totalSteps;
@@ -81,7 +79,7 @@ const Features = () => {
         );
 
         if (currentStep >= totalSteps) {
-          clearInterval(intervalId); // Stop counting when all are complete
+          clearInterval(intervalId);
         }
       }, intervalTime);
     };
@@ -89,11 +87,12 @@ const Features = () => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      clearTimeout(timeoutId);
     };
   }, [targets.count1, targets.count2, targets.count3]);
 
   return (
-    <section className="bg-globalColor5" id="featuers">
+    <section className="bg-globalColor5" id="features">
       <motion.div
         variants={containerVariants}
         className="title py-16 lg:mt-12 bg-globalColor0 bg-opacity-75"
