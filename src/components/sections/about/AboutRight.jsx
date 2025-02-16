@@ -2,21 +2,13 @@ import { useTranslation } from "react-i18next";
 import { FaCircleCheck } from "react-icons/fa6";
 
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import MotionContext from "../../../context/MotionContext";
 
 const AboutRight = () => {
-  const containerVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 0.6, staggerChildren: 0.2 },
-    },
-  };
+  
+  const { containerVariants, itemVariants } = useContext(MotionContext);
 
-  const itemVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.4 } },
-  };
   const { t } = useTranslation("about");
 
   return (

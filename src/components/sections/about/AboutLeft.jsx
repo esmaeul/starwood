@@ -1,22 +1,18 @@
 import { FaMapMarkerAlt } from "react-icons/fa";
-import starwoodStar from "../../../assets/images/about/star logo-hd.png";
-import arMap from "../../../assets/images/about/ar-map.png";
-import enMap from "../../../assets/images/about/en-map.png";
+import starwoodStar from "../../../assets/images/about/star logo-hd.webp";
+import arMap from "../../../assets/images/about/ar-map.webp";
+import enMap from "../../../assets/images/about/en-map.webp";
 
-import { motion } from "framer-motion";
+import { motion} from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import MotionContext from "../../../context/MotionContext";
 
 const AboutLeft = () => {
   const { i18n } = useTranslation("about");
 
-  const containerVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 0.6, staggerChildren: 0.2 },
-    },
-  };
+  const { containerVariants } = useContext(MotionContext);
+
   return i18n.language === "en" ? (
     <motion.div
       variants={containerVariants}
@@ -70,9 +66,9 @@ const AboutLeft = () => {
         </a>
       </div>
     </motion.div>
+  ) : (
     // End English Map
     // Start Arabic Map
-  ) : (
     <motion.div
       variants={containerVariants}
       initial="hidden"

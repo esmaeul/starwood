@@ -1,19 +1,10 @@
 import { motion } from "framer-motion";
+import MotionContext from "../../../context/MotionContext";
+import { useContext } from "react";
 
 const SingelActivity = ({ imgSrc, imgAlt, title, desc }) => {
-  const containerVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, staggerChildren: 0.2 },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, x: -10 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
-  };
+  const { containerVariants, imageVariants, itemVariants } =
+    useContext(MotionContext);
 
   return (
     <motion.div
@@ -24,9 +15,12 @@ const SingelActivity = ({ imgSrc, imgAlt, title, desc }) => {
       whileHover={{ scale: 1.05 }}
     >
       {/* Img */}
-      <div className="w-full h-96 p-1.5 group-hover:bg-globalColor1 overflow-hidden">
+      <motion.div
+        variants={imageVariants}
+        className="w-full h-96 p-1.5 group-hover:bg-globalColor1 overflow-hidden"
+      >
         <img className="object-cover h-full w-full" src={imgSrc} alt={imgAlt} />
-      </div>
+      </motion.div>
       {/* Text */}
       <div className="flex flex-col justify-between gap-6">
         <motion.h2 className="text-2xl mt-3" variants={itemVariants}>

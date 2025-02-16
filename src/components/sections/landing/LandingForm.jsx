@@ -1,21 +1,11 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import MotionContext from "../../../context/MotionContext";
 
 const LandingForm = () => {
-  const containerVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: "easeInOut" },
-    },
-  };
 
-  const itemVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.4 } },
-  };
+  const { containerVariants, itemVariants } = useContext(MotionContext);
 
   const { t } = useTranslation("home");
 

@@ -1,11 +1,17 @@
+// Motion
+import { motion } from "framer-motion";
+
 import Feature from "./features/Feature";
-import feat1 from "../../assets/images/features/1.jpg";
-import feat2 from "../../assets/images/features/2.jpg";
-import feat3 from "../../assets/images/features/3.jpg";
-import { useState, useRef, useEffect } from "react";
+import feat1 from "../../assets/images/features/1.webp";
+import feat2 from "../../assets/images/features/2.webp";
+import feat3 from "../../assets/images/features/3.webp";
+import { useState, useRef, useEffect, useContext } from "react";
 import { useTranslation } from "react-i18next";
+import MotionContext from "../../context/MotionContext";
 
 const Features = () => {
+  const { containerVariants, imageVariants } =
+    useContext(MotionContext);
   const { t } = useTranslation("features");
 
   const [count1, setCount1] = useState(0);
@@ -87,8 +93,11 @@ const Features = () => {
   }, [targets.count1, targets.count2, targets.count3]);
 
   return (
-    <div className="bg-globalColor5" id="featuers">
-      <div className="title py-16 lg:mt-12 bg-globalColor0 bg-opacity-75">
+    <section className="bg-globalColor5" id="featuers">
+      <motion.div
+        variants={containerVariants}
+        className="title py-16 lg:mt-12 bg-globalColor0 bg-opacity-75"
+      >
         <div className="container section h-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
           <Feature
             value={Math.floor(count1)}
@@ -106,31 +115,39 @@ const Features = () => {
             ref={featureRef3}
           />
         </div>
-      </div>
-      <div className="container grid grid-cols-3 gap-6 my-16">
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={containerVariants}
+        className="container grid grid-cols-3 gap-6 my-16"
+      >
         <div className="md:col-span-1 col-span-full">
-          <img
+          <motion.img
+            variants={imageVariants}
             className="min-w-full min-h-full object-cover"
             src={feat1}
             alt="our features"
           />
         </div>
         <div className="md:col-span-1 col-span-full">
-          <img
+          <motion.img
+            variants={imageVariants}
             className="min-w-full min-h-full object-cover"
             src={feat2}
             alt="our features"
           />
         </div>
         <div className="md:col-span-1 col-span-full">
-          <img
+          <motion.img
+            variants={imageVariants}
             className="min-w-full min-h-full object-cover"
             src={feat3}
             alt="our features"
           />
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </section>
   );
 };
 

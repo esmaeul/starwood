@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+/* eslint-disable no-unused-vars */
+import { MotionContext } from "framer-motion";
+import { useContext, useEffect, useState } from "react";
 
 const SingleDecor = ({ imgSrc, setCurrent }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -8,6 +10,8 @@ const SingleDecor = ({ imgSrc, setCurrent }) => {
     preloadImage.src = imgSrc;
     preloadImage.onload = () => setIsLoading(false);
   }, [imgSrc]);
+
+  const { containerVariants, itemVariants } = useContext(MotionContext);
 
   return (
     <div

@@ -5,7 +5,7 @@ import SingleDecor from "../components/sections/decors/SingleDecor";
 import Lightbox from "../components/sections/decors/LightBox";
 import { useTranslation } from "react-i18next";
 
-// Import images dynamically (choose Webpack or Vite method)
+// Import images dynamically
 const images = import.meta.glob(
   "../assets/images/decorations/*.{png,jpg,jpeg,webp}",
   { eager: true }

@@ -1,24 +1,14 @@
 import LandingForm from "./landing/LandingForm";
-import LandingImage from "../ui/LandingImage";
+import landingImage from "../../assets/images/landing/landing.webp";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import MotionContext from "../../context/MotionContext";
 
 const Landing = () => {
-  const containerVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: "easeInOut" },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.4 } },
-  };
+  const { containerVariants, itemVariants } = useContext(MotionContext);
 
   const { t } = useTranslation("home");
   const buttonClass =
@@ -27,7 +17,15 @@ const Landing = () => {
   return (
     <section className="landing relative mb-56 md:h-[85vh] flex flex-col md:justify-end justify-center bg-globalColor5 text-white">
       <div className="absolute top-0 left-0 w-full sm:h-full h-3/6">
-        <LandingImage />
+        <div className="relative w-full h-full overflow-hidden">
+          <div className="min-w-full h-full">
+            <img
+              src={landingImage}
+              className="w-full h-full object-cover bg-center"
+              aria-label="Landing image showcasing our logo"
+            />
+          </div>
+        </div>
       </div>
       {/* Start Landing Text */}
       <motion.div

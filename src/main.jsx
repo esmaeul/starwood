@@ -23,6 +23,7 @@ import PalaceAndResidential from "./routes/services/doors/PalaceAndResidential.j
 import OfiiceAndCorpotate from "./routes/services/doors/OfiiceAndCorpotate.jsx";
 import StagesAndPlatforms from "./routes/services/doors/StagesAndPlatforms.jsx";
 import { LanguageProvider } from "./context/LanguageContext.jsx";
+import { MotionProvider } from "./context/MotionContext.jsx";
 
 const router = createBrowserRouter([
   {
@@ -114,9 +115,11 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <LanguageProvider>
-      <RouterProvider router={router}>
-        <Root />
-      </RouterProvider>
+      <MotionProvider>
+        <RouterProvider router={router}>
+          <Root />
+        </RouterProvider>
+      </MotionProvider>
     </LanguageProvider>
   </StrictMode>
 );
