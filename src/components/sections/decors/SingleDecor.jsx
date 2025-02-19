@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
-import { MotionContext } from "framer-motion";
+import { motion } from "framer-motion";
 import { useContext, useEffect, useState } from "react";
+import MotionContext from "../../../context/MotionContext";
 
 const SingleDecor = ({ imgSrc, setCurrent }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -11,10 +12,14 @@ const SingleDecor = ({ imgSrc, setCurrent }) => {
     preloadImage.onload = () => setIsLoading(false);
   }, [imgSrc]);
 
-  const { containerVariants, itemVariants } = useContext(MotionContext);
+  const { containerVariants, imageVariants } = useContext(MotionContext);
 
   return (
-    <div
+    <motion.div
+      initial="hidden"
+      whileInView={isLoading ? "hidden" : "visible"}
+      variants={imageVariants}
+      viewport={{ once: true }}
       onClick={setCurrent}
       className="decor col-span-1 w-full h-60 rounded-lg overflow-hidden shadow-md flex items-center justify-center"
     >
@@ -32,7 +37,7 @@ const SingleDecor = ({ imgSrc, setCurrent }) => {
           />
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

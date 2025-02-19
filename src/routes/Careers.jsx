@@ -1,16 +1,24 @@
-import { useState } from "react";
+import { motion } from "framer-motion";
+import { useContext, useState } from "react";
 import imgSrc from "../assets/images/careers/careers.jpg";
 import CareersForm from "../components/careers/CareersForm";
 import MainTitle from "../components/minicomponents/MainTitle";
 import { useTranslation } from "react-i18next";
+import MotionContext from "../context/MotionContext";
 
 const Careers = () => {
   const { t } = useTranslation("common");
+  const { containerVariants } = useContext(MotionContext);
 
   const [submitDone, setSubmitDone] = useState(false);
 
   return (
-    <div className="bg-globalColor4 py-16 min-h-screen text-globalColor2">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      variants={containerVariants}
+      className="bg-globalColor4 py-16 min-h-screen text-globalColor2"
+    >
       <MainTitle title={t("title")} />
       <div className="container grid grid-cols-2 gap-8 mt-16">
         <div className="lg:col-span-1 col-span-full px-16 overflow-hidden">
@@ -35,7 +43,7 @@ const Careers = () => {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

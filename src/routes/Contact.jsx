@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import MotionContext from "../context/MotionContext";
+
 import BahraMap from "../components/map/BahraMap";
 import HeadOfficeMap from "../components/map/HeadOfficeMap";
 import OsfanMap from "../components/map/OsfanMap";
@@ -7,13 +10,20 @@ import { Link } from "react-router-dom";
 import { FaInstagram, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { useContext } from "react";
 
 const Contact = () => {
   const { t } = useTranslation("contactRoute");
+  const { containerVariants, itemVariants } = useContext(MotionContext);
 
   return (
     <div className="min-h-screen relative z-20 bg-globalColor4 bg-opacity-85 py-16 text-globalColor2">
-      <div className="container flex lg:flex-row flex-col-reverse items-center">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={containerVariants}
+        className="container flex lg:flex-row flex-col-reverse items-center"
+      >
         <div className="lg:basis-2/6 basis-full relative lg:my-0 mt-10">
           <div className="lg:fixed lg:top-1/4">
             <ul className="flex gap-4 text-3xl text-black ">
@@ -64,44 +74,74 @@ const Contact = () => {
             <h1 className="text-center py-6 text-4xl font-semibold text-globalColor0">
               {t("headOffice")}
             </h1>
-            <div className="container">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              variants={itemVariants}
+              viewport={{ once: true }}
+              className="container"
+            >
               <HeadOfficeMap />
-            </div>
+            </motion.div>
           </div>
           <div className="w-screen bg-transparent flex flex-col">
             <h1 className="text-center py-6 text-4xl font-semibold text-globalColor0">
               {t("factory")}
             </h1>
-            <div className="container">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              variants={itemVariants}
+              viewport={{ once: true }}
+              className="container"
+            >
               <FactoryMap />
-            </div>
+            </motion.div>
           </div>
           <div className="w-screen bg-transparent flex flex-col">
             <h1 className="text-center py-6 text-4xl font-semibold text-globalColor0">
               {t("bahra")}
             </h1>
-            <div className="container">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              variants={itemVariants}
+              viewport={{ once: true }}
+              className="container"
+            >
               <BahraMap />
-            </div>
+            </motion.div>
           </div>
           <div className="w-screen bg-transparent flex flex-col">
             <h1 className="text-center py-6 text-4xl font-semibold text-globalColor0">
               {t("osfan")}
             </h1>
-            <div className="container">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              variants={itemVariants}
+              viewport={{ once: true }}
+              className="container"
+            >
               <OsfanMap />
-            </div>
+            </motion.div>
           </div>
           <div className="w-screen bg-transparent flex flex-col">
             <h1 className="text-center py-6 text-4xl font-semibold text-globalColor0">
               {t("riyadh")}
             </h1>
-            <div className="container">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              variants={itemVariants}
+              viewport={{ once: true }}
+              className="container"
+            >
               <MapRiyadh />
-            </div>
+            </motion.div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,4 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
+import MotionContext from "../../context/MotionContext";
+
+import { useContext, useEffect, useRef, useState } from "react";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 import SingleDecor from "../../components/sections/decors/SingleDecor";
@@ -14,6 +17,7 @@ const intDoorsImgs = Object.values(images).map((img) => img.default);
 
 const InteriorDesigns = () => {
   const { t } = useTranslation("decorations");
+  const { containerVariants } = useContext(MotionContext);
 
   const imgRef = useRef(null);
   const [current, setCurrent] = useState(0);
@@ -42,7 +46,12 @@ const InteriorDesigns = () => {
 
   return (
     <div className="bg-globalColor5 py-10 select-none">
-      <div className="container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={containerVariants}
+        className="container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6"
+      >
         <div className="main-heading col-span-full mb-8 w-fit mx-auto flex flex-col gap-1.5">
           <h2 className="text-4xl text-globalColor0">{t("interiorDesign")}</h2>
         </div>
@@ -66,7 +75,7 @@ const InteriorDesigns = () => {
             onPrev={handlePrev}
           />
         )}
-      </div>
+      </motion.div>
     </div>
   );
 };
