@@ -15,7 +15,7 @@ const TrustedSection = () => {
     useContext(MotionContext);
 
   return (
-    <section className="section bg-gray-50 py-20 border-b overflow-hidden">
+    <section className="section bg-gray-100 py-20 border-b overflow-hidden">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -23,7 +23,7 @@ const TrustedSection = () => {
         className="container mx-auto px-6 grid grid-cols-7 gap-8 items-center"
       >
         {/* Title */}
-        <div className="lg:col-span-2 md:col-span-3 col-span-full text-center">
+        <div className="lg:col-span-2 md:col-span-3 row-span-4 col-span-full text-center">
           <motion.h1
             variants={itemVariants}
             className="lg:text-6xl md:text-5xl text-4xl font-bold text-globalColor1 font-mono"
