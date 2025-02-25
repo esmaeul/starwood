@@ -20,7 +20,7 @@ const TrustedSection = () => {
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
-        className="container mx-auto px-6 grid grid-cols-7 gap-8 items-center"
+        className="container mx-auto px-6 grid lg:grid-cols-7 grid-cols-6 gap-8 items-center"
       >
         {/* Title */}
         <div className="lg:col-span-2 md:col-span-3 row-span-4 col-span-full text-center">
@@ -38,7 +38,7 @@ const TrustedSection = () => {
             initial="hidden"
             whileInView="visible"
             variants={imageVariants}
-            className="lg:col-span-1 col-span-2 bg-white shadow-lg flex justify-center items-center p-4 rounded-lg select-none hover:scale-125 transition-all duration-500"
+            className="lg:hidden col-span-2 bg-white shadow-lg flex justify-center items-center p-4 rounded-lg select-none hover:scale-125 transition-all duration-500"
           >
             <img
               src={imgSrc}
@@ -47,6 +47,43 @@ const TrustedSection = () => {
             />
           </motion.div>
         ))}
+        {/* First Row - 5 Images */}
+        <div className="lg:col-span-5 lg:flex hidden justify-center gap-8">
+          {trustedImgs.slice(0, 5).map((imgSrc, index) => (
+            <motion.div
+              key={index}
+              initial="hidden"
+              whileInView="visible"
+              variants={imageVariants}
+              className="bg-white shadow-lg flex justify-center items-center p-4 rounded-lg select-none hover:scale-125 transition-all duration-500"
+            >
+              <img
+                src={imgSrc}
+                alt={t(`trustedImage_${index}`)}
+                className="w-28 h-28 object-contain"
+              />
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Second Row - Centered 3 Images */}
+        <div className="lg:col-span-5 lg:flex hidden justify-center gap-8">
+          {trustedImgs.slice(5).map((imgSrc, index) => (
+            <motion.div
+              key={index + 5}
+              initial="hidden"
+              whileInView="visible"
+              variants={imageVariants}
+              className="bg-white shadow-lg flex justify-center items-center p-4 rounded-lg select-none hover:scale-125 transition-all duration-500"
+            >
+              <img
+                src={imgSrc}
+                alt={t(`trustedImage_${index + 5}`)}
+                className="w-28 h-28 object-contain"
+              />
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
     </section>
   );

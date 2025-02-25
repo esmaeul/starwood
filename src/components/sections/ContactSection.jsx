@@ -43,7 +43,7 @@ const ContactSection = () => {
         variants={containerVariants}
         className="container section flex sm:flex-row sm:text-start text-center flex-col sm:gap-3 justify-between"
       >
-        <div className="sm:basis-1/2 basis-full">
+        <div className="md:basis-1/2 basis-full">
           <div className="heading pt-16 ">
             <motion.p className="text-globalColor0 text-lg">
               {t("leftTitle")}
@@ -56,7 +56,7 @@ const ContactSection = () => {
           <div className="time-table flex flex-col gap-4 text-start text-wrap sm:max-w-full max-w-96 sm:mx-0 mx-auto ">
             <motion.p variants={itemVariants}>{t("Address")}</motion.p>
             <motion.p variants={itemVariants}>{t("country")}</motion.p>
-            <div className="flex gap-3 text-white">
+            <div className="flex lg:flex-row flex-col gap-3 text-white">
               <motion.a
                 variants={itemVariants}
                 href="tel:+966126930030"
@@ -74,7 +74,7 @@ const ContactSection = () => {
             </div>
           </div>
         </div>
-        <div className="sm:basis-1/2 basis-full bg-globalColor5 md:border border-opacity-10 focus-within:border-opacity-50 border-globalColor2 md:-mt-16 my-8 min-h-full md:p-16">
+        <div className="md:basis-1/2 basis-full bg-globalColor5 md:border border-opacity-10 focus-within:border-opacity-50 border-globalColor2 md:-mt-16 my-8 min-h-full md:p-16">
           <div className="main-heading">
             <motion.p className="text-globalColor0 text-lg">
               {t("contactFormTitle")}
