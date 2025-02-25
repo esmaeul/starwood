@@ -21,7 +21,7 @@ import InteriorDoors from "./routes/services/doors/InteriorDoors.jsx";
 import ExteriorDoors from "./routes/services/doors/ExteriorDoors.jsx";
 import PalaceAndResidential from "./routes/services/doors/PalaceAndResidential.jsx";
 import OfiiceAndCorpotate from "./routes/services/doors/OfiiceAndCorpotate.jsx";
-import StagesAndPlatforms from "./routes/services/doors/StagesAndPlatforms.jsx";
+import StagesAndPlatforms from "./routes/services/StagesAndPlatforms.jsx";
 import { LanguageProvider } from "./context/LanguageContext.jsx";
 import { MotionProvider } from "./context/MotionContext.jsx";
 

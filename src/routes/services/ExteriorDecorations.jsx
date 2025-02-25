@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 
 // Import images dynamically (choose Webpack or Vite method)
 const images = import.meta.glob(
-  "../../assets/images/activities/doors/exterior-designs/*.{png,jpg,jpeg,webp}",
+  "../../assets/images/services/exterior-designs/*.{png,jpg,jpeg,webp}",
   { eager: true }
 );
 const extDesImgs = Object.values(images).map((img) => img.default);

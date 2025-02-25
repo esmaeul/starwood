@@ -10,7 +10,7 @@ import { useContext } from "react";
 
 // Import images dynamically (choose Webpack or Vite method)
 const images = import.meta.glob(
-  "../../assets/images/activities/doors/architectural/*.{png,jpg,jpeg,webp}",
+  "../../assets/images/services/architectural/*.{png,jpg,jpeg,webp}",
   { eager: true }
 );
 const ArchImgs = Object.values(images).map((img) => img.default);

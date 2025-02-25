@@ -4,23 +4,26 @@ import { useEffect, useState } from "react";
 
 const Lightbox = ({ current, images, onClose, onNext, onPrev, imgRef }) => {
   const [direction, setDirection] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   // Handle keyboard navigation (Arrow keys + Esc)
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key === "ArrowRight") {
+      if (e.key === "ArrowRight" && !isTransitioning) {
         setDirection(1);
+        setIsTransitioning(true);
         onNext();
       }
-      if (e.key === "ArrowLeft") {
+      if (e.key === "ArrowLeft" && !isTransitioning) {
         setDirection(-1);
+        setIsTransitioning(true);
         onPrev();
       }
       if (e.key === "Escape") onClose();
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [onNext, onPrev, onClose]);
+  }, [onNext, onPrev, onClose, isTransitioning]);
 
   // Animation Variants
   const imageVariants = {
@@ -51,31 +54,41 @@ const Lightbox = ({ current, images, onClose, onNext, onPrev, imgRef }) => {
           custom={direction}
           transition={{ duration: 0.4, ease: "easeInOut" }}
           onClick={(e) => e.stopPropagation()} // Prevent close on image click
+          onAnimationComplete={() => setIsTransitioning(false)} // Reset after animation
           ref={imgRef}
         >
           {/* Close Button */}
-          <FaXmark
-            className="text-white text-4xl absolute top-4 right-6 cursor-pointer hover:opacity-70 transition"
-            onClick={onClose}
-          />
+          {!isTransitioning && (
+            <FaXmark
+              className="text-white text-4xl absolute top-4 right-6 cursor-pointer hover:opacity-70 transition"
+              onClick={onClose}
+            />
+          )}
 
-          {/* Previous Button */}
-          <FaChevronLeft
-            className="text-white text-4xl absolute left-4 md:left-8 cursor-pointer hover:opacity-70 active:scale-90 transition"
-            onClick={() => {
-              setDirection(-1);
-              onPrev();
-            }}
-          />
+          {/* Previous Button (Hide during transition) */}
+          {!isTransitioning && (
+            <FaChevronLeft
+              className="text-white text-4xl absolute left-4 md:left-8 cursor-pointer hover:opacity-70 active:scale-90 transition"
+              onClick={() => {
+                setDirection(-1);
+                setIsTransitioning(true);
+                onPrev();
+              }}
+            />
+          )}
 
-          {/* Next Button */}
-          <FaChevronRight
-            className="text-white text-4xl absolute right-4 md:right-8 cursor-pointer hover:opacity-70 active:scale-90 transition"
-            onClick={() => {
-              setDirection(1);
-              onNext();
-            }}
-          />
+          {/* Next Button (Hide during transition) */}
+          {!isTransitioning && (
+            <FaChevronRight
+              className="text-white text-4xl absolute right-4 md:right-8 cursor-pointer hover:opacity-70 active:scale-90 transition"
+              onClick={() => {
+                setDirection(1);
+                setIsTransitioning(true);
+                onNext();
+              }}
+            />
+          )}
+
           {/* Image */}
           <motion.img
             key={current}

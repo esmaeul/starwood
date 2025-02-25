@@ -1,22 +1,21 @@
-import { useContext, useEffect, useRef, useState } from "react";
-
 import { motion } from "framer-motion";
+import MotionContext from "../../context/MotionContext";
 
+import { useContext, useEffect, useRef, useState } from "react";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-import SingleDecor from "../../../components/sections/decors/SingleDecor";
-import Lightbox from "../../../components/sections/decors/LightBox";
+import SingleDecor from "../../components/sections/decors/SingleDecor";
+import Lightbox from "../../components/sections/decors/LightBox";
 import { useTranslation } from "react-i18next";
-import MotionContext from "../../../context/MotionContext";
 
 // Import images dynamically (choose Webpack or Vite method)
 const images = import.meta.glob(
-  "../../../assets/images/services/doors/ofiice-corpotate/*.{png,jpg,jpeg,webp}",
+  "../../assets/images/services/stages-platforms/*.{png,jpg,jpeg,webp}",
   { eager: true }
 );
-const OfficeAndCorptateImgs = Object.values(images).map((img) => img.default);
+const stagetAndPlatfromsImgs = Object.values(images).map((img) => img.default);
 
-const OfficeAndCorptate = () => {
+const StagesAndPlatforms = () => {
   const { t } = useTranslation("decorations");
   const { containerVariants } = useContext(MotionContext);
 
@@ -25,11 +24,12 @@ const OfficeAndCorptate = () => {
   const [showModal, setShowModal] = useState(false);
 
   const handleNext = () =>
-    setCurrent((prev) => (prev + 1) % OfficeAndCorptateImgs.length);
+    setCurrent((prev) => (prev + 1) % stagetAndPlatfromsImgs.length);
   const handlePrev = () =>
     setCurrent(
       (prev) =>
-        (prev - 1 + OfficeAndCorptateImgs.length) % OfficeAndCorptateImgs.length
+        (prev - 1 + stagetAndPlatfromsImgs.length) %
+        stagetAndPlatfromsImgs.length
     );
 
   useEffect(() => {
@@ -55,11 +55,9 @@ const OfficeAndCorptate = () => {
         className="container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6"
       >
         <div className="main-heading col-span-full mb-8 w-fit mx-auto flex flex-col gap-1.5">
-          <h2 className="text-4xl text-globalColor0">
-            {t("officeCorporate Doors")}
-          </h2>
+          <h2 className="text-4xl text-globalColor0">{t("stagesPlatforms")}</h2>
         </div>
-        {OfficeAndCorptateImgs.map((imgSrc, index) => (
+        {stagetAndPlatfromsImgs.map((imgSrc, index) => (
           <SingleDecor
             key={index}
             imgSrc={imgSrc}
@@ -72,7 +70,7 @@ const OfficeAndCorptate = () => {
         {showModal && (
           <Lightbox
             current={current}
-            images={OfficeAndCorptateImgs}
+            images={stagetAndPlatfromsImgs}
             imgRef={imgRef}
             onClose={() => setShowModal(false)}
             onNext={handleNext}
@@ -84,4 +82,4 @@ const OfficeAndCorptate = () => {
   );
 };
 
-export default OfficeAndCorptate;
+export default StagesAndPlatforms;

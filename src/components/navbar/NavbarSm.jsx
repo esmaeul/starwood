@@ -86,10 +86,6 @@ const NavbarSm = ({ showMenu, setShowMenu }) => {
         {serMenu && (
           <>
             <SmMenuLink name={t("interiorDesign")} path={"/interior-design"} />
-            <SmMenuLink
-              name={t("interiorDecorations")}
-              path={"/interior-decorations"}
-            />
             <li
               // ref={doorsRef}
               className="flex items-center gap-1.5 my-3 text-lg border-b border-b-globalColor3 pb-2 pl-1.5 font-semibold"

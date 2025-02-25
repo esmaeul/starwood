@@ -9,8 +9,8 @@
     "doors": "الأبواب",
     "interiorDoors": "الأبواب الداخلية",
     "exteriorDoors": "الأبواب الخارجية",
-    "palaceResidential Doors": "أبواب القصور والمنازل السكنية",
-    "officeCorporate Doors": "أبواب المكاتب والشركات",
+    "palaceResidential Doors": "القصور والمنازل السكنية",
+    "officeCorporate Doors": "المكاتب والشركات",
     "stagesPlatforms": "المسارح والمنصات",
     "architecturalWork": "العمل المعماري",
     "projects": "المشاريع",
@@ -146,12 +146,12 @@
     "doors": "الأبواب",
     "interiorDoors": "الأبواب الداخلية",
     "exteriorDoors": "الأبواب الخارجية",
-    "palaceResidential Doors": "أبواب القصور والمنازل السكنية",
-    "officeCorporate Doors": "أبواب المكاتب والشركات",
+    "palaceResidential Doors": "القصور والمنازل السكنية",
+    "officeCorporate Doors": "المكاتب والشركات",
     "stagesPlatforms": "المسارح والمنصات",
     "architecturalWork": "العمل المعماري"
   },
-  "projects":{
+  "projects": {
     "title": "أخر أعمالنا",
     "project": "مشروع",
     "otherProjects": "مشاريع اخرى"

@@ -47,11 +47,6 @@ const ServicesMenu = ({ serMenu, setSerMenu }) => {
       />
       <SubmenuLink
         onClose={handleMenuClose}
-        name={t("interiorDecorations")}
-        path={"/interior-decorations"}
-      />
-      <SubmenuLink
-        onClose={handleMenuClose}
         name={t("exteriorDecorations")}
         path={"/exterior-decorations"}
       />
@@ -68,12 +63,11 @@ const ServicesMenu = ({ serMenu, setSerMenu }) => {
         aria-expanded={doorsMenu}
       >
         <SubmenuLink
-          onClose={handleMenuClose}
           name={t("doors")}
-          path={"/doors"}
+          path={"#"}
           icon={
             <IoIosArrowForward
-              className={` ml-auto transition duration-150 ${
+              className={`ml-auto transition duration-150 ${
                 doorsMenu ? "rotate-0 " : "rotate-90"
               }`}
             />

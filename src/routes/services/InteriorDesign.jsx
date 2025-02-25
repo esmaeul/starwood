@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 
 // Import images dynamically (choose Webpack or Vite method)
 const images = import.meta.glob(
-  "../../assets/images/activities/doors/interior-designs/*.{png,jpg,jpeg,webp}",
+  "../../assets/images/services/interior-designs/*.{png,jpg,jpeg,webp}",
   { eager: true }
 );
 const intDoorsImgs = Object.values(images).map((img) => img.default);

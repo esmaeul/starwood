@@ -21,7 +21,7 @@ const SingleDecor = ({ imgSrc, setCurrent }) => {
       variants={imageVariants}
       viewport={{ once: true }}
       onClick={setCurrent}
-      className="decor col-span-1 w-full h-60 rounded-lg overflow-hidden shadow-md flex items-center justify-center"
+      className="decor col-span-1 w-full h-60 rounded-lg overflow-hidden shadow-md flex items-center justify-center select-none"
     >
       <div
         className={`img w-full h-full cursor-pointer transition hover:scale-105 bg-gray-300 ${
