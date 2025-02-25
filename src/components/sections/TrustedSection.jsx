@@ -23,7 +23,7 @@ const TrustedSection = () => {
         className="container mx-auto px-6 grid lg:grid-cols-7 grid-cols-6 gap-8 items-center"
       >
         {/* Title */}
-        <div className="lg:col-span-2 md:col-span-3 row-span-4 col-span-full text-center">
+        <div className="lg:col-span-2 row-span-2 col-span-full text-center">
           <motion.h1
             variants={itemVariants}
             className="lg:text-6xl md:text-5xl text-4xl font-bold text-globalColor1 font-mono"
