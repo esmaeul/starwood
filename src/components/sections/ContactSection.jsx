@@ -19,6 +19,7 @@ const ContactSection = () => {
           initial="hidden"
           whileInView="visible"
           variants={containerVariants}
+          viewport={{ amount: 0.5 }}
           className="container section h-full"
         >
           <div className="main-heading w-fit h-full flex flex-col justify-center items-center gap-6 mx-auto text-center">
@@ -41,6 +42,7 @@ const ContactSection = () => {
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
+        viewport={{ amount: 0.5 }}
         className="container section flex sm:flex-row sm:text-start text-center flex-col sm:gap-3 justify-between"
       >
         <div className="md:basis-1/2 basis-full">

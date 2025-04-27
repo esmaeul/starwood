@@ -6,7 +6,6 @@ import { useContext } from "react";
 import MotionContext from "../../../context/MotionContext";
 
 const AboutRight = () => {
-  
   const { containerVariants, itemVariants } = useContext(MotionContext);
 
   const { t } = useTranslation("about");
@@ -14,6 +13,7 @@ const AboutRight = () => {
   return (
     <motion.div
       variants={containerVariants}
+      viewport={{ amount: 0.5 }}
       initial="hidden"
       whileInView={"visible"}
       className="md:basis-6/12 flex flex-col gap-3"

@@ -18,6 +18,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           variants={containerVariants}
+          viewport={{ amount: 0.5 }}
           className="container"
         >
           <MainTitle title={t("title")} />

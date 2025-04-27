@@ -3,7 +3,7 @@ import starwoodStar from "../../../assets/images/about/star logo-hd.webp";
 import arMap from "../../../assets/images/about/ar-map.webp";
 import enMap from "../../../assets/images/about/en-map.webp";
 
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useContext } from "react";
 import MotionContext from "../../../context/MotionContext";
@@ -16,6 +16,7 @@ const AboutLeft = () => {
   return i18n.language === "en" ? (
     <motion.div
       variants={containerVariants}
+      viewport={{ amount: 0.5 }}
       initial="hidden"
       whileInView="visible"
       className="md:basis-6/12 md:h-full overflow-hidden relative"
@@ -71,6 +72,7 @@ const AboutLeft = () => {
     // Start Arabic Map
     <motion.div
       variants={containerVariants}
+      viewport={{ amount: 0.5 }}
       initial="hidden"
       whileInView="visible"
       className="md:basis-6/12 md:h-full overflow-hidden relative"

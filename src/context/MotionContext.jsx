@@ -9,21 +9,20 @@ const containerVariants = {
     transition: {
       duration: 0.8,
       staggerChildren: 0.2,
-      delay: 0.4,
     },
   },
 };
 
 const itemVariants = {
   hidden: { opacity: 0, x: -20 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.4, delay: 0.5 } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.4 } },
 };
 
 const imageVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { duration: 0.6, ease: "easeOut", delay: 0.4 },
+    transition: { duration: 0.6, ease: "easeOut" },
   },
 };
 

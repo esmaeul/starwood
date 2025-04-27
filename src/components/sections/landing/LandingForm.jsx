@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import MotionContext from "../../../context/MotionContext";
 
 const LandingForm = () => {
-
   const { containerVariants, itemVariants } = useContext(MotionContext);
 
   const { t } = useTranslation("home");
@@ -28,6 +27,7 @@ const LandingForm = () => {
   return (
     <motion.form
       variants={containerVariants}
+      viewport={{ amount: 0.5 }}
       initial="hidden"
       whileInView={"visible"}
       className="-mb-36 lg:px-16 lg:py-24 py-8 px-0 lg:text-left text-center bg-globalColor8 text-globalColor2 sm:shadow-lg rounded-lg flex lg:flex-row flex-col lg:gap-5 items-center justify-center focus-within:bg-globalColor5 hover:bg-globalColor5 hover:shadow-none focus-within:shadow-none transition-all"

@@ -39,7 +39,7 @@ const Features = () => {
 
           timeoutId = setTimeout(() => {
             startCounting();
-          }, 500); // 🔥 Delay counting by 0.5s (matching motion delay)
+          }, 0); // 🔥 Delay counting by 0.5s (matching motion delay)
         } else {
           // Reset counts to 0 when the section is scrolled past
           setCount1(0);
@@ -95,6 +95,7 @@ const Features = () => {
     <section className="bg-globalColor5" id="features">
       <motion.div
         variants={containerVariants}
+        viewport={{ amount: 0.5 }}
         className="title py-16 lg:mt-12 bg-globalColor0 bg-opacity-75"
       >
         <div className="container section h-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
@@ -119,6 +120,7 @@ const Features = () => {
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
+        viewport={{ amount: 0.5 }}
         className="container grid grid-cols-3 gap-6 my-16"
       >
         <div className="md:col-span-1 col-span-full">

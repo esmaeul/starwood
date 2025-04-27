@@ -9,6 +9,7 @@ const Reason = ({ icon, title, desc }) => {
     <motion.div
       className="col-span-1 flex flex-col hover:shadow-xl py-16 bg-white border border-globalColor4 w-full text-center hover:scale-90 gap-6 text-globalColor0 transition"
       variants={containerVariants}
+      viewport={{ amount: 0.5 }}
       initial="hidden"
       whileInView="visible"
     >

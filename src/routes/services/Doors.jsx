@@ -10,6 +10,7 @@ const Doors = () => {
       initial="hidden"
       whileInView="visible"
       variants={containerVariants}
+      viewport={{ amount: 0.5 }}
     >
       doors
     </motion.div>

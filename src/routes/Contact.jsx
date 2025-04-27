@@ -22,6 +22,7 @@ const Contact = () => {
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
+        viewport={{ amount: 0.5 }}
         className="container flex lg:flex-row flex-col-reverse items-center"
       >
         <div className="lg:basis-2/6 basis-full relative lg:my-0 mt-10">

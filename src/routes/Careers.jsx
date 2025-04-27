@@ -17,6 +17,7 @@ const Careers = () => {
       initial="hidden"
       whileInView="visible"
       variants={containerVariants}
+      viewport={{ amount: 0.5 }}
       className="bg-globalColor4 py-16 min-h-screen text-globalColor2"
     >
       <MainTitle title={t("title")} />

@@ -11,6 +11,7 @@ const ProjectCard = ({ title, items }) => {
     <motion.div
       className="bg-white rounded-lg shadow-md p-6 my-4 w-full md:w-80 lg:w-96"
       variants={containerVariants}
+      viewport={{ amount: 0.5 }}
       initial="hidden"
       animate="visible"
     >

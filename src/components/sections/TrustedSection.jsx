@@ -20,6 +20,7 @@ const TrustedSection = () => {
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
+        viewport={{ amount: 0.5 }}
         className="container mx-auto px-6 grid lg:grid-cols-7 grid-cols-6 gap-8 items-center"
       >
         {/* Title */}

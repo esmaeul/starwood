@@ -10,6 +10,7 @@ const SingelActivity = ({ imgSrc, imgAlt, title, desc }) => {
     <motion.div
       className="service lg:col-span-1 h-fit transparent text-globalColor5 p-3 rounded-md hover:bg-inherit lg:hover:scale-x-110 hover:scale-105 hover:shadow-2xl transition"
       variants={containerVariants}
+      viewport={{ amount: 0.5 }}
       initial="hidden"
       whileInView="visible"
       whileHover={{ scale: 1.05 }}
