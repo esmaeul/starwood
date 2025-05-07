@@ -32,7 +32,6 @@ const Landing = () => {
         initial="hidden"
         whileInView={"visible"}
         variants={containerVariants}
-        viewport={{ amount: 0.5 }}
         className="container z-20 mt-28"
       >
         <div className="flex flex-col pb-10 gap-5">

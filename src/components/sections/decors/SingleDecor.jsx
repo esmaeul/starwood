@@ -19,7 +19,7 @@ const SingleDecor = ({ imgSrc, setCurrent }) => {
       initial="hidden"
       whileInView={isLoading ? "hidden" : "visible"}
       variants={imageVariants}
-      viewport={{ once: true }}
+      viewport={{ amount: 0.5 }}
       onClick={setCurrent}
       className="decor col-span-1 w-full h-60 rounded-lg overflow-hidden shadow-md flex items-center justify-center select-none"
     >

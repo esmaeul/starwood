@@ -55,7 +55,6 @@ const PalaceAndResidential = () => {
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
-        viewport={{ amount: 0.5 }}
         className="container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6"
       >
         <div className="main-heading col-span-full mb-8 w-fit mx-auto flex flex-col gap-1.5">

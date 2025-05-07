@@ -22,7 +22,6 @@ const Contact = () => {
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
-        viewport={{ amount: 0.5 }}
         className="container flex lg:flex-row flex-col-reverse items-center"
       >
         <div className="lg:basis-2/6 basis-full relative lg:my-0 mt-10">
@@ -79,7 +78,7 @@ const Contact = () => {
               initial="hidden"
               whileInView="visible"
               variants={itemVariants}
-              viewport={{ once: true }}
+              viewport={{ amount: 0.5 }}
               className="container"
             >
               <HeadOfficeMap />
@@ -93,7 +92,7 @@ const Contact = () => {
               initial="hidden"
               whileInView="visible"
               variants={itemVariants}
-              viewport={{ once: true }}
+              viewport={{ amount: 0.5 }}
               className="container"
             >
               <FactoryMap />
@@ -107,7 +106,7 @@ const Contact = () => {
               initial="hidden"
               whileInView="visible"
               variants={itemVariants}
-              viewport={{ once: true }}
+              viewport={{ amount: 0.5 }}
               className="container"
             >
               <BahraMap />
@@ -121,7 +120,7 @@ const Contact = () => {
               initial="hidden"
               whileInView="visible"
               variants={itemVariants}
-              viewport={{ once: true }}
+              viewport={{ amount: 0.5 }}
               className="container"
             >
               <OsfanMap />
@@ -135,7 +134,7 @@ const Contact = () => {
               initial="hidden"
               whileInView="visible"
               variants={itemVariants}
-              viewport={{ once: true }}
+              viewport={{ amount: 0.5 }}
               className="container"
             >
               <MapRiyadh />
