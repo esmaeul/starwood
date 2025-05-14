@@ -1,6 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { useTranslation } from "react-i18next";
 
 // head Office Coordinates
 const headOfficeCoordinates = [21.52591899822692, 39.18023267995888];
@@ -15,6 +16,8 @@ L.Icon.Default.mergeOptions({
 });
 
 const HeadOfficeMap = () => {
+  const { t } = useTranslation("common");
+
   return (
     <div className="flex">
       <div className="w-full mx-auto max-w-4xl h-[400px] rounded-lg shadow-lg overflow-hidden border border-gray-200">
@@ -31,10 +34,10 @@ const HeadOfficeMap = () => {
             <Popup>
               <span className="text-blue-600 font-bold">
                 <a
-                  href="https://maps.app.goo.gl/UdCniY4RYarYocEfA"
+                  href="https://maps.app.goo.gl/PSkS7EUWEvSjCucj7"
                   target="_blank"
                 >
-                  Visit us
+                  {t("visit")}
                 </a>
               </span>
             </Popup>

@@ -1,6 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { useTranslation } from "react-i18next";
 
 // factory coordinates
 const factoryCoordinates = [21.422200639812875, 39.471974146326836];
@@ -15,6 +16,7 @@ L.Icon.Default.mergeOptions({
 });
 
 const FactoryMap = () => {
+  const { t } = useTranslation("common");
   return (
     <div className="flex">
       <div className="w-full mx-auto max-w-4xl h-[400px] rounded-lg shadow-lg overflow-hidden border border-gray-200">
@@ -34,7 +36,7 @@ const FactoryMap = () => {
                   href="https://maps.app.goo.gl/JQLU5h6863UwQ6C26"
                   target="_blank"
                 >
-                  Visit us
+                  {t("visit")}
                 </a>
               </span>
             </Popup>

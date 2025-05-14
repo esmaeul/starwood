@@ -1,6 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { useTranslation } from "react-i18next";
 
 // Riyadh coordinates
 const riyadhCoordinates = [24.64234173850224, 46.755810184656724];
@@ -15,6 +16,8 @@ L.Icon.Default.mergeOptions({
 });
 
 const RiyadhMap = () => {
+  const { t } = useTranslation("common");
+
   return (
     <div className="flex">
       <div className="w-full mx-auto max-w-4xl h-[400px] rounded-lg shadow-lg overflow-hidden border border-gray-200">
@@ -34,7 +37,7 @@ const RiyadhMap = () => {
                   href="https://maps.app.goo.gl/zJTM9mGehtUjkCgG9"
                   target="_blank"
                 >
-                  Visit us
+                  {t("visit")}
                 </a>
               </span>
             </Popup>

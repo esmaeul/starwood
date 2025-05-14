@@ -1,6 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { useTranslation } from "react-i18next";
 
 // Riyadh coordinates
 const osfanCoordinates = [21.94447389547419, 39.36071925920351];
@@ -15,6 +16,9 @@ L.Icon.Default.mergeOptions({
 });
 
 const OsfanMap = () => {
+
+  const { t } = useTranslation("common");
+
   return (
     <div className="flex">
       <div className="w-full mx-auto max-w-4xl h-[400px] rounded-lg shadow-lg overflow-hidden border border-gray-200">
@@ -34,7 +38,7 @@ const OsfanMap = () => {
                   href="https://maps.app.goo.gl/X1bAxwsXC18jZvRFA"
                   target="_blank"
                 >
-                  Visit us
+                  {t("visit")}
                 </a>
               </span>
             </Popup>

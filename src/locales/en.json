@@ -25,7 +25,8 @@
     "phone": "Phone Number",
     "send": "Send",
     "formTitle": "Request a Job",
-    "msgSent": "Thanks for contacting us, your message has been sent successfully"
+    "msgSent": "Thanks for contacting us, your message has been sent successfully",
+    "visit": "Visit Us"
   },
   "home": {
     "landingTitle": "We are Starwood Engineer Experts",
