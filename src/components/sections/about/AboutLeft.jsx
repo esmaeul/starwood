@@ -24,7 +24,7 @@ const AboutLeft = () => {
       <img src={enMap} alt="starwood map" className="max-w-full max-h-full" />
       {/* Jeddah */}
       <div className="absolute animate-bounce top-[59%] left-[18%] flex flex-col">
-        <a href="https://maps.app.goo.gl/PSkS7EUWEvSjCucj7" target="_blank">
+        <a href="https://maps.app.goo.gl/tGJjXgV5tA7EF5289?g_st=com.google.maps.preview.copy" target="_blank">
           <img
             src={starwoodStar}
             alt="starwood marker"
