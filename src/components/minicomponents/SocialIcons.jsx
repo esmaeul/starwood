@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaInstagram, FaXTwitter, FaYoutube } from "react-icons/fa6";
-import { FaWhatsappSquare } from "react-icons/fa";
+import { FaFacebookF, FaWhatsappSquare } from "react-icons/fa";
 
 const SocialIcons = () => {
   return (
@@ -12,6 +12,15 @@ const SocialIcons = () => {
           target="_blank"
         >
           <FaYoutube />
+        </Link>
+      </li>
+      <li className="facebook">
+        <Link
+          className=" hover:text-facebookColor text-md transition"
+          to="https://www.facebook.com/share/1F7thgmfGb/?mibextid=wwXIfr"
+          target="_blank"
+        >
+          <FaFacebookF />
         </Link>
       </li>
       <li className="instagram">

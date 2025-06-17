@@ -7,7 +7,7 @@ import OsfanMap from "../components/map/OsfanMap";
 import MapRiyadh from "../components/map/RiyadhMap";
 import FactoryMap from "../components/map/FactoryMap";
 import { Link } from "react-router-dom";
-import { FaInstagram, FaXTwitter, FaYoutube } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { useContext } from "react";
@@ -36,6 +36,15 @@ const Contact = () => {
                   <FaYoutube />
                 </Link>
               </li>
+              <li className="facebook">
+                        <Link
+                          className=" hover:text-facebookColor text-md transition"
+                          to="https://www.facebook.com/share/1F7thgmfGb/?mibextid=wwXIfr"
+                          target="_blank"
+                        >
+                          <FaFacebook />
+                        </Link>
+                      </li>
               <li className="instagram">
                 <Link
                   className=" hover:text-instaColor text-md transition"

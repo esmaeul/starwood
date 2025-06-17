@@ -26,7 +26,7 @@ export default {
         globalColor6: "#655839",
         globalColor7: "#4b4f58",
         globalColor8: "#f6f7f8",
-        facbookColor: "#3b5998",
+        facebookColor: "#3b5998",
         youtubeColor: "#ff0000",
         instaColor: "#e1306c",
         twitterColor: "#1DA1F2", // Updated to today's X background color

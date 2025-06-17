@@ -5,7 +5,7 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { FaInstagram, FaXmark, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { IoIosArrowUp } from "react-icons/io";
 import { Link } from "react-router-dom";
-import { FaWhatsappSquare } from "react-icons/fa";
+import { FaFacebook, FaWhatsappSquare } from "react-icons/fa";
 import LanguageContext from "../../context/LanguageContext";
 import SmMenuLink from "./navbarsmlinks/SmMenuLink";
 import { useTranslation } from "react-i18next";
@@ -218,6 +218,15 @@ const NavbarSm = ({ showMenu, setShowMenu }) => {
             target="_blank"
           >
             <FaYoutube />
+          </Link>
+        </li>
+        <li className="facebook">
+          <Link
+            className=" hover:text-facebookColor text-md transition"
+            to="https://www.facebook.com/share/1F7thgmfGb/?mibextid=wwXIfr"
+            target="_blank"
+          >
+            <FaFacebook />
           </Link>
         </li>
         <li className="instagram">
