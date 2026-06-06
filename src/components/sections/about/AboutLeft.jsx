@@ -57,7 +57,7 @@ const AboutLeft = () => {
       </div>
       {/* Riyadh */}
       <div className="absolute animate-bounce top-[49%] left-[47%] flex flex-col">
-        <a href="https://maps.app.goo.gl/zJTM9mGehtUjkCgG9" target="_blank">
+        <a href="https://maps.app.goo.gl/F3u45DmBrXyXYbS96?g_st=iw" target="_blank">
           <img
             src={starwoodStar}
             alt="starwood marker"
@@ -113,7 +113,7 @@ const AboutLeft = () => {
       </div>
       {/* Riyadh */}
       <div className="absolute animate-bounce top-[48%] left-[47%] flex flex-col">
-        <a href="https://maps.app.goo.gl/zJTM9mGehtUjkCgG9" target="_blank">
+        <a href="https://maps.app.goo.gl/F3u45DmBrXyXYbS96?g_st=iw" target="_blank">
           <img
             src={starwoodStar}
             alt="starwood marker"
