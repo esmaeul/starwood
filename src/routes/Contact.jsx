@@ -3,7 +3,6 @@ import MotionContext from "../context/MotionContext";
 
 import BahraMap from "../components/map/BahraMap";
 import HeadOfficeMap from "../components/map/HeadOfficeMap";
-import OsfanMap from "../components/map/OsfanMap";
 import MapRiyadh from "../components/map/RiyadhMap";
 import FactoryMap from "../components/map/FactoryMap";
 import { Link } from "react-router-dom";
@@ -119,20 +118,6 @@ const Contact = () => {
               className="container"
             >
               <BahraMap />
-            </motion.div>
-          </div>
-          <div className="w-screen bg-transparent flex flex-col">
-            <h1 className="text-center py-6 text-4xl font-semibold text-globalColor0">
-              {t("osfan")}
-            </h1>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              variants={itemVariants}
-              viewport={{ amount: 0.5 }}
-              className="container"
-            >
-              <OsfanMap />
             </motion.div>
           </div>
           <div className="w-screen bg-transparent flex flex-col">

@@ -34,7 +34,7 @@ const RiyadhMap = () => {
             <Popup>
               <span className="text-blue-600 font-bold">
                 <a
-                  href="https://maps.app.goo.gl/zJTM9mGehtUjkCgG9"
+                  href="https://maps.app.goo.gl/F3u45DmBrXyXYbS96?g_st=iw"
                   target="_blank"
                 >
                   {t("visit")}
